@@ -1,0 +1,488 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "higherOrderMap",
+            "range": [
+              16,
+              30
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 16
+              },
+              "end": {
+                "line": 1,
+                "column": 30
+              }
+            }
+          },
+          "imported": {
+            "type": "Identifier",
+            "name": "map",
+            "range": [
+              9,
+              12
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 9
+              },
+              "end": {
+                "line": 1,
+                "column": 12
+              }
+            }
+          },
+          "range": [
+            9,
+            30
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 9
+            },
+            "end": {
+              "line": 1,
+              "column": 30
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "../operators",
+        "raw": "'../operators'",
+        "range": [
+          38,
+          52
+        ],
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 38
+          },
+          "end": {
+            "line": 1,
+            "column": 52
+          }
+        }
+      },
+      "range": [
+        0,
+        53
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 53
+        }
+      },
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * Applies a given `project` function to each value emitted by the source\r\n * Observable, and emits the resulting values as an Observable.\r\n *\r\n * <span class=\"informal\">Like [Array.prototype.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map),\r\n * it passes each source value through a transformation function to get\r\n * corresponding output values.</span>\r\n *\r\n * <img src=\"./img/map.png\" width=\"100%\">\r\n *\r\n * Similar to the well known `Array.prototype.map` function, this operator\r\n * applies a projection to each value and emits that projection in the output\r\n * Observable.\r\n *\r\n * @example <caption>Map every click to the clientX position of that click</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var positions = clicks.map(ev => ev.clientX);\r\n * positions.subscribe(x => console.log(x));\r\n *\r\n * @see {@link mapTo}\r\n * @see {@link pluck}\r\n *\r\n * @param {function(value: T, index: number): R} project The function to apply\r\n * to each `value` emitted by the source Observable. The `index` parameter is\r\n * the number `i` for the i-th emission that has happened since the\r\n * subscription, starting from the number `0`.\r\n * @param {any} [thisArg] An optional argument to define what `this` is in the\r\n * `project` function.\r\n * @return {Observable<R>} An Observable that emits the values from the source\r\n * Observable transformed by the given `project` function.\r\n * @method map\r\n * @owner Observable\r\n ",
+          "range": [
+            55,
+            1550
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 34,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "map",
+          "range": [
+            1568,
+            1571
+          ],
+          "loc": {
+            "start": {
+              "line": 35,
+              "column": 16
+            },
+            "end": {
+              "line": 35,
+              "column": 19
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "project",
+            "range": [
+              1572,
+              1579
+            ],
+            "loc": {
+              "start": {
+                "line": 35,
+                "column": 20
+              },
+              "end": {
+                "line": 35,
+                "column": 27
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "thisArg",
+            "range": [
+              1581,
+              1588
+            ],
+            "loc": {
+              "start": {
+                "line": 35,
+                "column": 29
+              },
+              "end": {
+                "line": 35,
+                "column": 36
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "higherOrderMap",
+                    "range": [
+                      1604,
+                      1618
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 36,
+                        "column": 11
+                      },
+                      "end": {
+                        "line": 36,
+                        "column": 25
+                      }
+                    }
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "name": "project",
+                      "range": [
+                        1619,
+                        1626
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 36,
+                          "column": 26
+                        },
+                        "end": {
+                          "line": 36,
+                          "column": 33
+                        }
+                      }
+                    },
+                    {
+                      "type": "Identifier",
+                      "name": "thisArg",
+                      "range": [
+                        1628,
+                        1635
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 36,
+                          "column": 35
+                        },
+                        "end": {
+                          "line": 36,
+                          "column": 42
+                        }
+                      }
+                    }
+                  ],
+                  "range": [
+                    1604,
+                    1636
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 36,
+                      "column": 11
+                    },
+                    "end": {
+                      "line": 36,
+                      "column": 43
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "ThisExpression",
+                    "range": [
+                      1637,
+                      1641
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 36,
+                        "column": 44
+                      },
+                      "end": {
+                        "line": 36,
+                        "column": 48
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  1604,
+                  1642
+                ],
+                "loc": {
+                  "start": {
+                    "line": 36,
+                    "column": 11
+                  },
+                  "end": {
+                    "line": 36,
+                    "column": 49
+                  }
+                }
+              },
+              "range": [
+                1597,
+                1643
+              ],
+              "loc": {
+                "start": {
+                  "line": 36,
+                  "column": 4
+                },
+                "end": {
+                  "line": 36,
+                  "column": 50
+                }
+              }
+            }
+          ],
+          "range": [
+            1590,
+            1646
+          ],
+          "loc": {
+            "start": {
+              "line": 35,
+              "column": 38
+            },
+            "end": {
+              "line": 37,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          1559,
+          1646
+        ],
+        "loc": {
+          "start": {
+            "line": 35,
+            "column": 7
+          },
+          "end": {
+            "line": 37,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\r\n * Applies a given `project` function to each value emitted by the source\r\n * Observable, and emits the resulting values as an Observable.\r\n *\r\n * <span class=\"informal\">Like [Array.prototype.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map),\r\n * it passes each source value through a transformation function to get\r\n * corresponding output values.</span>\r\n *\r\n * <img src=\"./img/map.png\" width=\"100%\">\r\n *\r\n * Similar to the well known `Array.prototype.map` function, this operator\r\n * applies a projection to each value and emits that projection in the output\r\n * Observable.\r\n *\r\n * @example <caption>Map every click to the clientX position of that click</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var positions = clicks.map(ev => ev.clientX);\r\n * positions.subscribe(x => console.log(x));\r\n *\r\n * @see {@link mapTo}\r\n * @see {@link pluck}\r\n *\r\n * @param {function(value: T, index: number): R} project The function to apply\r\n * to each `value` emitted by the source Observable. The `index` parameter is\r\n * the number `i` for the i-th emission that has happened since the\r\n * subscription, starting from the number `0`.\r\n * @param {any} [thisArg] An optional argument to define what `this` is in the\r\n * `project` function.\r\n * @return {Observable<R>} An Observable that emits the values from the source\r\n * Observable transformed by the given `project` function.\r\n * @method map\r\n * @owner Observable\r\n ",
+            "range": [
+              55,
+              1550
+            ],
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 0
+              },
+              "end": {
+                "line": 34,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Line",
+            "value": "# sourceMappingURL=map.js.map",
+            "range": [
+              1648,
+              1679
+            ],
+            "loc": {
+              "start": {
+                "line": 38,
+                "column": 0
+              },
+              "end": {
+                "line": 38,
+                "column": 31
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        1552,
+        1646
+      ],
+      "loc": {
+        "start": {
+          "line": 35,
+          "column": 0
+        },
+        "end": {
+          "line": 37,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * Applies a given `project` function to each value emitted by the source\r\n * Observable, and emits the resulting values as an Observable.\r\n *\r\n * <span class=\"informal\">Like [Array.prototype.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map),\r\n * it passes each source value through a transformation function to get\r\n * corresponding output values.</span>\r\n *\r\n * <img src=\"./img/map.png\" width=\"100%\">\r\n *\r\n * Similar to the well known `Array.prototype.map` function, this operator\r\n * applies a projection to each value and emits that projection in the output\r\n * Observable.\r\n *\r\n * @example <caption>Map every click to the clientX position of that click</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var positions = clicks.map(ev => ev.clientX);\r\n * positions.subscribe(x => console.log(x));\r\n *\r\n * @see {@link mapTo}\r\n * @see {@link pluck}\r\n *\r\n * @param {function(value: T, index: number): R} project The function to apply\r\n * to each `value` emitted by the source Observable. The `index` parameter is\r\n * the number `i` for the i-th emission that has happened since the\r\n * subscription, starting from the number `0`.\r\n * @param {any} [thisArg] An optional argument to define what `this` is in the\r\n * `project` function.\r\n * @return {Observable<R>} An Observable that emits the values from the source\r\n * Observable transformed by the given `project` function.\r\n * @method map\r\n * @owner Observable\r\n ",
+          "range": [
+            55,
+            1550
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 34,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Line",
+          "value": "# sourceMappingURL=map.js.map",
+          "range": [
+            1648,
+            1679
+          ],
+          "loc": {
+            "start": {
+              "line": 38,
+              "column": 0
+            },
+            "end": {
+              "line": 38,
+              "column": 31
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    0,
+    1646
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 37,
+      "column": 1
+    }
+  },
+  "comments": [
+    {
+      "type": "Block",
+      "value": "*\r\n * Applies a given `project` function to each value emitted by the source\r\n * Observable, and emits the resulting values as an Observable.\r\n *\r\n * <span class=\"informal\">Like [Array.prototype.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map),\r\n * it passes each source value through a transformation function to get\r\n * corresponding output values.</span>\r\n *\r\n * <img src=\"./img/map.png\" width=\"100%\">\r\n *\r\n * Similar to the well known `Array.prototype.map` function, this operator\r\n * applies a projection to each value and emits that projection in the output\r\n * Observable.\r\n *\r\n * @example <caption>Map every click to the clientX position of that click</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var positions = clicks.map(ev => ev.clientX);\r\n * positions.subscribe(x => console.log(x));\r\n *\r\n * @see {@link mapTo}\r\n * @see {@link pluck}\r\n *\r\n * @param {function(value: T, index: number): R} project The function to apply\r\n * to each `value` emitted by the source Observable. The `index` parameter is\r\n * the number `i` for the i-th emission that has happened since the\r\n * subscription, starting from the number `0`.\r\n * @param {any} [thisArg] An optional argument to define what `this` is in the\r\n * `project` function.\r\n * @return {Observable<R>} An Observable that emits the values from the source\r\n * Observable transformed by the given `project` function.\r\n * @method map\r\n * @owner Observable\r\n ",
+      "range": [
+        55,
+        1550
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 34,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Line",
+      "value": "# sourceMappingURL=map.js.map",
+      "range": [
+        1648,
+        1679
+      ],
+      "loc": {
+        "start": {
+          "line": 38,
+          "column": 0
+        },
+        "end": {
+          "line": 38,
+          "column": 31
+        }
+      }
+    }
+  ]
+}

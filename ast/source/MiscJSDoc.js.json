@@ -1,0 +1,2086 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "Observable",
+            "range": [
+              9,
+              19
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 9
+              },
+              "end": {
+                "line": 1,
+                "column": 19
+              }
+            }
+          },
+          "imported": {
+            "type": "Identifier",
+            "name": "Observable",
+            "range": [
+              9,
+              19
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 9
+              },
+              "end": {
+                "line": 1,
+                "column": 19
+              }
+            }
+          },
+          "range": [
+            9,
+            19
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 9
+            },
+            "end": {
+              "line": 1,
+              "column": 19
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "./Observable",
+        "raw": "'./Observable'",
+        "range": [
+          27,
+          41
+        ],
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 27
+          },
+          "end": {
+            "line": 1,
+            "column": 41
+          }
+        }
+      },
+      "range": [
+        0,
+        42
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 42
+        }
+      }
+    },
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [],
+      "source": {
+        "type": "Literal",
+        "value": "./observable/dom/MiscJSDoc",
+        "raw": "'./observable/dom/MiscJSDoc'",
+        "range": [
+          51,
+          79
+        ],
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 7
+          },
+          "end": {
+            "line": 2,
+            "column": 35
+          }
+        }
+      },
+      "range": [
+        44,
+        80
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 36
+        }
+      },
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * We need this JSDoc comment for affecting ESDoc.\r\n * @extends {Ignored}\r\n * @hide true\r\n ",
+          "range": [
+            82,
+            180
+          ],
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 0
+            },
+            "end": {
+              "line": 7,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "ClassDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "ObservableDoc",
+          "range": [
+            195,
+            208
+          ],
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 13
+            },
+            "end": {
+              "line": 8,
+              "column": 26
+            }
+          }
+        },
+        "superClass": null,
+        "body": {
+          "type": "ClassBody",
+          "body": [
+            {
+              "type": "MethodDefinition",
+              "key": {
+                "type": "Identifier",
+                "name": "create",
+                "range": [
+                  5592,
+                  5598
+                ],
+                "loc": {
+                  "start": {
+                    "line": 128,
+                    "column": 11
+                  },
+                  "end": {
+                    "line": 128,
+                    "column": 17
+                  }
+                }
+              },
+              "value": {
+                "type": "FunctionExpression",
+                "id": null,
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "name": "onSubscription",
+                    "range": [
+                      5599,
+                      5613
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 128,
+                        "column": 18
+                      },
+                      "end": {
+                        "line": 128,
+                        "column": 32
+                      }
+                    }
+                  }
+                ],
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "ReturnStatement",
+                      "argument": {
+                        "type": "NewExpression",
+                        "callee": {
+                          "type": "Identifier",
+                          "name": "Observable",
+                          "range": [
+                            5637,
+                            5647
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 129,
+                              "column": 19
+                            },
+                            "end": {
+                              "line": 129,
+                              "column": 29
+                            }
+                          }
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "name": "onSubscription",
+                            "range": [
+                              5648,
+                              5662
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 129,
+                                "column": 30
+                              },
+                              "end": {
+                                "line": 129,
+                                "column": 44
+                              }
+                            }
+                          }
+                        ],
+                        "range": [
+                          5633,
+                          5663
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 129,
+                            "column": 15
+                          },
+                          "end": {
+                            "line": 129,
+                            "column": 45
+                          }
+                        }
+                      },
+                      "range": [
+                        5626,
+                        5664
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 129,
+                          "column": 8
+                        },
+                        "end": {
+                          "line": 129,
+                          "column": 46
+                        }
+                      }
+                    }
+                  ],
+                  "range": [
+                    5615,
+                    5671
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 128,
+                      "column": 34
+                    },
+                    "end": {
+                      "line": 130,
+                      "column": 5
+                    }
+                  }
+                },
+                "generator": false,
+                "expression": false,
+                "range": [
+                  5598,
+                  5671
+                ],
+                "loc": {
+                  "start": {
+                    "line": 128,
+                    "column": 17
+                  },
+                  "end": {
+                    "line": 130,
+                    "column": 5
+                  }
+                }
+              },
+              "kind": "method",
+              "computed": false,
+              "range": [
+                5585,
+                5671
+              ],
+              "loc": {
+                "start": {
+                  "line": 128,
+                  "column": 4
+                },
+                "end": {
+                  "line": 130,
+                  "column": 5
+                }
+              },
+              "leadingComments": [
+                {
+                  "type": "Block",
+                  "value": "*\r\n     * Creates a new Observable, that will execute the specified function when an\r\n     * {@link Observer} subscribes to it.\r\n     *\r\n     * <span class=\"informal\">Create custom Observable, that does whatever you like.</span>\r\n     *\r\n     * <img src=\"./img/create.png\" width=\"100%\">\r\n     *\r\n     * `create` converts an `onSubscription` function to an actual Observable.\r\n     * Whenever someone subscribes to that Observable, the function will be called\r\n     * with an {@link Observer} instance as a first and only parameter. `onSubscription` should\r\n     * then invoke the Observers `next`, `error` and `complete` methods.\r\n     *\r\n     * Calling `next` with a value will emit that value to the observer. Calling `complete`\r\n     * means that Observable finished emitting and will not do anything else.\r\n     * Calling `error` means that something went wrong - value passed to `error` method should\r\n     * provide details on what exactly happened.\r\n     *\r\n     * A well-formed Observable can emit as many values as it needs via `next` method,\r\n     * but `complete` and `error` methods can be called only once and nothing else can be called\r\n     * thereafter. If you try to invoke `next`, `complete` or `error` methods after created\r\n     * Observable already completed or ended with an error, these calls will be ignored to\r\n     * preserve so called *Observable Contract*. Note that you are not required to call\r\n     * `complete` at any point - it is perfectly fine to create an Observable that never ends,\r\n     * depending on your needs.\r\n     *\r\n     * `onSubscription` can optionally return either a function or an object with\r\n     * `unsubscribe` method. In both cases function or method will be called when\r\n     * subscription to Observable is being cancelled and should be used to clean up all\r\n     * resources. So, for example, if you are using `setTimeout` in your custom\r\n     * Observable, when someone unsubscribes, you can clear planned timeout, so that\r\n     * it does not fire needlessly and browser (or other environment) does not waste\r\n     * computing power on timing event that no one will listen to anyways.\r\n     *\r\n     * Most of the times you should not need to use `create`, because existing\r\n     * operators allow you to create an Observable for most of the use cases.\r\n     * That being said, `create` is low-level mechanism allowing you to create\r\n     * any Observable, if you have very specific needs.\r\n     *\r\n     * **TypeScript signature issue**\r\n     *\r\n     * Because Observable extends class which already has defined static `create` function,\r\n     * but with different type signature, it was impossible to assign proper signature to\r\n     * `Observable.create`. Because of that, it has very general type `Function` and thus\r\n     * function passed to `create` will not be type checked, unless you explicitly state\r\n     * what signature it should have.\r\n     *\r\n     * When using TypeScript we recommend to declare type signature of function passed to\r\n     * `create` as `(observer: Observer) => TeardownLogic`, where {@link Observer}\r\n     * and {@link TeardownLogic} are interfaces provided by the library.\r\n     *\r\n     * @example <caption>Emit three numbers, then complete.</caption>\r\n     * var observable = Rx.Observable.create(function (observer) {\r\n     *   observer.next(1);\r\n     *   observer.next(2);\r\n     *   observer.next(3);\r\n     *   observer.complete();\r\n     * });\r\n     * observable.subscribe(\r\n     *   value => console.log(value),\r\n     *   err => {},\r\n     *   () => console.log('this is the end')\r\n     * );\r\n     *\r\n     * // Logs\r\n     * // 1\r\n     * // 2\r\n     * // 3\r\n     * // \"this is the end\"\r\n     *\r\n     *\r\n     * @example <caption>Emit an error</caption>\r\n     * const observable = Rx.Observable.create((observer) => {\r\n     *   observer.error('something went really wrong...');\r\n     * });\r\n     *\r\n     * observable.subscribe(\r\n     *   value => console.log(value), // will never be called\r\n     *   err => console.log(err),\r\n     *   () => console.log('complete') // will never be called\r\n     * );\r\n     *\r\n     * // Logs\r\n     * // \"something went really wrong...\"\r\n     *\r\n     *\r\n     * @example <caption>Return unsubscribe function</caption>\r\n     *\r\n     * const observable = Rx.Observable.create(observer => {\r\n     *   const id = setTimeout(() => observer.next('...'), 5000); // emit value after 5s\r\n     *\r\n     *   return () => { clearTimeout(id); console.log('cleared!'); };\r\n     * });\r\n     *\r\n     * const subscription = observable.subscribe(value => console.log(value));\r\n     *\r\n     * setTimeout(() => subscription.unsubscribe(), 3000); // cancel subscription after 3s\r\n     *\r\n     * // Logs:\r\n     * // \"cleared!\" after 3s\r\n     *\r\n     * // Never logs \"...\"\r\n     *\r\n     *\r\n     * @see {@link empty}\r\n     * @see {@link never}\r\n     * @see {@link of}\r\n     * @see {@link throw}\r\n     *\r\n     * @param {function(observer: Observer): TeardownLogic} onSubscription A\r\n     * function that accepts an Observer, and invokes its `next`,\r\n     * `error`, and `complete` methods as appropriate, and optionally returns some\r\n     * logic for cleaning up resources.\r\n     * @return {Observable} An Observable that, whenever subscribed, will execute the\r\n     * specified function.\r\n     * @static true\r\n     * @name create\r\n     * @owner Observable\r\n     ",
+                  "range": [
+                    216,
+                    5579
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 9,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 127,
+                      "column": 7
+                    }
+                  }
+                }
+              ],
+              "static": true
+            }
+          ],
+          "range": [
+            209,
+            5681
+          ],
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 27
+            },
+            "end": {
+              "line": 132,
+              "column": 1
+            }
+          }
+        },
+        "range": [
+          189,
+          5681
+        ],
+        "loc": {
+          "start": {
+            "line": 8,
+            "column": 7
+          },
+          "end": {
+            "line": 132,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\r\n * We need this JSDoc comment for affecting ESDoc.\r\n * @extends {Ignored}\r\n * @hide true\r\n ",
+            "range": [
+              82,
+              180
+            ],
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 0
+              },
+              "end": {
+                "line": 7,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Block",
+            "value": "*\r\n * An interface for a consumer of push-based notifications delivered by an\r\n * {@link Observable}.\r\n *\r\n * ```ts\r\n * interface Observer<T> {\r\n *   closed?: boolean;\r\n *   next: (value: T) => void;\r\n *   error: (err: any) => void;\r\n *   complete: () => void;\r\n * }\r\n * ```\r\n *\r\n * An object conforming to the Observer interface is usually\r\n * given to the `observable.subscribe(observer)` method, and the Observable will\r\n * call the Observer's `next(value)` method to provide notifications. A\r\n * well-behaved Observable will call an Observer's `complete()` method exactly\r\n * once or the Observer's `error(err)` method exactly once, as the last\r\n * notification delivered.\r\n *\r\n * @interface\r\n * @name Observer\r\n * @noimport true\r\n ",
+            "range": [
+              5683,
+              6423
+            ],
+            "loc": {
+              "start": {
+                "line": 133,
+                "column": 0
+              },
+              "end": {
+                "line": 156,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        182,
+        5681
+      ],
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 0
+        },
+        "end": {
+          "line": 132,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * We need this JSDoc comment for affecting ESDoc.\r\n * @extends {Ignored}\r\n * @hide true\r\n ",
+          "range": [
+            82,
+            180
+          ],
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 0
+            },
+            "end": {
+              "line": 7,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * An interface for a consumer of push-based notifications delivered by an\r\n * {@link Observable}.\r\n *\r\n * ```ts\r\n * interface Observer<T> {\r\n *   closed?: boolean;\r\n *   next: (value: T) => void;\r\n *   error: (err: any) => void;\r\n *   complete: () => void;\r\n * }\r\n * ```\r\n *\r\n * An object conforming to the Observer interface is usually\r\n * given to the `observable.subscribe(observer)` method, and the Observable will\r\n * call the Observer's `next(value)` method to provide notifications. A\r\n * well-behaved Observable will call an Observer's `complete()` method exactly\r\n * once or the Observer's `error(err)` method exactly once, as the last\r\n * notification delivered.\r\n *\r\n * @interface\r\n * @name Observer\r\n * @noimport true\r\n ",
+          "range": [
+            5683,
+            6423
+          ],
+          "loc": {
+            "start": {
+              "line": 133,
+              "column": 0
+            },
+            "end": {
+              "line": 156,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "ClassDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "ObserverDoc",
+          "range": [
+            6438,
+            6449
+          ],
+          "loc": {
+            "start": {
+              "line": 157,
+              "column": 13
+            },
+            "end": {
+              "line": 157,
+              "column": 24
+            }
+          }
+        },
+        "superClass": null,
+        "body": {
+          "type": "ClassBody",
+          "body": [
+            {
+              "type": "MethodDefinition",
+              "key": {
+                "type": "Identifier",
+                "name": "constructor",
+                "range": [
+                  6457,
+                  6468
+                ],
+                "loc": {
+                  "start": {
+                    "line": 158,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 158,
+                    "column": 15
+                  }
+                }
+              },
+              "value": {
+                "type": "FunctionExpression",
+                "id": null,
+                "params": [],
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "ThisExpression",
+                            "range": [
+                              6690,
+                              6694
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 164,
+                                "column": 8
+                              },
+                              "end": {
+                                "line": 164,
+                                "column": 12
+                              }
+                            }
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "closed",
+                            "range": [
+                              6695,
+                              6701
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 164,
+                                "column": 13
+                              },
+                              "end": {
+                                "line": 164,
+                                "column": 19
+                              }
+                            }
+                          },
+                          "range": [
+                            6690,
+                            6701
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 164,
+                              "column": 8
+                            },
+                            "end": {
+                              "line": 164,
+                              "column": 19
+                            }
+                          }
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": false,
+                          "raw": "false",
+                          "range": [
+                            6704,
+                            6709
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 164,
+                              "column": 22
+                            },
+                            "end": {
+                              "line": 164,
+                              "column": 27
+                            }
+                          }
+                        },
+                        "range": [
+                          6690,
+                          6709
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 164,
+                            "column": 8
+                          },
+                          "end": {
+                            "line": 164,
+                            "column": 27
+                          }
+                        }
+                      },
+                      "range": [
+                        6690,
+                        6710
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 164,
+                          "column": 8
+                        },
+                        "end": {
+                          "line": 164,
+                          "column": 28
+                        }
+                      },
+                      "leadingComments": [
+                        {
+                          "type": "Block",
+                          "value": "*\r\n         * An optional flag to indicate whether this Observer, when used as a\r\n         * subscriber, has already been unsubscribed from its Observable.\r\n         * @type {boolean}\r\n         ",
+                          "range": [
+                            6482,
+                            6680
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 159,
+                              "column": 8
+                            },
+                            "end": {
+                              "line": 163,
+                              "column": 11
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "range": [
+                    6471,
+                    6717
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 158,
+                      "column": 18
+                    },
+                    "end": {
+                      "line": 165,
+                      "column": 5
+                    }
+                  }
+                },
+                "generator": false,
+                "expression": false,
+                "range": [
+                  6468,
+                  6717
+                ],
+                "loc": {
+                  "start": {
+                    "line": 158,
+                    "column": 15
+                  },
+                  "end": {
+                    "line": 165,
+                    "column": 5
+                  }
+                }
+              },
+              "kind": "constructor",
+              "computed": false,
+              "range": [
+                6457,
+                6717
+              ],
+              "loc": {
+                "start": {
+                  "line": 158,
+                  "column": 4
+                },
+                "end": {
+                  "line": 165,
+                  "column": 5
+                }
+              },
+              "trailingComments": [
+                {
+                  "type": "Block",
+                  "value": "*\r\n     * The callback to receive notifications of type `next` from the Observable,\r\n     * with a value. The Observable may call this method 0 or more times.\r\n     * @param {T} value The `next` value.\r\n     * @return {void}\r\n     ",
+                  "range": [
+                    6723,
+                    6958
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 166,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 171,
+                      "column": 7
+                    }
+                  }
+                }
+              ],
+              "static": false
+            },
+            {
+              "type": "MethodDefinition",
+              "key": {
+                "type": "Identifier",
+                "name": "next",
+                "range": [
+                  6964,
+                  6968
+                ],
+                "loc": {
+                  "start": {
+                    "line": 172,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 172,
+                    "column": 8
+                  }
+                }
+              },
+              "value": {
+                "type": "FunctionExpression",
+                "id": null,
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "name": "value",
+                    "range": [
+                      6969,
+                      6974
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 172,
+                        "column": 9
+                      },
+                      "end": {
+                        "line": 172,
+                        "column": 14
+                      }
+                    }
+                  }
+                ],
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "ReturnStatement",
+                      "argument": {
+                        "type": "UnaryExpression",
+                        "operator": "void",
+                        "argument": {
+                          "type": "Literal",
+                          "value": 0,
+                          "raw": "0",
+                          "range": [
+                            6999,
+                            7000
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 173,
+                              "column": 20
+                            },
+                            "end": {
+                              "line": 173,
+                              "column": 21
+                            }
+                          }
+                        },
+                        "prefix": true,
+                        "range": [
+                          6994,
+                          7000
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 173,
+                            "column": 15
+                          },
+                          "end": {
+                            "line": 173,
+                            "column": 21
+                          }
+                        }
+                      },
+                      "range": [
+                        6987,
+                        7001
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 173,
+                          "column": 8
+                        },
+                        "end": {
+                          "line": 173,
+                          "column": 22
+                        }
+                      }
+                    }
+                  ],
+                  "range": [
+                    6976,
+                    7008
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 172,
+                      "column": 16
+                    },
+                    "end": {
+                      "line": 174,
+                      "column": 5
+                    }
+                  }
+                },
+                "generator": false,
+                "expression": false,
+                "range": [
+                  6968,
+                  7008
+                ],
+                "loc": {
+                  "start": {
+                    "line": 172,
+                    "column": 8
+                  },
+                  "end": {
+                    "line": 174,
+                    "column": 5
+                  }
+                }
+              },
+              "kind": "method",
+              "computed": false,
+              "range": [
+                6964,
+                7008
+              ],
+              "loc": {
+                "start": {
+                  "line": 172,
+                  "column": 4
+                },
+                "end": {
+                  "line": 174,
+                  "column": 5
+                }
+              },
+              "leadingComments": [
+                {
+                  "type": "Block",
+                  "value": "*\r\n     * The callback to receive notifications of type `next` from the Observable,\r\n     * with a value. The Observable may call this method 0 or more times.\r\n     * @param {T} value The `next` value.\r\n     * @return {void}\r\n     ",
+                  "range": [
+                    6723,
+                    6958
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 166,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 171,
+                      "column": 7
+                    }
+                  }
+                }
+              ],
+              "trailingComments": [
+                {
+                  "type": "Block",
+                  "value": "*\r\n     * The callback to receive notifications of type `error` from the Observable,\r\n     * with an attached {@link Error}. Notifies the Observer that the Observable\r\n     * has experienced an error condition.\r\n     * @param {any} err The `error` exception.\r\n     * @return {void}\r\n     ",
+                  "range": [
+                    7014,
+                    7306
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 175,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 181,
+                      "column": 7
+                    }
+                  }
+                }
+              ],
+              "static": false
+            },
+            {
+              "type": "MethodDefinition",
+              "key": {
+                "type": "Identifier",
+                "name": "error",
+                "range": [
+                  7312,
+                  7317
+                ],
+                "loc": {
+                  "start": {
+                    "line": 182,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 182,
+                    "column": 9
+                  }
+                }
+              },
+              "value": {
+                "type": "FunctionExpression",
+                "id": null,
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "name": "err",
+                    "range": [
+                      7318,
+                      7321
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 182,
+                        "column": 10
+                      },
+                      "end": {
+                        "line": 182,
+                        "column": 13
+                      }
+                    }
+                  }
+                ],
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "ReturnStatement",
+                      "argument": {
+                        "type": "UnaryExpression",
+                        "operator": "void",
+                        "argument": {
+                          "type": "Literal",
+                          "value": 0,
+                          "raw": "0",
+                          "range": [
+                            7346,
+                            7347
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 183,
+                              "column": 20
+                            },
+                            "end": {
+                              "line": 183,
+                              "column": 21
+                            }
+                          }
+                        },
+                        "prefix": true,
+                        "range": [
+                          7341,
+                          7347
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 183,
+                            "column": 15
+                          },
+                          "end": {
+                            "line": 183,
+                            "column": 21
+                          }
+                        }
+                      },
+                      "range": [
+                        7334,
+                        7348
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 183,
+                          "column": 8
+                        },
+                        "end": {
+                          "line": 183,
+                          "column": 22
+                        }
+                      }
+                    }
+                  ],
+                  "range": [
+                    7323,
+                    7355
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 182,
+                      "column": 15
+                    },
+                    "end": {
+                      "line": 184,
+                      "column": 5
+                    }
+                  }
+                },
+                "generator": false,
+                "expression": false,
+                "range": [
+                  7317,
+                  7355
+                ],
+                "loc": {
+                  "start": {
+                    "line": 182,
+                    "column": 9
+                  },
+                  "end": {
+                    "line": 184,
+                    "column": 5
+                  }
+                }
+              },
+              "kind": "method",
+              "computed": false,
+              "range": [
+                7312,
+                7355
+              ],
+              "loc": {
+                "start": {
+                  "line": 182,
+                  "column": 4
+                },
+                "end": {
+                  "line": 184,
+                  "column": 5
+                }
+              },
+              "leadingComments": [
+                {
+                  "type": "Block",
+                  "value": "*\r\n     * The callback to receive notifications of type `error` from the Observable,\r\n     * with an attached {@link Error}. Notifies the Observer that the Observable\r\n     * has experienced an error condition.\r\n     * @param {any} err The `error` exception.\r\n     * @return {void}\r\n     ",
+                  "range": [
+                    7014,
+                    7306
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 175,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 181,
+                      "column": 7
+                    }
+                  }
+                }
+              ],
+              "trailingComments": [
+                {
+                  "type": "Block",
+                  "value": "*\r\n     * The callback to receive a valueless notification of type `complete` from\r\n     * the Observable. Notifies the Observer that the Observable has finished\r\n     * sending push-based notifications.\r\n     * @return {void}\r\n     ",
+                  "range": [
+                    7361,
+                    7598
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 185,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 190,
+                      "column": 7
+                    }
+                  }
+                }
+              ],
+              "static": false
+            },
+            {
+              "type": "MethodDefinition",
+              "key": {
+                "type": "Identifier",
+                "name": "complete",
+                "range": [
+                  7604,
+                  7612
+                ],
+                "loc": {
+                  "start": {
+                    "line": 191,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 191,
+                    "column": 12
+                  }
+                }
+              },
+              "value": {
+                "type": "FunctionExpression",
+                "id": null,
+                "params": [],
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "ReturnStatement",
+                      "argument": {
+                        "type": "UnaryExpression",
+                        "operator": "void",
+                        "argument": {
+                          "type": "Literal",
+                          "value": 0,
+                          "raw": "0",
+                          "range": [
+                            7638,
+                            7639
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 192,
+                              "column": 20
+                            },
+                            "end": {
+                              "line": 192,
+                              "column": 21
+                            }
+                          }
+                        },
+                        "prefix": true,
+                        "range": [
+                          7633,
+                          7639
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 192,
+                            "column": 15
+                          },
+                          "end": {
+                            "line": 192,
+                            "column": 21
+                          }
+                        }
+                      },
+                      "range": [
+                        7626,
+                        7640
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 192,
+                          "column": 8
+                        },
+                        "end": {
+                          "line": 192,
+                          "column": 22
+                        }
+                      }
+                    }
+                  ],
+                  "range": [
+                    7615,
+                    7647
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 191,
+                      "column": 15
+                    },
+                    "end": {
+                      "line": 193,
+                      "column": 5
+                    }
+                  }
+                },
+                "generator": false,
+                "expression": false,
+                "range": [
+                  7612,
+                  7647
+                ],
+                "loc": {
+                  "start": {
+                    "line": 191,
+                    "column": 12
+                  },
+                  "end": {
+                    "line": 193,
+                    "column": 5
+                  }
+                }
+              },
+              "kind": "method",
+              "computed": false,
+              "range": [
+                7604,
+                7647
+              ],
+              "loc": {
+                "start": {
+                  "line": 191,
+                  "column": 4
+                },
+                "end": {
+                  "line": 193,
+                  "column": 5
+                }
+              },
+              "leadingComments": [
+                {
+                  "type": "Block",
+                  "value": "*\r\n     * The callback to receive a valueless notification of type `complete` from\r\n     * the Observable. Notifies the Observer that the Observable has finished\r\n     * sending push-based notifications.\r\n     * @return {void}\r\n     ",
+                  "range": [
+                    7361,
+                    7598
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 185,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 190,
+                      "column": 7
+                    }
+                  }
+                }
+              ],
+              "static": false
+            }
+          ],
+          "range": [
+            6450,
+            7650
+          ],
+          "loc": {
+            "start": {
+              "line": 157,
+              "column": 25
+            },
+            "end": {
+              "line": 194,
+              "column": 1
+            }
+          }
+        },
+        "range": [
+          6432,
+          7650
+        ],
+        "loc": {
+          "start": {
+            "line": 157,
+            "column": 7
+          },
+          "end": {
+            "line": 194,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\r\n * An interface for a consumer of push-based notifications delivered by an\r\n * {@link Observable}.\r\n *\r\n * ```ts\r\n * interface Observer<T> {\r\n *   closed?: boolean;\r\n *   next: (value: T) => void;\r\n *   error: (err: any) => void;\r\n *   complete: () => void;\r\n * }\r\n * ```\r\n *\r\n * An object conforming to the Observer interface is usually\r\n * given to the `observable.subscribe(observer)` method, and the Observable will\r\n * call the Observer's `next(value)` method to provide notifications. A\r\n * well-behaved Observable will call an Observer's `complete()` method exactly\r\n * once or the Observer's `error(err)` method exactly once, as the last\r\n * notification delivered.\r\n *\r\n * @interface\r\n * @name Observer\r\n * @noimport true\r\n ",
+            "range": [
+              5683,
+              6423
+            ],
+            "loc": {
+              "start": {
+                "line": 133,
+                "column": 0
+              },
+              "end": {
+                "line": 156,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Block",
+            "value": "*\r\n * `SubscribableOrPromise` interface describes values that behave like either\r\n * Observables or Promises. Every operator that accepts arguments annotated\r\n * with this interface, can be also used with parameters that are not necessarily\r\n * RxJS Observables.\r\n *\r\n * Following types of values might be passed to operators expecting this interface:\r\n *\r\n * ## Observable\r\n *\r\n * RxJS {@link Observable} instance.\r\n *\r\n * ## Observable-like (Subscribable)\r\n *\r\n * This might be any object that has `Symbol.observable` method. This method,\r\n * when called, should return object with `subscribe` method on it, which should\r\n * behave the same as RxJS `Observable.subscribe`.\r\n *\r\n * `Symbol.observable` is part of https://github.com/tc39/proposal-observable proposal.\r\n * Since currently it is not supported natively, and every symbol is equal only to itself,\r\n * you should use https://github.com/blesh/symbol-observable polyfill, when implementing\r\n * custom Observable-likes.\r\n *\r\n * **TypeScript Subscribable interface issue**\r\n *\r\n * Although TypeScript interface claims that Subscribable is an object that has `subscribe`\r\n * method declared directly on it, passing custom objects that have `subscribe`\r\n * method but not `Symbol.observable` method will fail at runtime. Conversely, passing\r\n * objects with `Symbol.observable` but without `subscribe` will fail at compile time\r\n * (if you use TypeScript).\r\n *\r\n * TypeScript has problem supporting interfaces with methods defined as symbol\r\n * properties. To get around that, you should implement `subscribe` directly on\r\n * passed object, and make `Symbol.observable` method simply return `this`. That way\r\n * everything will work as expected, and compiler will not complain. If you really\r\n * do not want to put `subscribe` directly on your object, you will have to type cast\r\n * it to `any`, before passing it to an operator.\r\n *\r\n * When this issue is resolved, Subscribable interface will only permit Observable-like\r\n * objects with `Symbol.observable` defined, no matter if they themselves implement\r\n * `subscribe` method or not.\r\n *\r\n * ## ES6 Promise\r\n *\r\n * Promise can be interpreted as Observable that emits value and completes\r\n * when it is resolved or errors when it is rejected.\r\n *\r\n * ## Promise-like (Thenable)\r\n *\r\n * Promises passed to operators do not have to be native ES6 Promises.\r\n * They can be implementations from popular Promise libraries, polyfills\r\n * or even custom ones. They just need to have `then` method that works\r\n * as the same as ES6 Promise `then`.\r\n *\r\n * @example <caption>Use merge and then map with non-RxJS observable</caption>\r\n * const nonRxJSObservable = {\r\n *   subscribe(observer) {\r\n *     observer.next(1000);\r\n *     observer.complete();\r\n *   },\r\n *   [Symbol.observable]() {\r\n *     return this;\r\n *   }\r\n * };\r\n *\r\n * Rx.Observable.merge(nonRxJSObservable)\r\n * .map(value => \"This value is \" + value)\r\n * .subscribe(result => console.log(result)); // Logs \"This value is 1000\"\r\n *\r\n *\r\n * @example <caption>Use combineLatest with ES6 Promise</caption>\r\n * Rx.Observable.combineLatest(Promise.resolve(5), Promise.resolve(10), Promise.resolve(15))\r\n * .subscribe(\r\n *   value => console.log(value),\r\n *   err => {},\r\n *   () => console.log('the end!')\r\n * );\r\n * // Logs\r\n * // [5, 10, 15]\r\n * // \"the end!\"\r\n *\r\n *\r\n * @interface\r\n * @name SubscribableOrPromise\r\n * @noimport true\r\n ",
+            "range": [
+              7652,
+              11055
+            ],
+            "loc": {
+              "start": {
+                "line": 195,
+                "column": 0
+              },
+              "end": {
+                "line": 280,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        6425,
+        7650
+      ],
+      "loc": {
+        "start": {
+          "line": 157,
+          "column": 0
+        },
+        "end": {
+          "line": 194,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * An interface for a consumer of push-based notifications delivered by an\r\n * {@link Observable}.\r\n *\r\n * ```ts\r\n * interface Observer<T> {\r\n *   closed?: boolean;\r\n *   next: (value: T) => void;\r\n *   error: (err: any) => void;\r\n *   complete: () => void;\r\n * }\r\n * ```\r\n *\r\n * An object conforming to the Observer interface is usually\r\n * given to the `observable.subscribe(observer)` method, and the Observable will\r\n * call the Observer's `next(value)` method to provide notifications. A\r\n * well-behaved Observable will call an Observer's `complete()` method exactly\r\n * once or the Observer's `error(err)` method exactly once, as the last\r\n * notification delivered.\r\n *\r\n * @interface\r\n * @name Observer\r\n * @noimport true\r\n ",
+          "range": [
+            5683,
+            6423
+          ],
+          "loc": {
+            "start": {
+              "line": 133,
+              "column": 0
+            },
+            "end": {
+              "line": 156,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * `SubscribableOrPromise` interface describes values that behave like either\r\n * Observables or Promises. Every operator that accepts arguments annotated\r\n * with this interface, can be also used with parameters that are not necessarily\r\n * RxJS Observables.\r\n *\r\n * Following types of values might be passed to operators expecting this interface:\r\n *\r\n * ## Observable\r\n *\r\n * RxJS {@link Observable} instance.\r\n *\r\n * ## Observable-like (Subscribable)\r\n *\r\n * This might be any object that has `Symbol.observable` method. This method,\r\n * when called, should return object with `subscribe` method on it, which should\r\n * behave the same as RxJS `Observable.subscribe`.\r\n *\r\n * `Symbol.observable` is part of https://github.com/tc39/proposal-observable proposal.\r\n * Since currently it is not supported natively, and every symbol is equal only to itself,\r\n * you should use https://github.com/blesh/symbol-observable polyfill, when implementing\r\n * custom Observable-likes.\r\n *\r\n * **TypeScript Subscribable interface issue**\r\n *\r\n * Although TypeScript interface claims that Subscribable is an object that has `subscribe`\r\n * method declared directly on it, passing custom objects that have `subscribe`\r\n * method but not `Symbol.observable` method will fail at runtime. Conversely, passing\r\n * objects with `Symbol.observable` but without `subscribe` will fail at compile time\r\n * (if you use TypeScript).\r\n *\r\n * TypeScript has problem supporting interfaces with methods defined as symbol\r\n * properties. To get around that, you should implement `subscribe` directly on\r\n * passed object, and make `Symbol.observable` method simply return `this`. That way\r\n * everything will work as expected, and compiler will not complain. If you really\r\n * do not want to put `subscribe` directly on your object, you will have to type cast\r\n * it to `any`, before passing it to an operator.\r\n *\r\n * When this issue is resolved, Subscribable interface will only permit Observable-like\r\n * objects with `Symbol.observable` defined, no matter if they themselves implement\r\n * `subscribe` method or not.\r\n *\r\n * ## ES6 Promise\r\n *\r\n * Promise can be interpreted as Observable that emits value and completes\r\n * when it is resolved or errors when it is rejected.\r\n *\r\n * ## Promise-like (Thenable)\r\n *\r\n * Promises passed to operators do not have to be native ES6 Promises.\r\n * They can be implementations from popular Promise libraries, polyfills\r\n * or even custom ones. They just need to have `then` method that works\r\n * as the same as ES6 Promise `then`.\r\n *\r\n * @example <caption>Use merge and then map with non-RxJS observable</caption>\r\n * const nonRxJSObservable = {\r\n *   subscribe(observer) {\r\n *     observer.next(1000);\r\n *     observer.complete();\r\n *   },\r\n *   [Symbol.observable]() {\r\n *     return this;\r\n *   }\r\n * };\r\n *\r\n * Rx.Observable.merge(nonRxJSObservable)\r\n * .map(value => \"This value is \" + value)\r\n * .subscribe(result => console.log(result)); // Logs \"This value is 1000\"\r\n *\r\n *\r\n * @example <caption>Use combineLatest with ES6 Promise</caption>\r\n * Rx.Observable.combineLatest(Promise.resolve(5), Promise.resolve(10), Promise.resolve(15))\r\n * .subscribe(\r\n *   value => console.log(value),\r\n *   err => {},\r\n *   () => console.log('the end!')\r\n * );\r\n * // Logs\r\n * // [5, 10, 15]\r\n * // \"the end!\"\r\n *\r\n *\r\n * @interface\r\n * @name SubscribableOrPromise\r\n * @noimport true\r\n ",
+          "range": [
+            7652,
+            11055
+          ],
+          "loc": {
+            "start": {
+              "line": 195,
+              "column": 0
+            },
+            "end": {
+              "line": 280,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "ClassDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "SubscribableOrPromiseDoc",
+          "range": [
+            11070,
+            11094
+          ],
+          "loc": {
+            "start": {
+              "line": 281,
+              "column": 13
+            },
+            "end": {
+              "line": 281,
+              "column": 37
+            }
+          }
+        },
+        "superClass": null,
+        "body": {
+          "type": "ClassBody",
+          "body": [],
+          "range": [
+            11095,
+            11099
+          ],
+          "loc": {
+            "start": {
+              "line": 281,
+              "column": 38
+            },
+            "end": {
+              "line": 282,
+              "column": 1
+            }
+          }
+        },
+        "range": [
+          11064,
+          11099
+        ],
+        "loc": {
+          "start": {
+            "line": 281,
+            "column": 7
+          },
+          "end": {
+            "line": 282,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\r\n * `SubscribableOrPromise` interface describes values that behave like either\r\n * Observables or Promises. Every operator that accepts arguments annotated\r\n * with this interface, can be also used with parameters that are not necessarily\r\n * RxJS Observables.\r\n *\r\n * Following types of values might be passed to operators expecting this interface:\r\n *\r\n * ## Observable\r\n *\r\n * RxJS {@link Observable} instance.\r\n *\r\n * ## Observable-like (Subscribable)\r\n *\r\n * This might be any object that has `Symbol.observable` method. This method,\r\n * when called, should return object with `subscribe` method on it, which should\r\n * behave the same as RxJS `Observable.subscribe`.\r\n *\r\n * `Symbol.observable` is part of https://github.com/tc39/proposal-observable proposal.\r\n * Since currently it is not supported natively, and every symbol is equal only to itself,\r\n * you should use https://github.com/blesh/symbol-observable polyfill, when implementing\r\n * custom Observable-likes.\r\n *\r\n * **TypeScript Subscribable interface issue**\r\n *\r\n * Although TypeScript interface claims that Subscribable is an object that has `subscribe`\r\n * method declared directly on it, passing custom objects that have `subscribe`\r\n * method but not `Symbol.observable` method will fail at runtime. Conversely, passing\r\n * objects with `Symbol.observable` but without `subscribe` will fail at compile time\r\n * (if you use TypeScript).\r\n *\r\n * TypeScript has problem supporting interfaces with methods defined as symbol\r\n * properties. To get around that, you should implement `subscribe` directly on\r\n * passed object, and make `Symbol.observable` method simply return `this`. That way\r\n * everything will work as expected, and compiler will not complain. If you really\r\n * do not want to put `subscribe` directly on your object, you will have to type cast\r\n * it to `any`, before passing it to an operator.\r\n *\r\n * When this issue is resolved, Subscribable interface will only permit Observable-like\r\n * objects with `Symbol.observable` defined, no matter if they themselves implement\r\n * `subscribe` method or not.\r\n *\r\n * ## ES6 Promise\r\n *\r\n * Promise can be interpreted as Observable that emits value and completes\r\n * when it is resolved or errors when it is rejected.\r\n *\r\n * ## Promise-like (Thenable)\r\n *\r\n * Promises passed to operators do not have to be native ES6 Promises.\r\n * They can be implementations from popular Promise libraries, polyfills\r\n * or even custom ones. They just need to have `then` method that works\r\n * as the same as ES6 Promise `then`.\r\n *\r\n * @example <caption>Use merge and then map with non-RxJS observable</caption>\r\n * const nonRxJSObservable = {\r\n *   subscribe(observer) {\r\n *     observer.next(1000);\r\n *     observer.complete();\r\n *   },\r\n *   [Symbol.observable]() {\r\n *     return this;\r\n *   }\r\n * };\r\n *\r\n * Rx.Observable.merge(nonRxJSObservable)\r\n * .map(value => \"This value is \" + value)\r\n * .subscribe(result => console.log(result)); // Logs \"This value is 1000\"\r\n *\r\n *\r\n * @example <caption>Use combineLatest with ES6 Promise</caption>\r\n * Rx.Observable.combineLatest(Promise.resolve(5), Promise.resolve(10), Promise.resolve(15))\r\n * .subscribe(\r\n *   value => console.log(value),\r\n *   err => {},\r\n *   () => console.log('the end!')\r\n * );\r\n * // Logs\r\n * // [5, 10, 15]\r\n * // \"the end!\"\r\n *\r\n *\r\n * @interface\r\n * @name SubscribableOrPromise\r\n * @noimport true\r\n ",
+            "range": [
+              7652,
+              11055
+            ],
+            "loc": {
+              "start": {
+                "line": 195,
+                "column": 0
+              },
+              "end": {
+                "line": 280,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Block",
+            "value": "*\r\n * `ObservableInput` interface describes all values that are either an\r\n * {@link SubscribableOrPromise} or some kind of collection of values that\r\n * can be transformed to Observable emitting that values. Every operator that\r\n * accepts arguments annotated with this interface, can be also used with\r\n * parameters that are not necessarily RxJS Observables.\r\n *\r\n * `ObservableInput` extends {@link SubscribableOrPromise} with following types:\r\n *\r\n * ## Array\r\n *\r\n * Arrays can be interpreted as observables that emit all values in array one by one,\r\n * from left to right, and then complete immediately.\r\n *\r\n * ## Array-like\r\n *\r\n * Arrays passed to operators do not have to be built-in JavaScript Arrays. They\r\n * can be also, for example, `arguments` property available inside every function,\r\n * [DOM NodeList](https://developer.mozilla.org/pl/docs/Web/API/NodeList),\r\n * or, actually, any object that has `length` property (which is a number)\r\n * and stores values under non-negative (zero and up) integers.\r\n *\r\n * ## ES6 Iterable\r\n *\r\n * Operators will accept both built-in and custom ES6 Iterables, by treating them as\r\n * observables that emit all its values in order of iteration and then complete\r\n * when iteration ends. Note that contrary to arrays, Iterables do not have to\r\n * necessarily be finite, so creating Observables that never complete is possible as well.\r\n *\r\n * Note that you can make iterator an instance of Iterable by having it return itself\r\n * in `Symbol.iterator` method. It means that every operator accepting Iterables accepts,\r\n * though indirectly, iterators themselves as well. All native ES6 iterators are instances\r\n * of Iterable by default, so you do not have to implement their `Symbol.iterator` method\r\n * yourself.\r\n *\r\n * **TypeScript Iterable interface issue**\r\n *\r\n * TypeScript `ObservableInput` interface actually lacks type signature for Iterables,\r\n * because of issues it caused in some projects (see [this issue](https://github.com/ReactiveX/rxjs/issues/2306)).\r\n * If you want to use Iterable as argument for operator, cast it to `any` first.\r\n * Remember of course that, because of casting, you have to yourself ensure that passed\r\n * argument really implements said interface.\r\n *\r\n *\r\n * @example <caption>Use merge with arrays</caption>\r\n * Rx.Observable.merge([1, 2], [4], [5, 6])\r\n * .subscribe(\r\n *   value => console.log(value),\r\n *   err => {},\r\n *   () => console.log('ta dam!')\r\n * );\r\n *\r\n * // Logs\r\n * // 1\r\n * // 2\r\n * // 3\r\n * // 4\r\n * // 5\r\n * // 6\r\n * // \"ta dam!\"\r\n *\r\n *\r\n * @example <caption>Use merge with array-like</caption>\r\n * Rx.Observable.merge({0: 1, 1: 2, length: 2}, {0: 3, length: 1})\r\n * .subscribe(\r\n *   value => console.log(value),\r\n *   err => {},\r\n *   () => console.log('nice, huh?')\r\n * );\r\n *\r\n * // Logs\r\n * // 1\r\n * // 2\r\n * // 3\r\n * // \"nice, huh?\"\r\n *\r\n * @example <caption>Use merge with an Iterable (Map)</caption>\r\n * const firstMap = new Map([[1, 'a'], [2, 'b']]);\r\n * const secondMap = new Map([[3, 'c'], [4, 'd']]);\r\n *\r\n * Rx.Observable.merge(\r\n *   firstMap,          // pass Iterable\r\n *   secondMap.values() // pass iterator, which is itself an Iterable\r\n * ).subscribe(\r\n *   value => console.log(value),\r\n *   err => {},\r\n *   () => console.log('yup!')\r\n * );\r\n *\r\n * // Logs\r\n * // [1, \"a\"]\r\n * // [2, \"b\"]\r\n * // \"c\"\r\n * // \"d\"\r\n * // \"yup!\"\r\n *\r\n * @example <caption>Use from with generator (returning infinite iterator)</caption>\r\n * // infinite stream of incrementing numbers\r\n * const infinite = function* () {\r\n *   let i = 0;\r\n *\r\n *   while (true) {\r\n *     yield i++;\r\n *   }\r\n * };\r\n *\r\n * Rx.Observable.from(infinite())\r\n * .take(3) // only take 3, cause this is infinite\r\n * .subscribe(\r\n *   value => console.log(value),\r\n *   err => {},\r\n *   () => console.log('ta dam!')\r\n * );\r\n *\r\n * // Logs\r\n * // 0\r\n * // 1\r\n * // 2\r\n * // \"ta dam!\"\r\n *\r\n * @interface\r\n * @name ObservableInput\r\n * @noimport true\r\n ",
+            "range": [
+              11101,
+              15043
+            ],
+            "loc": {
+              "start": {
+                "line": 283,
+                "column": 0
+              },
+              "end": {
+                "line": 406,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        11057,
+        11099
+      ],
+      "loc": {
+        "start": {
+          "line": 281,
+          "column": 0
+        },
+        "end": {
+          "line": 282,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * `SubscribableOrPromise` interface describes values that behave like either\r\n * Observables or Promises. Every operator that accepts arguments annotated\r\n * with this interface, can be also used with parameters that are not necessarily\r\n * RxJS Observables.\r\n *\r\n * Following types of values might be passed to operators expecting this interface:\r\n *\r\n * ## Observable\r\n *\r\n * RxJS {@link Observable} instance.\r\n *\r\n * ## Observable-like (Subscribable)\r\n *\r\n * This might be any object that has `Symbol.observable` method. This method,\r\n * when called, should return object with `subscribe` method on it, which should\r\n * behave the same as RxJS `Observable.subscribe`.\r\n *\r\n * `Symbol.observable` is part of https://github.com/tc39/proposal-observable proposal.\r\n * Since currently it is not supported natively, and every symbol is equal only to itself,\r\n * you should use https://github.com/blesh/symbol-observable polyfill, when implementing\r\n * custom Observable-likes.\r\n *\r\n * **TypeScript Subscribable interface issue**\r\n *\r\n * Although TypeScript interface claims that Subscribable is an object that has `subscribe`\r\n * method declared directly on it, passing custom objects that have `subscribe`\r\n * method but not `Symbol.observable` method will fail at runtime. Conversely, passing\r\n * objects with `Symbol.observable` but without `subscribe` will fail at compile time\r\n * (if you use TypeScript).\r\n *\r\n * TypeScript has problem supporting interfaces with methods defined as symbol\r\n * properties. To get around that, you should implement `subscribe` directly on\r\n * passed object, and make `Symbol.observable` method simply return `this`. That way\r\n * everything will work as expected, and compiler will not complain. If you really\r\n * do not want to put `subscribe` directly on your object, you will have to type cast\r\n * it to `any`, before passing it to an operator.\r\n *\r\n * When this issue is resolved, Subscribable interface will only permit Observable-like\r\n * objects with `Symbol.observable` defined, no matter if they themselves implement\r\n * `subscribe` method or not.\r\n *\r\n * ## ES6 Promise\r\n *\r\n * Promise can be interpreted as Observable that emits value and completes\r\n * when it is resolved or errors when it is rejected.\r\n *\r\n * ## Promise-like (Thenable)\r\n *\r\n * Promises passed to operators do not have to be native ES6 Promises.\r\n * They can be implementations from popular Promise libraries, polyfills\r\n * or even custom ones. They just need to have `then` method that works\r\n * as the same as ES6 Promise `then`.\r\n *\r\n * @example <caption>Use merge and then map with non-RxJS observable</caption>\r\n * const nonRxJSObservable = {\r\n *   subscribe(observer) {\r\n *     observer.next(1000);\r\n *     observer.complete();\r\n *   },\r\n *   [Symbol.observable]() {\r\n *     return this;\r\n *   }\r\n * };\r\n *\r\n * Rx.Observable.merge(nonRxJSObservable)\r\n * .map(value => \"This value is \" + value)\r\n * .subscribe(result => console.log(result)); // Logs \"This value is 1000\"\r\n *\r\n *\r\n * @example <caption>Use combineLatest with ES6 Promise</caption>\r\n * Rx.Observable.combineLatest(Promise.resolve(5), Promise.resolve(10), Promise.resolve(15))\r\n * .subscribe(\r\n *   value => console.log(value),\r\n *   err => {},\r\n *   () => console.log('the end!')\r\n * );\r\n * // Logs\r\n * // [5, 10, 15]\r\n * // \"the end!\"\r\n *\r\n *\r\n * @interface\r\n * @name SubscribableOrPromise\r\n * @noimport true\r\n ",
+          "range": [
+            7652,
+            11055
+          ],
+          "loc": {
+            "start": {
+              "line": 195,
+              "column": 0
+            },
+            "end": {
+              "line": 280,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * `ObservableInput` interface describes all values that are either an\r\n * {@link SubscribableOrPromise} or some kind of collection of values that\r\n * can be transformed to Observable emitting that values. Every operator that\r\n * accepts arguments annotated with this interface, can be also used with\r\n * parameters that are not necessarily RxJS Observables.\r\n *\r\n * `ObservableInput` extends {@link SubscribableOrPromise} with following types:\r\n *\r\n * ## Array\r\n *\r\n * Arrays can be interpreted as observables that emit all values in array one by one,\r\n * from left to right, and then complete immediately.\r\n *\r\n * ## Array-like\r\n *\r\n * Arrays passed to operators do not have to be built-in JavaScript Arrays. They\r\n * can be also, for example, `arguments` property available inside every function,\r\n * [DOM NodeList](https://developer.mozilla.org/pl/docs/Web/API/NodeList),\r\n * or, actually, any object that has `length` property (which is a number)\r\n * and stores values under non-negative (zero and up) integers.\r\n *\r\n * ## ES6 Iterable\r\n *\r\n * Operators will accept both built-in and custom ES6 Iterables, by treating them as\r\n * observables that emit all its values in order of iteration and then complete\r\n * when iteration ends. Note that contrary to arrays, Iterables do not have to\r\n * necessarily be finite, so creating Observables that never complete is possible as well.\r\n *\r\n * Note that you can make iterator an instance of Iterable by having it return itself\r\n * in `Symbol.iterator` method. It means that every operator accepting Iterables accepts,\r\n * though indirectly, iterators themselves as well. All native ES6 iterators are instances\r\n * of Iterable by default, so you do not have to implement their `Symbol.iterator` method\r\n * yourself.\r\n *\r\n * **TypeScript Iterable interface issue**\r\n *\r\n * TypeScript `ObservableInput` interface actually lacks type signature for Iterables,\r\n * because of issues it caused in some projects (see [this issue](https://github.com/ReactiveX/rxjs/issues/2306)).\r\n * If you want to use Iterable as argument for operator, cast it to `any` first.\r\n * Remember of course that, because of casting, you have to yourself ensure that passed\r\n * argument really implements said interface.\r\n *\r\n *\r\n * @example <caption>Use merge with arrays</caption>\r\n * Rx.Observable.merge([1, 2], [4], [5, 6])\r\n * .subscribe(\r\n *   value => console.log(value),\r\n *   err => {},\r\n *   () => console.log('ta dam!')\r\n * );\r\n *\r\n * // Logs\r\n * // 1\r\n * // 2\r\n * // 3\r\n * // 4\r\n * // 5\r\n * // 6\r\n * // \"ta dam!\"\r\n *\r\n *\r\n * @example <caption>Use merge with array-like</caption>\r\n * Rx.Observable.merge({0: 1, 1: 2, length: 2}, {0: 3, length: 1})\r\n * .subscribe(\r\n *   value => console.log(value),\r\n *   err => {},\r\n *   () => console.log('nice, huh?')\r\n * );\r\n *\r\n * // Logs\r\n * // 1\r\n * // 2\r\n * // 3\r\n * // \"nice, huh?\"\r\n *\r\n * @example <caption>Use merge with an Iterable (Map)</caption>\r\n * const firstMap = new Map([[1, 'a'], [2, 'b']]);\r\n * const secondMap = new Map([[3, 'c'], [4, 'd']]);\r\n *\r\n * Rx.Observable.merge(\r\n *   firstMap,          // pass Iterable\r\n *   secondMap.values() // pass iterator, which is itself an Iterable\r\n * ).subscribe(\r\n *   value => console.log(value),\r\n *   err => {},\r\n *   () => console.log('yup!')\r\n * );\r\n *\r\n * // Logs\r\n * // [1, \"a\"]\r\n * // [2, \"b\"]\r\n * // \"c\"\r\n * // \"d\"\r\n * // \"yup!\"\r\n *\r\n * @example <caption>Use from with generator (returning infinite iterator)</caption>\r\n * // infinite stream of incrementing numbers\r\n * const infinite = function* () {\r\n *   let i = 0;\r\n *\r\n *   while (true) {\r\n *     yield i++;\r\n *   }\r\n * };\r\n *\r\n * Rx.Observable.from(infinite())\r\n * .take(3) // only take 3, cause this is infinite\r\n * .subscribe(\r\n *   value => console.log(value),\r\n *   err => {},\r\n *   () => console.log('ta dam!')\r\n * );\r\n *\r\n * // Logs\r\n * // 0\r\n * // 1\r\n * // 2\r\n * // \"ta dam!\"\r\n *\r\n * @interface\r\n * @name ObservableInput\r\n * @noimport true\r\n ",
+          "range": [
+            11101,
+            15043
+          ],
+          "loc": {
+            "start": {
+              "line": 283,
+              "column": 0
+            },
+            "end": {
+              "line": 406,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "ClassDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "ObservableInputDoc",
+          "range": [
+            15058,
+            15076
+          ],
+          "loc": {
+            "start": {
+              "line": 407,
+              "column": 13
+            },
+            "end": {
+              "line": 407,
+              "column": 31
+            }
+          }
+        },
+        "superClass": null,
+        "body": {
+          "type": "ClassBody",
+          "body": [],
+          "range": [
+            15077,
+            15081
+          ],
+          "loc": {
+            "start": {
+              "line": 407,
+              "column": 32
+            },
+            "end": {
+              "line": 408,
+              "column": 1
+            }
+          }
+        },
+        "range": [
+          15052,
+          15081
+        ],
+        "loc": {
+          "start": {
+            "line": 407,
+            "column": 7
+          },
+          "end": {
+            "line": 408,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\r\n * `ObservableInput` interface describes all values that are either an\r\n * {@link SubscribableOrPromise} or some kind of collection of values that\r\n * can be transformed to Observable emitting that values. Every operator that\r\n * accepts arguments annotated with this interface, can be also used with\r\n * parameters that are not necessarily RxJS Observables.\r\n *\r\n * `ObservableInput` extends {@link SubscribableOrPromise} with following types:\r\n *\r\n * ## Array\r\n *\r\n * Arrays can be interpreted as observables that emit all values in array one by one,\r\n * from left to right, and then complete immediately.\r\n *\r\n * ## Array-like\r\n *\r\n * Arrays passed to operators do not have to be built-in JavaScript Arrays. They\r\n * can be also, for example, `arguments` property available inside every function,\r\n * [DOM NodeList](https://developer.mozilla.org/pl/docs/Web/API/NodeList),\r\n * or, actually, any object that has `length` property (which is a number)\r\n * and stores values under non-negative (zero and up) integers.\r\n *\r\n * ## ES6 Iterable\r\n *\r\n * Operators will accept both built-in and custom ES6 Iterables, by treating them as\r\n * observables that emit all its values in order of iteration and then complete\r\n * when iteration ends. Note that contrary to arrays, Iterables do not have to\r\n * necessarily be finite, so creating Observables that never complete is possible as well.\r\n *\r\n * Note that you can make iterator an instance of Iterable by having it return itself\r\n * in `Symbol.iterator` method. It means that every operator accepting Iterables accepts,\r\n * though indirectly, iterators themselves as well. All native ES6 iterators are instances\r\n * of Iterable by default, so you do not have to implement their `Symbol.iterator` method\r\n * yourself.\r\n *\r\n * **TypeScript Iterable interface issue**\r\n *\r\n * TypeScript `ObservableInput` interface actually lacks type signature for Iterables,\r\n * because of issues it caused in some projects (see [this issue](https://github.com/ReactiveX/rxjs/issues/2306)).\r\n * If you want to use Iterable as argument for operator, cast it to `any` first.\r\n * Remember of course that, because of casting, you have to yourself ensure that passed\r\n * argument really implements said interface.\r\n *\r\n *\r\n * @example <caption>Use merge with arrays</caption>\r\n * Rx.Observable.merge([1, 2], [4], [5, 6])\r\n * .subscribe(\r\n *   value => console.log(value),\r\n *   err => {},\r\n *   () => console.log('ta dam!')\r\n * );\r\n *\r\n * // Logs\r\n * // 1\r\n * // 2\r\n * // 3\r\n * // 4\r\n * // 5\r\n * // 6\r\n * // \"ta dam!\"\r\n *\r\n *\r\n * @example <caption>Use merge with array-like</caption>\r\n * Rx.Observable.merge({0: 1, 1: 2, length: 2}, {0: 3, length: 1})\r\n * .subscribe(\r\n *   value => console.log(value),\r\n *   err => {},\r\n *   () => console.log('nice, huh?')\r\n * );\r\n *\r\n * // Logs\r\n * // 1\r\n * // 2\r\n * // 3\r\n * // \"nice, huh?\"\r\n *\r\n * @example <caption>Use merge with an Iterable (Map)</caption>\r\n * const firstMap = new Map([[1, 'a'], [2, 'b']]);\r\n * const secondMap = new Map([[3, 'c'], [4, 'd']]);\r\n *\r\n * Rx.Observable.merge(\r\n *   firstMap,          // pass Iterable\r\n *   secondMap.values() // pass iterator, which is itself an Iterable\r\n * ).subscribe(\r\n *   value => console.log(value),\r\n *   err => {},\r\n *   () => console.log('yup!')\r\n * );\r\n *\r\n * // Logs\r\n * // [1, \"a\"]\r\n * // [2, \"b\"]\r\n * // \"c\"\r\n * // \"d\"\r\n * // \"yup!\"\r\n *\r\n * @example <caption>Use from with generator (returning infinite iterator)</caption>\r\n * // infinite stream of incrementing numbers\r\n * const infinite = function* () {\r\n *   let i = 0;\r\n *\r\n *   while (true) {\r\n *     yield i++;\r\n *   }\r\n * };\r\n *\r\n * Rx.Observable.from(infinite())\r\n * .take(3) // only take 3, cause this is infinite\r\n * .subscribe(\r\n *   value => console.log(value),\r\n *   err => {},\r\n *   () => console.log('ta dam!')\r\n * );\r\n *\r\n * // Logs\r\n * // 0\r\n * // 1\r\n * // 2\r\n * // \"ta dam!\"\r\n *\r\n * @interface\r\n * @name ObservableInput\r\n * @noimport true\r\n ",
+            "range": [
+              11101,
+              15043
+            ],
+            "loc": {
+              "start": {
+                "line": 283,
+                "column": 0
+              },
+              "end": {
+                "line": 406,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Block",
+            "value": "*\r\n *\r\n * This interface describes what should be returned by function passed to Observable\r\n * constructor or static {@link create} function. Value of that interface will be used\r\n * to cancel subscription for given Observable.\r\n *\r\n * `TeardownLogic` can be:\r\n *\r\n * ## Function\r\n *\r\n * Function that takes no parameters. When consumer of created Observable calls `unsubscribe`,\r\n * that function will be called\r\n *\r\n * ## AnonymousSubscription\r\n *\r\n * `AnonymousSubscription` is simply an object with `unsubscribe` method on it. That method\r\n * will work the same as function\r\n *\r\n * ## void\r\n *\r\n * If created Observable does not have any resources to clean up, function does not have to\r\n * return anything.\r\n *\r\n * @interface\r\n * @name TeardownLogic\r\n * @noimport true\r\n ",
+            "range": [
+              15083,
+              15864
+            ],
+            "loc": {
+              "start": {
+                "line": 409,
+                "column": 0
+              },
+              "end": {
+                "line": 435,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        15045,
+        15081
+      ],
+      "loc": {
+        "start": {
+          "line": 407,
+          "column": 0
+        },
+        "end": {
+          "line": 408,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * `ObservableInput` interface describes all values that are either an\r\n * {@link SubscribableOrPromise} or some kind of collection of values that\r\n * can be transformed to Observable emitting that values. Every operator that\r\n * accepts arguments annotated with this interface, can be also used with\r\n * parameters that are not necessarily RxJS Observables.\r\n *\r\n * `ObservableInput` extends {@link SubscribableOrPromise} with following types:\r\n *\r\n * ## Array\r\n *\r\n * Arrays can be interpreted as observables that emit all values in array one by one,\r\n * from left to right, and then complete immediately.\r\n *\r\n * ## Array-like\r\n *\r\n * Arrays passed to operators do not have to be built-in JavaScript Arrays. They\r\n * can be also, for example, `arguments` property available inside every function,\r\n * [DOM NodeList](https://developer.mozilla.org/pl/docs/Web/API/NodeList),\r\n * or, actually, any object that has `length` property (which is a number)\r\n * and stores values under non-negative (zero and up) integers.\r\n *\r\n * ## ES6 Iterable\r\n *\r\n * Operators will accept both built-in and custom ES6 Iterables, by treating them as\r\n * observables that emit all its values in order of iteration and then complete\r\n * when iteration ends. Note that contrary to arrays, Iterables do not have to\r\n * necessarily be finite, so creating Observables that never complete is possible as well.\r\n *\r\n * Note that you can make iterator an instance of Iterable by having it return itself\r\n * in `Symbol.iterator` method. It means that every operator accepting Iterables accepts,\r\n * though indirectly, iterators themselves as well. All native ES6 iterators are instances\r\n * of Iterable by default, so you do not have to implement their `Symbol.iterator` method\r\n * yourself.\r\n *\r\n * **TypeScript Iterable interface issue**\r\n *\r\n * TypeScript `ObservableInput` interface actually lacks type signature for Iterables,\r\n * because of issues it caused in some projects (see [this issue](https://github.com/ReactiveX/rxjs/issues/2306)).\r\n * If you want to use Iterable as argument for operator, cast it to `any` first.\r\n * Remember of course that, because of casting, you have to yourself ensure that passed\r\n * argument really implements said interface.\r\n *\r\n *\r\n * @example <caption>Use merge with arrays</caption>\r\n * Rx.Observable.merge([1, 2], [4], [5, 6])\r\n * .subscribe(\r\n *   value => console.log(value),\r\n *   err => {},\r\n *   () => console.log('ta dam!')\r\n * );\r\n *\r\n * // Logs\r\n * // 1\r\n * // 2\r\n * // 3\r\n * // 4\r\n * // 5\r\n * // 6\r\n * // \"ta dam!\"\r\n *\r\n *\r\n * @example <caption>Use merge with array-like</caption>\r\n * Rx.Observable.merge({0: 1, 1: 2, length: 2}, {0: 3, length: 1})\r\n * .subscribe(\r\n *   value => console.log(value),\r\n *   err => {},\r\n *   () => console.log('nice, huh?')\r\n * );\r\n *\r\n * // Logs\r\n * // 1\r\n * // 2\r\n * // 3\r\n * // \"nice, huh?\"\r\n *\r\n * @example <caption>Use merge with an Iterable (Map)</caption>\r\n * const firstMap = new Map([[1, 'a'], [2, 'b']]);\r\n * const secondMap = new Map([[3, 'c'], [4, 'd']]);\r\n *\r\n * Rx.Observable.merge(\r\n *   firstMap,          // pass Iterable\r\n *   secondMap.values() // pass iterator, which is itself an Iterable\r\n * ).subscribe(\r\n *   value => console.log(value),\r\n *   err => {},\r\n *   () => console.log('yup!')\r\n * );\r\n *\r\n * // Logs\r\n * // [1, \"a\"]\r\n * // [2, \"b\"]\r\n * // \"c\"\r\n * // \"d\"\r\n * // \"yup!\"\r\n *\r\n * @example <caption>Use from with generator (returning infinite iterator)</caption>\r\n * // infinite stream of incrementing numbers\r\n * const infinite = function* () {\r\n *   let i = 0;\r\n *\r\n *   while (true) {\r\n *     yield i++;\r\n *   }\r\n * };\r\n *\r\n * Rx.Observable.from(infinite())\r\n * .take(3) // only take 3, cause this is infinite\r\n * .subscribe(\r\n *   value => console.log(value),\r\n *   err => {},\r\n *   () => console.log('ta dam!')\r\n * );\r\n *\r\n * // Logs\r\n * // 0\r\n * // 1\r\n * // 2\r\n * // \"ta dam!\"\r\n *\r\n * @interface\r\n * @name ObservableInput\r\n * @noimport true\r\n ",
+          "range": [
+            11101,
+            15043
+          ],
+          "loc": {
+            "start": {
+              "line": 283,
+              "column": 0
+            },
+            "end": {
+              "line": 406,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n *\r\n * This interface describes what should be returned by function passed to Observable\r\n * constructor or static {@link create} function. Value of that interface will be used\r\n * to cancel subscription for given Observable.\r\n *\r\n * `TeardownLogic` can be:\r\n *\r\n * ## Function\r\n *\r\n * Function that takes no parameters. When consumer of created Observable calls `unsubscribe`,\r\n * that function will be called\r\n *\r\n * ## AnonymousSubscription\r\n *\r\n * `AnonymousSubscription` is simply an object with `unsubscribe` method on it. That method\r\n * will work the same as function\r\n *\r\n * ## void\r\n *\r\n * If created Observable does not have any resources to clean up, function does not have to\r\n * return anything.\r\n *\r\n * @interface\r\n * @name TeardownLogic\r\n * @noimport true\r\n ",
+          "range": [
+            15083,
+            15864
+          ],
+          "loc": {
+            "start": {
+              "line": 409,
+              "column": 0
+            },
+            "end": {
+              "line": 435,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "ClassDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "TeardownLogicDoc",
+          "range": [
+            15879,
+            15895
+          ],
+          "loc": {
+            "start": {
+              "line": 436,
+              "column": 13
+            },
+            "end": {
+              "line": 436,
+              "column": 29
+            }
+          }
+        },
+        "superClass": null,
+        "body": {
+          "type": "ClassBody",
+          "body": [],
+          "range": [
+            15896,
+            15900
+          ],
+          "loc": {
+            "start": {
+              "line": 436,
+              "column": 30
+            },
+            "end": {
+              "line": 437,
+              "column": 1
+            }
+          }
+        },
+        "range": [
+          15873,
+          15900
+        ],
+        "loc": {
+          "start": {
+            "line": 436,
+            "column": 7
+          },
+          "end": {
+            "line": 437,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\r\n *\r\n * This interface describes what should be returned by function passed to Observable\r\n * constructor or static {@link create} function. Value of that interface will be used\r\n * to cancel subscription for given Observable.\r\n *\r\n * `TeardownLogic` can be:\r\n *\r\n * ## Function\r\n *\r\n * Function that takes no parameters. When consumer of created Observable calls `unsubscribe`,\r\n * that function will be called\r\n *\r\n * ## AnonymousSubscription\r\n *\r\n * `AnonymousSubscription` is simply an object with `unsubscribe` method on it. That method\r\n * will work the same as function\r\n *\r\n * ## void\r\n *\r\n * If created Observable does not have any resources to clean up, function does not have to\r\n * return anything.\r\n *\r\n * @interface\r\n * @name TeardownLogic\r\n * @noimport true\r\n ",
+            "range": [
+              15083,
+              15864
+            ],
+            "loc": {
+              "start": {
+                "line": 409,
+                "column": 0
+              },
+              "end": {
+                "line": 435,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Line",
+            "value": "# sourceMappingURL=MiscJSDoc.js.map",
+            "range": [
+              15902,
+              15939
+            ],
+            "loc": {
+              "start": {
+                "line": 438,
+                "column": 0
+              },
+              "end": {
+                "line": 438,
+                "column": 37
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        15866,
+        15900
+      ],
+      "loc": {
+        "start": {
+          "line": 436,
+          "column": 0
+        },
+        "end": {
+          "line": 437,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n *\r\n * This interface describes what should be returned by function passed to Observable\r\n * constructor or static {@link create} function. Value of that interface will be used\r\n * to cancel subscription for given Observable.\r\n *\r\n * `TeardownLogic` can be:\r\n *\r\n * ## Function\r\n *\r\n * Function that takes no parameters. When consumer of created Observable calls `unsubscribe`,\r\n * that function will be called\r\n *\r\n * ## AnonymousSubscription\r\n *\r\n * `AnonymousSubscription` is simply an object with `unsubscribe` method on it. That method\r\n * will work the same as function\r\n *\r\n * ## void\r\n *\r\n * If created Observable does not have any resources to clean up, function does not have to\r\n * return anything.\r\n *\r\n * @interface\r\n * @name TeardownLogic\r\n * @noimport true\r\n ",
+          "range": [
+            15083,
+            15864
+          ],
+          "loc": {
+            "start": {
+              "line": 409,
+              "column": 0
+            },
+            "end": {
+              "line": 435,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Line",
+          "value": "# sourceMappingURL=MiscJSDoc.js.map",
+          "range": [
+            15902,
+            15939
+          ],
+          "loc": {
+            "start": {
+              "line": 438,
+              "column": 0
+            },
+            "end": {
+              "line": 438,
+              "column": 37
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    0,
+    15900
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 437,
+      "column": 1
+    }
+  },
+  "comments": [
+    {
+      "type": "Block",
+      "value": "*\r\n * We need this JSDoc comment for affecting ESDoc.\r\n * @extends {Ignored}\r\n * @hide true\r\n ",
+      "range": [
+        82,
+        180
+      ],
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\r\n     * Creates a new Observable, that will execute the specified function when an\r\n     * {@link Observer} subscribes to it.\r\n     *\r\n     * <span class=\"informal\">Create custom Observable, that does whatever you like.</span>\r\n     *\r\n     * <img src=\"./img/create.png\" width=\"100%\">\r\n     *\r\n     * `create` converts an `onSubscription` function to an actual Observable.\r\n     * Whenever someone subscribes to that Observable, the function will be called\r\n     * with an {@link Observer} instance as a first and only parameter. `onSubscription` should\r\n     * then invoke the Observers `next`, `error` and `complete` methods.\r\n     *\r\n     * Calling `next` with a value will emit that value to the observer. Calling `complete`\r\n     * means that Observable finished emitting and will not do anything else.\r\n     * Calling `error` means that something went wrong - value passed to `error` method should\r\n     * provide details on what exactly happened.\r\n     *\r\n     * A well-formed Observable can emit as many values as it needs via `next` method,\r\n     * but `complete` and `error` methods can be called only once and nothing else can be called\r\n     * thereafter. If you try to invoke `next`, `complete` or `error` methods after created\r\n     * Observable already completed or ended with an error, these calls will be ignored to\r\n     * preserve so called *Observable Contract*. Note that you are not required to call\r\n     * `complete` at any point - it is perfectly fine to create an Observable that never ends,\r\n     * depending on your needs.\r\n     *\r\n     * `onSubscription` can optionally return either a function or an object with\r\n     * `unsubscribe` method. In both cases function or method will be called when\r\n     * subscription to Observable is being cancelled and should be used to clean up all\r\n     * resources. So, for example, if you are using `setTimeout` in your custom\r\n     * Observable, when someone unsubscribes, you can clear planned timeout, so that\r\n     * it does not fire needlessly and browser (or other environment) does not waste\r\n     * computing power on timing event that no one will listen to anyways.\r\n     *\r\n     * Most of the times you should not need to use `create`, because existing\r\n     * operators allow you to create an Observable for most of the use cases.\r\n     * That being said, `create` is low-level mechanism allowing you to create\r\n     * any Observable, if you have very specific needs.\r\n     *\r\n     * **TypeScript signature issue**\r\n     *\r\n     * Because Observable extends class which already has defined static `create` function,\r\n     * but with different type signature, it was impossible to assign proper signature to\r\n     * `Observable.create`. Because of that, it has very general type `Function` and thus\r\n     * function passed to `create` will not be type checked, unless you explicitly state\r\n     * what signature it should have.\r\n     *\r\n     * When using TypeScript we recommend to declare type signature of function passed to\r\n     * `create` as `(observer: Observer) => TeardownLogic`, where {@link Observer}\r\n     * and {@link TeardownLogic} are interfaces provided by the library.\r\n     *\r\n     * @example <caption>Emit three numbers, then complete.</caption>\r\n     * var observable = Rx.Observable.create(function (observer) {\r\n     *   observer.next(1);\r\n     *   observer.next(2);\r\n     *   observer.next(3);\r\n     *   observer.complete();\r\n     * });\r\n     * observable.subscribe(\r\n     *   value => console.log(value),\r\n     *   err => {},\r\n     *   () => console.log('this is the end')\r\n     * );\r\n     *\r\n     * // Logs\r\n     * // 1\r\n     * // 2\r\n     * // 3\r\n     * // \"this is the end\"\r\n     *\r\n     *\r\n     * @example <caption>Emit an error</caption>\r\n     * const observable = Rx.Observable.create((observer) => {\r\n     *   observer.error('something went really wrong...');\r\n     * });\r\n     *\r\n     * observable.subscribe(\r\n     *   value => console.log(value), // will never be called\r\n     *   err => console.log(err),\r\n     *   () => console.log('complete') // will never be called\r\n     * );\r\n     *\r\n     * // Logs\r\n     * // \"something went really wrong...\"\r\n     *\r\n     *\r\n     * @example <caption>Return unsubscribe function</caption>\r\n     *\r\n     * const observable = Rx.Observable.create(observer => {\r\n     *   const id = setTimeout(() => observer.next('...'), 5000); // emit value after 5s\r\n     *\r\n     *   return () => { clearTimeout(id); console.log('cleared!'); };\r\n     * });\r\n     *\r\n     * const subscription = observable.subscribe(value => console.log(value));\r\n     *\r\n     * setTimeout(() => subscription.unsubscribe(), 3000); // cancel subscription after 3s\r\n     *\r\n     * // Logs:\r\n     * // \"cleared!\" after 3s\r\n     *\r\n     * // Never logs \"...\"\r\n     *\r\n     *\r\n     * @see {@link empty}\r\n     * @see {@link never}\r\n     * @see {@link of}\r\n     * @see {@link throw}\r\n     *\r\n     * @param {function(observer: Observer): TeardownLogic} onSubscription A\r\n     * function that accepts an Observer, and invokes its `next`,\r\n     * `error`, and `complete` methods as appropriate, and optionally returns some\r\n     * logic for cleaning up resources.\r\n     * @return {Observable} An Observable that, whenever subscribed, will execute the\r\n     * specified function.\r\n     * @static true\r\n     * @name create\r\n     * @owner Observable\r\n     ",
+      "range": [
+        216,
+        5579
+      ],
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 4
+        },
+        "end": {
+          "line": 127,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\r\n * An interface for a consumer of push-based notifications delivered by an\r\n * {@link Observable}.\r\n *\r\n * ```ts\r\n * interface Observer<T> {\r\n *   closed?: boolean;\r\n *   next: (value: T) => void;\r\n *   error: (err: any) => void;\r\n *   complete: () => void;\r\n * }\r\n * ```\r\n *\r\n * An object conforming to the Observer interface is usually\r\n * given to the `observable.subscribe(observer)` method, and the Observable will\r\n * call the Observer's `next(value)` method to provide notifications. A\r\n * well-behaved Observable will call an Observer's `complete()` method exactly\r\n * once or the Observer's `error(err)` method exactly once, as the last\r\n * notification delivered.\r\n *\r\n * @interface\r\n * @name Observer\r\n * @noimport true\r\n ",
+      "range": [
+        5683,
+        6423
+      ],
+      "loc": {
+        "start": {
+          "line": 133,
+          "column": 0
+        },
+        "end": {
+          "line": 156,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\r\n         * An optional flag to indicate whether this Observer, when used as a\r\n         * subscriber, has already been unsubscribed from its Observable.\r\n         * @type {boolean}\r\n         ",
+      "range": [
+        6482,
+        6680
+      ],
+      "loc": {
+        "start": {
+          "line": 159,
+          "column": 8
+        },
+        "end": {
+          "line": 163,
+          "column": 11
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\r\n     * The callback to receive notifications of type `next` from the Observable,\r\n     * with a value. The Observable may call this method 0 or more times.\r\n     * @param {T} value The `next` value.\r\n     * @return {void}\r\n     ",
+      "range": [
+        6723,
+        6958
+      ],
+      "loc": {
+        "start": {
+          "line": 166,
+          "column": 4
+        },
+        "end": {
+          "line": 171,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\r\n     * The callback to receive notifications of type `error` from the Observable,\r\n     * with an attached {@link Error}. Notifies the Observer that the Observable\r\n     * has experienced an error condition.\r\n     * @param {any} err The `error` exception.\r\n     * @return {void}\r\n     ",
+      "range": [
+        7014,
+        7306
+      ],
+      "loc": {
+        "start": {
+          "line": 175,
+          "column": 4
+        },
+        "end": {
+          "line": 181,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\r\n     * The callback to receive a valueless notification of type `complete` from\r\n     * the Observable. Notifies the Observer that the Observable has finished\r\n     * sending push-based notifications.\r\n     * @return {void}\r\n     ",
+      "range": [
+        7361,
+        7598
+      ],
+      "loc": {
+        "start": {
+          "line": 185,
+          "column": 4
+        },
+        "end": {
+          "line": 190,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\r\n * `SubscribableOrPromise` interface describes values that behave like either\r\n * Observables or Promises. Every operator that accepts arguments annotated\r\n * with this interface, can be also used with parameters that are not necessarily\r\n * RxJS Observables.\r\n *\r\n * Following types of values might be passed to operators expecting this interface:\r\n *\r\n * ## Observable\r\n *\r\n * RxJS {@link Observable} instance.\r\n *\r\n * ## Observable-like (Subscribable)\r\n *\r\n * This might be any object that has `Symbol.observable` method. This method,\r\n * when called, should return object with `subscribe` method on it, which should\r\n * behave the same as RxJS `Observable.subscribe`.\r\n *\r\n * `Symbol.observable` is part of https://github.com/tc39/proposal-observable proposal.\r\n * Since currently it is not supported natively, and every symbol is equal only to itself,\r\n * you should use https://github.com/blesh/symbol-observable polyfill, when implementing\r\n * custom Observable-likes.\r\n *\r\n * **TypeScript Subscribable interface issue**\r\n *\r\n * Although TypeScript interface claims that Subscribable is an object that has `subscribe`\r\n * method declared directly on it, passing custom objects that have `subscribe`\r\n * method but not `Symbol.observable` method will fail at runtime. Conversely, passing\r\n * objects with `Symbol.observable` but without `subscribe` will fail at compile time\r\n * (if you use TypeScript).\r\n *\r\n * TypeScript has problem supporting interfaces with methods defined as symbol\r\n * properties. To get around that, you should implement `subscribe` directly on\r\n * passed object, and make `Symbol.observable` method simply return `this`. That way\r\n * everything will work as expected, and compiler will not complain. If you really\r\n * do not want to put `subscribe` directly on your object, you will have to type cast\r\n * it to `any`, before passing it to an operator.\r\n *\r\n * When this issue is resolved, Subscribable interface will only permit Observable-like\r\n * objects with `Symbol.observable` defined, no matter if they themselves implement\r\n * `subscribe` method or not.\r\n *\r\n * ## ES6 Promise\r\n *\r\n * Promise can be interpreted as Observable that emits value and completes\r\n * when it is resolved or errors when it is rejected.\r\n *\r\n * ## Promise-like (Thenable)\r\n *\r\n * Promises passed to operators do not have to be native ES6 Promises.\r\n * They can be implementations from popular Promise libraries, polyfills\r\n * or even custom ones. They just need to have `then` method that works\r\n * as the same as ES6 Promise `then`.\r\n *\r\n * @example <caption>Use merge and then map with non-RxJS observable</caption>\r\n * const nonRxJSObservable = {\r\n *   subscribe(observer) {\r\n *     observer.next(1000);\r\n *     observer.complete();\r\n *   },\r\n *   [Symbol.observable]() {\r\n *     return this;\r\n *   }\r\n * };\r\n *\r\n * Rx.Observable.merge(nonRxJSObservable)\r\n * .map(value => \"This value is \" + value)\r\n * .subscribe(result => console.log(result)); // Logs \"This value is 1000\"\r\n *\r\n *\r\n * @example <caption>Use combineLatest with ES6 Promise</caption>\r\n * Rx.Observable.combineLatest(Promise.resolve(5), Promise.resolve(10), Promise.resolve(15))\r\n * .subscribe(\r\n *   value => console.log(value),\r\n *   err => {},\r\n *   () => console.log('the end!')\r\n * );\r\n * // Logs\r\n * // [5, 10, 15]\r\n * // \"the end!\"\r\n *\r\n *\r\n * @interface\r\n * @name SubscribableOrPromise\r\n * @noimport true\r\n ",
+      "range": [
+        7652,
+        11055
+      ],
+      "loc": {
+        "start": {
+          "line": 195,
+          "column": 0
+        },
+        "end": {
+          "line": 280,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\r\n * `ObservableInput` interface describes all values that are either an\r\n * {@link SubscribableOrPromise} or some kind of collection of values that\r\n * can be transformed to Observable emitting that values. Every operator that\r\n * accepts arguments annotated with this interface, can be also used with\r\n * parameters that are not necessarily RxJS Observables.\r\n *\r\n * `ObservableInput` extends {@link SubscribableOrPromise} with following types:\r\n *\r\n * ## Array\r\n *\r\n * Arrays can be interpreted as observables that emit all values in array one by one,\r\n * from left to right, and then complete immediately.\r\n *\r\n * ## Array-like\r\n *\r\n * Arrays passed to operators do not have to be built-in JavaScript Arrays. They\r\n * can be also, for example, `arguments` property available inside every function,\r\n * [DOM NodeList](https://developer.mozilla.org/pl/docs/Web/API/NodeList),\r\n * or, actually, any object that has `length` property (which is a number)\r\n * and stores values under non-negative (zero and up) integers.\r\n *\r\n * ## ES6 Iterable\r\n *\r\n * Operators will accept both built-in and custom ES6 Iterables, by treating them as\r\n * observables that emit all its values in order of iteration and then complete\r\n * when iteration ends. Note that contrary to arrays, Iterables do not have to\r\n * necessarily be finite, so creating Observables that never complete is possible as well.\r\n *\r\n * Note that you can make iterator an instance of Iterable by having it return itself\r\n * in `Symbol.iterator` method. It means that every operator accepting Iterables accepts,\r\n * though indirectly, iterators themselves as well. All native ES6 iterators are instances\r\n * of Iterable by default, so you do not have to implement their `Symbol.iterator` method\r\n * yourself.\r\n *\r\n * **TypeScript Iterable interface issue**\r\n *\r\n * TypeScript `ObservableInput` interface actually lacks type signature for Iterables,\r\n * because of issues it caused in some projects (see [this issue](https://github.com/ReactiveX/rxjs/issues/2306)).\r\n * If you want to use Iterable as argument for operator, cast it to `any` first.\r\n * Remember of course that, because of casting, you have to yourself ensure that passed\r\n * argument really implements said interface.\r\n *\r\n *\r\n * @example <caption>Use merge with arrays</caption>\r\n * Rx.Observable.merge([1, 2], [4], [5, 6])\r\n * .subscribe(\r\n *   value => console.log(value),\r\n *   err => {},\r\n *   () => console.log('ta dam!')\r\n * );\r\n *\r\n * // Logs\r\n * // 1\r\n * // 2\r\n * // 3\r\n * // 4\r\n * // 5\r\n * // 6\r\n * // \"ta dam!\"\r\n *\r\n *\r\n * @example <caption>Use merge with array-like</caption>\r\n * Rx.Observable.merge({0: 1, 1: 2, length: 2}, {0: 3, length: 1})\r\n * .subscribe(\r\n *   value => console.log(value),\r\n *   err => {},\r\n *   () => console.log('nice, huh?')\r\n * );\r\n *\r\n * // Logs\r\n * // 1\r\n * // 2\r\n * // 3\r\n * // \"nice, huh?\"\r\n *\r\n * @example <caption>Use merge with an Iterable (Map)</caption>\r\n * const firstMap = new Map([[1, 'a'], [2, 'b']]);\r\n * const secondMap = new Map([[3, 'c'], [4, 'd']]);\r\n *\r\n * Rx.Observable.merge(\r\n *   firstMap,          // pass Iterable\r\n *   secondMap.values() // pass iterator, which is itself an Iterable\r\n * ).subscribe(\r\n *   value => console.log(value),\r\n *   err => {},\r\n *   () => console.log('yup!')\r\n * );\r\n *\r\n * // Logs\r\n * // [1, \"a\"]\r\n * // [2, \"b\"]\r\n * // \"c\"\r\n * // \"d\"\r\n * // \"yup!\"\r\n *\r\n * @example <caption>Use from with generator (returning infinite iterator)</caption>\r\n * // infinite stream of incrementing numbers\r\n * const infinite = function* () {\r\n *   let i = 0;\r\n *\r\n *   while (true) {\r\n *     yield i++;\r\n *   }\r\n * };\r\n *\r\n * Rx.Observable.from(infinite())\r\n * .take(3) // only take 3, cause this is infinite\r\n * .subscribe(\r\n *   value => console.log(value),\r\n *   err => {},\r\n *   () => console.log('ta dam!')\r\n * );\r\n *\r\n * // Logs\r\n * // 0\r\n * // 1\r\n * // 2\r\n * // \"ta dam!\"\r\n *\r\n * @interface\r\n * @name ObservableInput\r\n * @noimport true\r\n ",
+      "range": [
+        11101,
+        15043
+      ],
+      "loc": {
+        "start": {
+          "line": 283,
+          "column": 0
+        },
+        "end": {
+          "line": 406,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\r\n *\r\n * This interface describes what should be returned by function passed to Observable\r\n * constructor or static {@link create} function. Value of that interface will be used\r\n * to cancel subscription for given Observable.\r\n *\r\n * `TeardownLogic` can be:\r\n *\r\n * ## Function\r\n *\r\n * Function that takes no parameters. When consumer of created Observable calls `unsubscribe`,\r\n * that function will be called\r\n *\r\n * ## AnonymousSubscription\r\n *\r\n * `AnonymousSubscription` is simply an object with `unsubscribe` method on it. That method\r\n * will work the same as function\r\n *\r\n * ## void\r\n *\r\n * If created Observable does not have any resources to clean up, function does not have to\r\n * return anything.\r\n *\r\n * @interface\r\n * @name TeardownLogic\r\n * @noimport true\r\n ",
+      "range": [
+        15083,
+        15864
+      ],
+      "loc": {
+        "start": {
+          "line": 409,
+          "column": 0
+        },
+        "end": {
+          "line": 435,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Line",
+      "value": "# sourceMappingURL=MiscJSDoc.js.map",
+      "range": [
+        15902,
+        15939
+      ],
+      "loc": {
+        "start": {
+          "line": 438,
+          "column": 0
+        },
+        "end": {
+          "line": 438,
+          "column": 37
+        }
+      }
+    }
+  ]
+}

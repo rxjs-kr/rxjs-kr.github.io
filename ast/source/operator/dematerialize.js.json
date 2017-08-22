@@ -1,0 +1,414 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "higherOrder",
+            "range": [
+              26,
+              37
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 26
+              },
+              "end": {
+                "line": 1,
+                "column": 37
+              }
+            }
+          },
+          "imported": {
+            "type": "Identifier",
+            "name": "dematerialize",
+            "range": [
+              9,
+              22
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 9
+              },
+              "end": {
+                "line": 1,
+                "column": 22
+              }
+            }
+          },
+          "range": [
+            9,
+            37
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 9
+            },
+            "end": {
+              "line": 1,
+              "column": 37
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "../operators",
+        "raw": "'../operators'",
+        "range": [
+          45,
+          59
+        ],
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 45
+          },
+          "end": {
+            "line": 1,
+            "column": 59
+          }
+        }
+      },
+      "range": [
+        0,
+        60
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 60
+        }
+      },
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * Converts an Observable of {@link Notification} objects into the emissions\r\n * that they represent.\r\n *\r\n * <span class=\"informal\">Unwraps {@link Notification} objects as actual `next`,\r\n * `error` and `complete` emissions. The opposite of {@link materialize}.</span>\r\n *\r\n * <img src=\"./img/dematerialize.png\" width=\"100%\">\r\n *\r\n * `dematerialize` is assumed to operate an Observable that only emits\r\n * {@link Notification} objects as `next` emissions, and does not emit any\r\n * `error`. Such Observable is the output of a `materialize` operation. Those\r\n * notifications are then unwrapped using the metadata they contain, and emitted\r\n * as `next`, `error`, and `complete` on the output Observable.\r\n *\r\n * Use this operator in conjunction with {@link materialize}.\r\n *\r\n * @example <caption>Convert an Observable of Notifications to an actual Observable</caption>\r\n * var notifA = new Rx.Notification('N', 'A');\r\n * var notifB = new Rx.Notification('N', 'B');\r\n * var notifE = new Rx.Notification('E', void 0,\r\n *   new TypeError('x.toUpperCase is not a function')\r\n * );\r\n * var materialized = Rx.Observable.of(notifA, notifB, notifE);\r\n * var upperCase = materialized.dematerialize();\r\n * upperCase.subscribe(x => console.log(x), e => console.error(e));\r\n *\r\n * // Results in:\r\n * // A\r\n * // B\r\n * // TypeError: x.toUpperCase is not a function\r\n *\r\n * @see {@link Notification}\r\n * @see {@link materialize}\r\n *\r\n * @return {Observable} An Observable that emits items and notifications\r\n * embedded in Notification objects emitted by the source Observable.\r\n * @method dematerialize\r\n * @owner Observable\r\n ",
+          "range": [
+            62,
+            1685
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 41,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "dematerialize",
+          "range": [
+            1703,
+            1716
+          ],
+          "loc": {
+            "start": {
+              "line": 42,
+              "column": 16
+            },
+            "end": {
+              "line": 42,
+              "column": 29
+            }
+          }
+        },
+        "params": [],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "higherOrder",
+                    "range": [
+                      1733,
+                      1744
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 43,
+                        "column": 11
+                      },
+                      "end": {
+                        "line": 43,
+                        "column": 22
+                      }
+                    }
+                  },
+                  "arguments": [],
+                  "range": [
+                    1733,
+                    1746
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 43,
+                      "column": 11
+                    },
+                    "end": {
+                      "line": 43,
+                      "column": 24
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "ThisExpression",
+                    "range": [
+                      1747,
+                      1751
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 43,
+                        "column": 25
+                      },
+                      "end": {
+                        "line": 43,
+                        "column": 29
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  1733,
+                  1752
+                ],
+                "loc": {
+                  "start": {
+                    "line": 43,
+                    "column": 11
+                  },
+                  "end": {
+                    "line": 43,
+                    "column": 30
+                  }
+                }
+              },
+              "range": [
+                1726,
+                1753
+              ],
+              "loc": {
+                "start": {
+                  "line": 43,
+                  "column": 4
+                },
+                "end": {
+                  "line": 43,
+                  "column": 31
+                }
+              }
+            }
+          ],
+          "range": [
+            1719,
+            1756
+          ],
+          "loc": {
+            "start": {
+              "line": 42,
+              "column": 32
+            },
+            "end": {
+              "line": 44,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          1694,
+          1756
+        ],
+        "loc": {
+          "start": {
+            "line": 42,
+            "column": 7
+          },
+          "end": {
+            "line": 44,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\r\n * Converts an Observable of {@link Notification} objects into the emissions\r\n * that they represent.\r\n *\r\n * <span class=\"informal\">Unwraps {@link Notification} objects as actual `next`,\r\n * `error` and `complete` emissions. The opposite of {@link materialize}.</span>\r\n *\r\n * <img src=\"./img/dematerialize.png\" width=\"100%\">\r\n *\r\n * `dematerialize` is assumed to operate an Observable that only emits\r\n * {@link Notification} objects as `next` emissions, and does not emit any\r\n * `error`. Such Observable is the output of a `materialize` operation. Those\r\n * notifications are then unwrapped using the metadata they contain, and emitted\r\n * as `next`, `error`, and `complete` on the output Observable.\r\n *\r\n * Use this operator in conjunction with {@link materialize}.\r\n *\r\n * @example <caption>Convert an Observable of Notifications to an actual Observable</caption>\r\n * var notifA = new Rx.Notification('N', 'A');\r\n * var notifB = new Rx.Notification('N', 'B');\r\n * var notifE = new Rx.Notification('E', void 0,\r\n *   new TypeError('x.toUpperCase is not a function')\r\n * );\r\n * var materialized = Rx.Observable.of(notifA, notifB, notifE);\r\n * var upperCase = materialized.dematerialize();\r\n * upperCase.subscribe(x => console.log(x), e => console.error(e));\r\n *\r\n * // Results in:\r\n * // A\r\n * // B\r\n * // TypeError: x.toUpperCase is not a function\r\n *\r\n * @see {@link Notification}\r\n * @see {@link materialize}\r\n *\r\n * @return {Observable} An Observable that emits items and notifications\r\n * embedded in Notification objects emitted by the source Observable.\r\n * @method dematerialize\r\n * @owner Observable\r\n ",
+            "range": [
+              62,
+              1685
+            ],
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 0
+              },
+              "end": {
+                "line": 41,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Line",
+            "value": "# sourceMappingURL=dematerialize.js.map",
+            "range": [
+              1758,
+              1799
+            ],
+            "loc": {
+              "start": {
+                "line": 45,
+                "column": 0
+              },
+              "end": {
+                "line": 45,
+                "column": 41
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        1687,
+        1756
+      ],
+      "loc": {
+        "start": {
+          "line": 42,
+          "column": 0
+        },
+        "end": {
+          "line": 44,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * Converts an Observable of {@link Notification} objects into the emissions\r\n * that they represent.\r\n *\r\n * <span class=\"informal\">Unwraps {@link Notification} objects as actual `next`,\r\n * `error` and `complete` emissions. The opposite of {@link materialize}.</span>\r\n *\r\n * <img src=\"./img/dematerialize.png\" width=\"100%\">\r\n *\r\n * `dematerialize` is assumed to operate an Observable that only emits\r\n * {@link Notification} objects as `next` emissions, and does not emit any\r\n * `error`. Such Observable is the output of a `materialize` operation. Those\r\n * notifications are then unwrapped using the metadata they contain, and emitted\r\n * as `next`, `error`, and `complete` on the output Observable.\r\n *\r\n * Use this operator in conjunction with {@link materialize}.\r\n *\r\n * @example <caption>Convert an Observable of Notifications to an actual Observable</caption>\r\n * var notifA = new Rx.Notification('N', 'A');\r\n * var notifB = new Rx.Notification('N', 'B');\r\n * var notifE = new Rx.Notification('E', void 0,\r\n *   new TypeError('x.toUpperCase is not a function')\r\n * );\r\n * var materialized = Rx.Observable.of(notifA, notifB, notifE);\r\n * var upperCase = materialized.dematerialize();\r\n * upperCase.subscribe(x => console.log(x), e => console.error(e));\r\n *\r\n * // Results in:\r\n * // A\r\n * // B\r\n * // TypeError: x.toUpperCase is not a function\r\n *\r\n * @see {@link Notification}\r\n * @see {@link materialize}\r\n *\r\n * @return {Observable} An Observable that emits items and notifications\r\n * embedded in Notification objects emitted by the source Observable.\r\n * @method dematerialize\r\n * @owner Observable\r\n ",
+          "range": [
+            62,
+            1685
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 41,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Line",
+          "value": "# sourceMappingURL=dematerialize.js.map",
+          "range": [
+            1758,
+            1799
+          ],
+          "loc": {
+            "start": {
+              "line": 45,
+              "column": 0
+            },
+            "end": {
+              "line": 45,
+              "column": 41
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    0,
+    1756
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 44,
+      "column": 1
+    }
+  },
+  "comments": [
+    {
+      "type": "Block",
+      "value": "*\r\n * Converts an Observable of {@link Notification} objects into the emissions\r\n * that they represent.\r\n *\r\n * <span class=\"informal\">Unwraps {@link Notification} objects as actual `next`,\r\n * `error` and `complete` emissions. The opposite of {@link materialize}.</span>\r\n *\r\n * <img src=\"./img/dematerialize.png\" width=\"100%\">\r\n *\r\n * `dematerialize` is assumed to operate an Observable that only emits\r\n * {@link Notification} objects as `next` emissions, and does not emit any\r\n * `error`. Such Observable is the output of a `materialize` operation. Those\r\n * notifications are then unwrapped using the metadata they contain, and emitted\r\n * as `next`, `error`, and `complete` on the output Observable.\r\n *\r\n * Use this operator in conjunction with {@link materialize}.\r\n *\r\n * @example <caption>Convert an Observable of Notifications to an actual Observable</caption>\r\n * var notifA = new Rx.Notification('N', 'A');\r\n * var notifB = new Rx.Notification('N', 'B');\r\n * var notifE = new Rx.Notification('E', void 0,\r\n *   new TypeError('x.toUpperCase is not a function')\r\n * );\r\n * var materialized = Rx.Observable.of(notifA, notifB, notifE);\r\n * var upperCase = materialized.dematerialize();\r\n * upperCase.subscribe(x => console.log(x), e => console.error(e));\r\n *\r\n * // Results in:\r\n * // A\r\n * // B\r\n * // TypeError: x.toUpperCase is not a function\r\n *\r\n * @see {@link Notification}\r\n * @see {@link materialize}\r\n *\r\n * @return {Observable} An Observable that emits items and notifications\r\n * embedded in Notification objects emitted by the source Observable.\r\n * @method dematerialize\r\n * @owner Observable\r\n ",
+      "range": [
+        62,
+        1685
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 41,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Line",
+      "value": "# sourceMappingURL=dematerialize.js.map",
+      "range": [
+        1758,
+        1799
+      ],
+      "loc": {
+        "start": {
+          "line": 45,
+          "column": 0
+        },
+        "end": {
+          "line": 45,
+          "column": 41
+        }
+      }
+    }
+  ]
+}

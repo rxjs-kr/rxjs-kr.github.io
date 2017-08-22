@@ -1,0 +1,596 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "higherOrder",
+            "range": [
+              16,
+              27
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 16
+              },
+              "end": {
+                "line": 1,
+                "column": 27
+              }
+            }
+          },
+          "imported": {
+            "type": "Identifier",
+            "name": "tap",
+            "range": [
+              9,
+              12
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 9
+              },
+              "end": {
+                "line": 1,
+                "column": 12
+              }
+            }
+          },
+          "range": [
+            9,
+            27
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 9
+            },
+            "end": {
+              "line": 1,
+              "column": 27
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "../operators",
+        "raw": "'../operators'",
+        "range": [
+          35,
+          49
+        ],
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 35
+          },
+          "end": {
+            "line": 1,
+            "column": 49
+          }
+        }
+      },
+      "range": [
+        0,
+        50
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 50
+        }
+      },
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": " tslint:enable:max-line-length ",
+          "range": [
+            52,
+            87
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 2,
+              "column": 35
+            }
+          }
+        },
+        {
+          "type": "Block",
+          "value": "*\r\n * Perform a side effect for every emission on the source Observable, but return\r\n * an Observable that is identical to the source.\r\n *\r\n * <span class=\"informal\">Intercepts each emission on the source and runs a\r\n * function, but returns an output which is identical to the source as long as errors don't occur.</span>\r\n *\r\n * <img src=\"./img/do.png\" width=\"100%\">\r\n *\r\n * Returns a mirrored Observable of the source Observable, but modified so that\r\n * the provided Observer is called to perform a side effect for every value,\r\n * error, and completion emitted by the source. Any errors that are thrown in\r\n * the aforementioned Observer or handlers are safely sent down the error path\r\n * of the output Observable.\r\n *\r\n * This operator is useful for debugging your Observables for the correct values\r\n * or performing other side effects.\r\n *\r\n * Note: this is different to a `subscribe` on the Observable. If the Observable\r\n * returned by `do` is not subscribed, the side effects specified by the\r\n * Observer will never happen. `do` therefore simply spies on existing\r\n * execution, it does not trigger an execution to happen like `subscribe` does.\r\n *\r\n * @example <caption>Map every click to the clientX position of that click, while also logging the click event</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var positions = clicks\r\n *   .do(ev => console.log(ev))\r\n *   .map(ev => ev.clientX);\r\n * positions.subscribe(x => console.log(x));\r\n *\r\n * @see {@link map}\r\n * @see {@link subscribe}\r\n *\r\n * @param {Observer|function} [nextOrObserver] A normal Observer object or a\r\n * callback for `next`.\r\n * @param {function} [error] Callback for errors in the source.\r\n * @param {function} [complete] Callback for the completion of the source.\r\n * @return {Observable} An Observable identical to the source, but runs the\r\n * specified Observer or callback(s) for each item.\r\n * @method do\r\n * @name do\r\n * @owner Observable\r\n ",
+          "range": [
+            89,
+            2056
+          ],
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 0
+            },
+            "end": {
+              "line": 45,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "_do",
+          "range": [
+            2074,
+            2077
+          ],
+          "loc": {
+            "start": {
+              "line": 46,
+              "column": 16
+            },
+            "end": {
+              "line": 46,
+              "column": 19
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "nextOrObserver",
+            "range": [
+              2078,
+              2092
+            ],
+            "loc": {
+              "start": {
+                "line": 46,
+                "column": 20
+              },
+              "end": {
+                "line": 46,
+                "column": 34
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "error",
+            "range": [
+              2094,
+              2099
+            ],
+            "loc": {
+              "start": {
+                "line": 46,
+                "column": 36
+              },
+              "end": {
+                "line": 46,
+                "column": 41
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "complete",
+            "range": [
+              2101,
+              2109
+            ],
+            "loc": {
+              "start": {
+                "line": 46,
+                "column": 43
+              },
+              "end": {
+                "line": 46,
+                "column": 51
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "higherOrder",
+                    "range": [
+                      2125,
+                      2136
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 47,
+                        "column": 11
+                      },
+                      "end": {
+                        "line": 47,
+                        "column": 22
+                      }
+                    }
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "name": "nextOrObserver",
+                      "range": [
+                        2137,
+                        2151
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 47,
+                          "column": 23
+                        },
+                        "end": {
+                          "line": 47,
+                          "column": 37
+                        }
+                      }
+                    },
+                    {
+                      "type": "Identifier",
+                      "name": "error",
+                      "range": [
+                        2153,
+                        2158
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 47,
+                          "column": 39
+                        },
+                        "end": {
+                          "line": 47,
+                          "column": 44
+                        }
+                      }
+                    },
+                    {
+                      "type": "Identifier",
+                      "name": "complete",
+                      "range": [
+                        2160,
+                        2168
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 47,
+                          "column": 46
+                        },
+                        "end": {
+                          "line": 47,
+                          "column": 54
+                        }
+                      }
+                    }
+                  ],
+                  "range": [
+                    2125,
+                    2169
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 47,
+                      "column": 11
+                    },
+                    "end": {
+                      "line": 47,
+                      "column": 55
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "ThisExpression",
+                    "range": [
+                      2170,
+                      2174
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 47,
+                        "column": 56
+                      },
+                      "end": {
+                        "line": 47,
+                        "column": 60
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  2125,
+                  2175
+                ],
+                "loc": {
+                  "start": {
+                    "line": 47,
+                    "column": 11
+                  },
+                  "end": {
+                    "line": 47,
+                    "column": 61
+                  }
+                }
+              },
+              "range": [
+                2118,
+                2176
+              ],
+              "loc": {
+                "start": {
+                  "line": 47,
+                  "column": 4
+                },
+                "end": {
+                  "line": 47,
+                  "column": 62
+                }
+              }
+            }
+          ],
+          "range": [
+            2111,
+            2179
+          ],
+          "loc": {
+            "start": {
+              "line": 46,
+              "column": 53
+            },
+            "end": {
+              "line": 48,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          2065,
+          2179
+        ],
+        "loc": {
+          "start": {
+            "line": 46,
+            "column": 7
+          },
+          "end": {
+            "line": 48,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": " tslint:enable:max-line-length ",
+            "range": [
+              52,
+              87
+            ],
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 0
+              },
+              "end": {
+                "line": 2,
+                "column": 35
+              }
+            }
+          },
+          {
+            "type": "Block",
+            "value": "*\r\n * Perform a side effect for every emission on the source Observable, but return\r\n * an Observable that is identical to the source.\r\n *\r\n * <span class=\"informal\">Intercepts each emission on the source and runs a\r\n * function, but returns an output which is identical to the source as long as errors don't occur.</span>\r\n *\r\n * <img src=\"./img/do.png\" width=\"100%\">\r\n *\r\n * Returns a mirrored Observable of the source Observable, but modified so that\r\n * the provided Observer is called to perform a side effect for every value,\r\n * error, and completion emitted by the source. Any errors that are thrown in\r\n * the aforementioned Observer or handlers are safely sent down the error path\r\n * of the output Observable.\r\n *\r\n * This operator is useful for debugging your Observables for the correct values\r\n * or performing other side effects.\r\n *\r\n * Note: this is different to a `subscribe` on the Observable. If the Observable\r\n * returned by `do` is not subscribed, the side effects specified by the\r\n * Observer will never happen. `do` therefore simply spies on existing\r\n * execution, it does not trigger an execution to happen like `subscribe` does.\r\n *\r\n * @example <caption>Map every click to the clientX position of that click, while also logging the click event</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var positions = clicks\r\n *   .do(ev => console.log(ev))\r\n *   .map(ev => ev.clientX);\r\n * positions.subscribe(x => console.log(x));\r\n *\r\n * @see {@link map}\r\n * @see {@link subscribe}\r\n *\r\n * @param {Observer|function} [nextOrObserver] A normal Observer object or a\r\n * callback for `next`.\r\n * @param {function} [error] Callback for errors in the source.\r\n * @param {function} [complete] Callback for the completion of the source.\r\n * @return {Observable} An Observable identical to the source, but runs the\r\n * specified Observer or callback(s) for each item.\r\n * @method do\r\n * @name do\r\n * @owner Observable\r\n ",
+            "range": [
+              89,
+              2056
+            ],
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 0
+              },
+              "end": {
+                "line": 45,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Line",
+            "value": "# sourceMappingURL=do.js.map",
+            "range": [
+              2181,
+              2211
+            ],
+            "loc": {
+              "start": {
+                "line": 49,
+                "column": 0
+              },
+              "end": {
+                "line": 49,
+                "column": 30
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        2058,
+        2179
+      ],
+      "loc": {
+        "start": {
+          "line": 46,
+          "column": 0
+        },
+        "end": {
+          "line": 48,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": " tslint:enable:max-line-length ",
+          "range": [
+            52,
+            87
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 2,
+              "column": 35
+            }
+          }
+        },
+        {
+          "type": "Block",
+          "value": "*\r\n * Perform a side effect for every emission on the source Observable, but return\r\n * an Observable that is identical to the source.\r\n *\r\n * <span class=\"informal\">Intercepts each emission on the source and runs a\r\n * function, but returns an output which is identical to the source as long as errors don't occur.</span>\r\n *\r\n * <img src=\"./img/do.png\" width=\"100%\">\r\n *\r\n * Returns a mirrored Observable of the source Observable, but modified so that\r\n * the provided Observer is called to perform a side effect for every value,\r\n * error, and completion emitted by the source. Any errors that are thrown in\r\n * the aforementioned Observer or handlers are safely sent down the error path\r\n * of the output Observable.\r\n *\r\n * This operator is useful for debugging your Observables for the correct values\r\n * or performing other side effects.\r\n *\r\n * Note: this is different to a `subscribe` on the Observable. If the Observable\r\n * returned by `do` is not subscribed, the side effects specified by the\r\n * Observer will never happen. `do` therefore simply spies on existing\r\n * execution, it does not trigger an execution to happen like `subscribe` does.\r\n *\r\n * @example <caption>Map every click to the clientX position of that click, while also logging the click event</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var positions = clicks\r\n *   .do(ev => console.log(ev))\r\n *   .map(ev => ev.clientX);\r\n * positions.subscribe(x => console.log(x));\r\n *\r\n * @see {@link map}\r\n * @see {@link subscribe}\r\n *\r\n * @param {Observer|function} [nextOrObserver] A normal Observer object or a\r\n * callback for `next`.\r\n * @param {function} [error] Callback for errors in the source.\r\n * @param {function} [complete] Callback for the completion of the source.\r\n * @return {Observable} An Observable identical to the source, but runs the\r\n * specified Observer or callback(s) for each item.\r\n * @method do\r\n * @name do\r\n * @owner Observable\r\n ",
+          "range": [
+            89,
+            2056
+          ],
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 0
+            },
+            "end": {
+              "line": 45,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Line",
+          "value": "# sourceMappingURL=do.js.map",
+          "range": [
+            2181,
+            2211
+          ],
+          "loc": {
+            "start": {
+              "line": 49,
+              "column": 0
+            },
+            "end": {
+              "line": 49,
+              "column": 30
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    0,
+    2179
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 48,
+      "column": 1
+    }
+  },
+  "comments": [
+    {
+      "type": "Block",
+      "value": " tslint:enable:max-line-length ",
+      "range": [
+        52,
+        87
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 35
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\r\n * Perform a side effect for every emission on the source Observable, but return\r\n * an Observable that is identical to the source.\r\n *\r\n * <span class=\"informal\">Intercepts each emission on the source and runs a\r\n * function, but returns an output which is identical to the source as long as errors don't occur.</span>\r\n *\r\n * <img src=\"./img/do.png\" width=\"100%\">\r\n *\r\n * Returns a mirrored Observable of the source Observable, but modified so that\r\n * the provided Observer is called to perform a side effect for every value,\r\n * error, and completion emitted by the source. Any errors that are thrown in\r\n * the aforementioned Observer or handlers are safely sent down the error path\r\n * of the output Observable.\r\n *\r\n * This operator is useful for debugging your Observables for the correct values\r\n * or performing other side effects.\r\n *\r\n * Note: this is different to a `subscribe` on the Observable. If the Observable\r\n * returned by `do` is not subscribed, the side effects specified by the\r\n * Observer will never happen. `do` therefore simply spies on existing\r\n * execution, it does not trigger an execution to happen like `subscribe` does.\r\n *\r\n * @example <caption>Map every click to the clientX position of that click, while also logging the click event</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var positions = clicks\r\n *   .do(ev => console.log(ev))\r\n *   .map(ev => ev.clientX);\r\n * positions.subscribe(x => console.log(x));\r\n *\r\n * @see {@link map}\r\n * @see {@link subscribe}\r\n *\r\n * @param {Observer|function} [nextOrObserver] A normal Observer object or a\r\n * callback for `next`.\r\n * @param {function} [error] Callback for errors in the source.\r\n * @param {function} [complete] Callback for the completion of the source.\r\n * @return {Observable} An Observable identical to the source, but runs the\r\n * specified Observer or callback(s) for each item.\r\n * @method do\r\n * @name do\r\n * @owner Observable\r\n ",
+      "range": [
+        89,
+        2056
+      ],
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 45,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Line",
+      "value": "# sourceMappingURL=do.js.map",
+      "range": [
+        2181,
+        2211
+      ],
+      "loc": {
+        "start": {
+          "line": 49,
+          "column": 0
+        },
+        "end": {
+          "line": 49,
+          "column": 30
+        }
+      }
+    }
+  ]
+}

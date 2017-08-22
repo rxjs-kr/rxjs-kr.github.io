@@ -1,0 +1,452 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "higherOrderMax",
+            "range": [
+              16,
+              30
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 16
+              },
+              "end": {
+                "line": 1,
+                "column": 30
+              }
+            }
+          },
+          "imported": {
+            "type": "Identifier",
+            "name": "max",
+            "range": [
+              9,
+              12
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 9
+              },
+              "end": {
+                "line": 1,
+                "column": 12
+              }
+            }
+          },
+          "range": [
+            9,
+            30
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 9
+            },
+            "end": {
+              "line": 1,
+              "column": 30
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "../operators",
+        "raw": "'../operators'",
+        "range": [
+          38,
+          52
+        ],
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 38
+          },
+          "end": {
+            "line": 1,
+            "column": 52
+          }
+        }
+      },
+      "range": [
+        0,
+        53
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 53
+        }
+      },
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * The Max operator operates on an Observable that emits numbers (or items that can be compared with a provided function),\r\n * and when source Observable completes it emits a single item: the item with the largest value.\r\n *\r\n * <img src=\"./img/max.png\" width=\"100%\">\r\n *\r\n * @example <caption>Get the maximal value of a series of numbers</caption>\r\n * Rx.Observable.of(5, 4, 7, 2, 8)\r\n *   .max()\r\n *   .subscribe(x => console.log(x)); // -> 8\r\n *\r\n * @example <caption>Use a comparer function to get the maximal item</caption>\r\n * interface Person {\r\n *   age: number,\r\n *   name: string\r\n * }\r\n * Observable.of<Person>({age: 7, name: 'Foo'},\r\n *                       {age: 5, name: 'Bar'},\r\n *                       {age: 9, name: 'Beer'})\r\n *           .max<Person>((a: Person, b: Person) => a.age < b.age ? -1 : 1)\r\n *           .subscribe((x: Person) => console.log(x.name)); // -> 'Beer'\r\n * }\r\n *\r\n * @see {@link min}\r\n *\r\n * @param {Function} [comparer] - Optional comparer function that it will use instead of its default to compare the\r\n * value of two items.\r\n * @return {Observable} An Observable that emits item with the largest value.\r\n * @method max\r\n * @owner Observable\r\n ",
+          "range": [
+            55,
+            1253
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 32,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "max",
+          "range": [
+            1271,
+            1274
+          ],
+          "loc": {
+            "start": {
+              "line": 33,
+              "column": 16
+            },
+            "end": {
+              "line": 33,
+              "column": 19
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "comparer",
+            "range": [
+              1275,
+              1283
+            ],
+            "loc": {
+              "start": {
+                "line": 33,
+                "column": 20
+              },
+              "end": {
+                "line": 33,
+                "column": 28
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "higherOrderMax",
+                    "range": [
+                      1299,
+                      1313
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 34,
+                        "column": 11
+                      },
+                      "end": {
+                        "line": 34,
+                        "column": 25
+                      }
+                    }
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "name": "comparer",
+                      "range": [
+                        1314,
+                        1322
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 34,
+                          "column": 26
+                        },
+                        "end": {
+                          "line": 34,
+                          "column": 34
+                        }
+                      }
+                    }
+                  ],
+                  "range": [
+                    1299,
+                    1323
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 34,
+                      "column": 11
+                    },
+                    "end": {
+                      "line": 34,
+                      "column": 35
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "ThisExpression",
+                    "range": [
+                      1324,
+                      1328
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 34,
+                        "column": 36
+                      },
+                      "end": {
+                        "line": 34,
+                        "column": 40
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  1299,
+                  1329
+                ],
+                "loc": {
+                  "start": {
+                    "line": 34,
+                    "column": 11
+                  },
+                  "end": {
+                    "line": 34,
+                    "column": 41
+                  }
+                }
+              },
+              "range": [
+                1292,
+                1330
+              ],
+              "loc": {
+                "start": {
+                  "line": 34,
+                  "column": 4
+                },
+                "end": {
+                  "line": 34,
+                  "column": 42
+                }
+              }
+            }
+          ],
+          "range": [
+            1285,
+            1333
+          ],
+          "loc": {
+            "start": {
+              "line": 33,
+              "column": 30
+            },
+            "end": {
+              "line": 35,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          1262,
+          1333
+        ],
+        "loc": {
+          "start": {
+            "line": 33,
+            "column": 7
+          },
+          "end": {
+            "line": 35,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\r\n * The Max operator operates on an Observable that emits numbers (or items that can be compared with a provided function),\r\n * and when source Observable completes it emits a single item: the item with the largest value.\r\n *\r\n * <img src=\"./img/max.png\" width=\"100%\">\r\n *\r\n * @example <caption>Get the maximal value of a series of numbers</caption>\r\n * Rx.Observable.of(5, 4, 7, 2, 8)\r\n *   .max()\r\n *   .subscribe(x => console.log(x)); // -> 8\r\n *\r\n * @example <caption>Use a comparer function to get the maximal item</caption>\r\n * interface Person {\r\n *   age: number,\r\n *   name: string\r\n * }\r\n * Observable.of<Person>({age: 7, name: 'Foo'},\r\n *                       {age: 5, name: 'Bar'},\r\n *                       {age: 9, name: 'Beer'})\r\n *           .max<Person>((a: Person, b: Person) => a.age < b.age ? -1 : 1)\r\n *           .subscribe((x: Person) => console.log(x.name)); // -> 'Beer'\r\n * }\r\n *\r\n * @see {@link min}\r\n *\r\n * @param {Function} [comparer] - Optional comparer function that it will use instead of its default to compare the\r\n * value of two items.\r\n * @return {Observable} An Observable that emits item with the largest value.\r\n * @method max\r\n * @owner Observable\r\n ",
+            "range": [
+              55,
+              1253
+            ],
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 0
+              },
+              "end": {
+                "line": 32,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Line",
+            "value": "# sourceMappingURL=max.js.map",
+            "range": [
+              1335,
+              1366
+            ],
+            "loc": {
+              "start": {
+                "line": 36,
+                "column": 0
+              },
+              "end": {
+                "line": 36,
+                "column": 31
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        1255,
+        1333
+      ],
+      "loc": {
+        "start": {
+          "line": 33,
+          "column": 0
+        },
+        "end": {
+          "line": 35,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * The Max operator operates on an Observable that emits numbers (or items that can be compared with a provided function),\r\n * and when source Observable completes it emits a single item: the item with the largest value.\r\n *\r\n * <img src=\"./img/max.png\" width=\"100%\">\r\n *\r\n * @example <caption>Get the maximal value of a series of numbers</caption>\r\n * Rx.Observable.of(5, 4, 7, 2, 8)\r\n *   .max()\r\n *   .subscribe(x => console.log(x)); // -> 8\r\n *\r\n * @example <caption>Use a comparer function to get the maximal item</caption>\r\n * interface Person {\r\n *   age: number,\r\n *   name: string\r\n * }\r\n * Observable.of<Person>({age: 7, name: 'Foo'},\r\n *                       {age: 5, name: 'Bar'},\r\n *                       {age: 9, name: 'Beer'})\r\n *           .max<Person>((a: Person, b: Person) => a.age < b.age ? -1 : 1)\r\n *           .subscribe((x: Person) => console.log(x.name)); // -> 'Beer'\r\n * }\r\n *\r\n * @see {@link min}\r\n *\r\n * @param {Function} [comparer] - Optional comparer function that it will use instead of its default to compare the\r\n * value of two items.\r\n * @return {Observable} An Observable that emits item with the largest value.\r\n * @method max\r\n * @owner Observable\r\n ",
+          "range": [
+            55,
+            1253
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 32,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Line",
+          "value": "# sourceMappingURL=max.js.map",
+          "range": [
+            1335,
+            1366
+          ],
+          "loc": {
+            "start": {
+              "line": 36,
+              "column": 0
+            },
+            "end": {
+              "line": 36,
+              "column": 31
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    0,
+    1333
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 35,
+      "column": 1
+    }
+  },
+  "comments": [
+    {
+      "type": "Block",
+      "value": "*\r\n * The Max operator operates on an Observable that emits numbers (or items that can be compared with a provided function),\r\n * and when source Observable completes it emits a single item: the item with the largest value.\r\n *\r\n * <img src=\"./img/max.png\" width=\"100%\">\r\n *\r\n * @example <caption>Get the maximal value of a series of numbers</caption>\r\n * Rx.Observable.of(5, 4, 7, 2, 8)\r\n *   .max()\r\n *   .subscribe(x => console.log(x)); // -> 8\r\n *\r\n * @example <caption>Use a comparer function to get the maximal item</caption>\r\n * interface Person {\r\n *   age: number,\r\n *   name: string\r\n * }\r\n * Observable.of<Person>({age: 7, name: 'Foo'},\r\n *                       {age: 5, name: 'Bar'},\r\n *                       {age: 9, name: 'Beer'})\r\n *           .max<Person>((a: Person, b: Person) => a.age < b.age ? -1 : 1)\r\n *           .subscribe((x: Person) => console.log(x.name)); // -> 'Beer'\r\n * }\r\n *\r\n * @see {@link min}\r\n *\r\n * @param {Function} [comparer] - Optional comparer function that it will use instead of its default to compare the\r\n * value of two items.\r\n * @return {Observable} An Observable that emits item with the largest value.\r\n * @method max\r\n * @owner Observable\r\n ",
+      "range": [
+        55,
+        1253
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 32,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Line",
+      "value": "# sourceMappingURL=max.js.map",
+      "range": [
+        1335,
+        1366
+      ],
+      "loc": {
+        "start": {
+          "line": 36,
+          "column": 0
+        },
+        "end": {
+          "line": 36,
+          "column": 31
+        }
+      }
+    }
+  ]
+}

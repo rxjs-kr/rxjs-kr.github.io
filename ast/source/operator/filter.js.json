@@ -1,0 +1,560 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "higherOrderFilter",
+            "range": [
+              19,
+              36
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 19
+              },
+              "end": {
+                "line": 1,
+                "column": 36
+              }
+            }
+          },
+          "imported": {
+            "type": "Identifier",
+            "name": "filter",
+            "range": [
+              9,
+              15
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 9
+              },
+              "end": {
+                "line": 1,
+                "column": 15
+              }
+            }
+          },
+          "range": [
+            9,
+            36
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 9
+            },
+            "end": {
+              "line": 1,
+              "column": 36
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "../operators",
+        "raw": "'../operators'",
+        "range": [
+          44,
+          58
+        ],
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 44
+          },
+          "end": {
+            "line": 1,
+            "column": 58
+          }
+        }
+      },
+      "range": [
+        0,
+        59
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 59
+        }
+      },
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": " tslint:enable:max-line-length ",
+          "range": [
+            61,
+            96
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 2,
+              "column": 35
+            }
+          }
+        },
+        {
+          "type": "Block",
+          "value": "*\r\n * Filter items emitted by the source Observable by only emitting those that\r\n * satisfy a specified predicate.\r\n *\r\n * <span class=\"informal\">Like\r\n * [Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter),\r\n * it only emits a value from the source if it passes a criterion function.</span>\r\n *\r\n * <img src=\"./img/filter.png\" width=\"100%\">\r\n *\r\n * Similar to the well-known `Array.prototype.filter` method, this operator\r\n * takes values from the source Observable, passes them through a `predicate`\r\n * function and only emits those values that yielded `true`.\r\n *\r\n * @example <caption>Emit only click events whose target was a DIV element</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var clicksOnDivs = clicks.filter(ev => ev.target.tagName === 'DIV');\r\n * clicksOnDivs.subscribe(x => console.log(x));\r\n *\r\n * @see {@link distinct}\r\n * @see {@link distinctUntilChanged}\r\n * @see {@link distinctUntilKeyChanged}\r\n * @see {@link ignoreElements}\r\n * @see {@link partition}\r\n * @see {@link skip}\r\n *\r\n * @param {function(value: T, index: number): boolean} predicate A function that\r\n * evaluates each value emitted by the source Observable. If it returns `true`,\r\n * the value is emitted, if `false` the value is not passed to the output\r\n * Observable. The `index` parameter is the number `i` for the i-th source\r\n * emission that has happened since the subscription, starting from the number\r\n * `0`.\r\n * @param {any} [thisArg] An optional argument to determine the value of `this`\r\n * in the `predicate` function.\r\n * @return {Observable} An Observable of values from the source that were\r\n * allowed by the `predicate` function.\r\n * @method filter\r\n * @owner Observable\r\n ",
+          "range": [
+            98,
+            1879
+          ],
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 0
+            },
+            "end": {
+              "line": 41,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "filter",
+          "range": [
+            1897,
+            1903
+          ],
+          "loc": {
+            "start": {
+              "line": 42,
+              "column": 16
+            },
+            "end": {
+              "line": 42,
+              "column": 22
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "predicate",
+            "range": [
+              1904,
+              1913
+            ],
+            "loc": {
+              "start": {
+                "line": 42,
+                "column": 23
+              },
+              "end": {
+                "line": 42,
+                "column": 32
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "thisArg",
+            "range": [
+              1915,
+              1922
+            ],
+            "loc": {
+              "start": {
+                "line": 42,
+                "column": 34
+              },
+              "end": {
+                "line": 42,
+                "column": 41
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "higherOrderFilter",
+                    "range": [
+                      1938,
+                      1955
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 43,
+                        "column": 11
+                      },
+                      "end": {
+                        "line": 43,
+                        "column": 28
+                      }
+                    }
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "name": "predicate",
+                      "range": [
+                        1956,
+                        1965
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 43,
+                          "column": 29
+                        },
+                        "end": {
+                          "line": 43,
+                          "column": 38
+                        }
+                      }
+                    },
+                    {
+                      "type": "Identifier",
+                      "name": "thisArg",
+                      "range": [
+                        1967,
+                        1974
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 43,
+                          "column": 40
+                        },
+                        "end": {
+                          "line": 43,
+                          "column": 47
+                        }
+                      }
+                    }
+                  ],
+                  "range": [
+                    1938,
+                    1975
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 43,
+                      "column": 11
+                    },
+                    "end": {
+                      "line": 43,
+                      "column": 48
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "ThisExpression",
+                    "range": [
+                      1976,
+                      1980
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 43,
+                        "column": 49
+                      },
+                      "end": {
+                        "line": 43,
+                        "column": 53
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  1938,
+                  1981
+                ],
+                "loc": {
+                  "start": {
+                    "line": 43,
+                    "column": 11
+                  },
+                  "end": {
+                    "line": 43,
+                    "column": 54
+                  }
+                }
+              },
+              "range": [
+                1931,
+                1982
+              ],
+              "loc": {
+                "start": {
+                  "line": 43,
+                  "column": 4
+                },
+                "end": {
+                  "line": 43,
+                  "column": 55
+                }
+              }
+            }
+          ],
+          "range": [
+            1924,
+            1985
+          ],
+          "loc": {
+            "start": {
+              "line": 42,
+              "column": 43
+            },
+            "end": {
+              "line": 44,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          1888,
+          1985
+        ],
+        "loc": {
+          "start": {
+            "line": 42,
+            "column": 7
+          },
+          "end": {
+            "line": 44,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": " tslint:enable:max-line-length ",
+            "range": [
+              61,
+              96
+            ],
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 0
+              },
+              "end": {
+                "line": 2,
+                "column": 35
+              }
+            }
+          },
+          {
+            "type": "Block",
+            "value": "*\r\n * Filter items emitted by the source Observable by only emitting those that\r\n * satisfy a specified predicate.\r\n *\r\n * <span class=\"informal\">Like\r\n * [Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter),\r\n * it only emits a value from the source if it passes a criterion function.</span>\r\n *\r\n * <img src=\"./img/filter.png\" width=\"100%\">\r\n *\r\n * Similar to the well-known `Array.prototype.filter` method, this operator\r\n * takes values from the source Observable, passes them through a `predicate`\r\n * function and only emits those values that yielded `true`.\r\n *\r\n * @example <caption>Emit only click events whose target was a DIV element</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var clicksOnDivs = clicks.filter(ev => ev.target.tagName === 'DIV');\r\n * clicksOnDivs.subscribe(x => console.log(x));\r\n *\r\n * @see {@link distinct}\r\n * @see {@link distinctUntilChanged}\r\n * @see {@link distinctUntilKeyChanged}\r\n * @see {@link ignoreElements}\r\n * @see {@link partition}\r\n * @see {@link skip}\r\n *\r\n * @param {function(value: T, index: number): boolean} predicate A function that\r\n * evaluates each value emitted by the source Observable. If it returns `true`,\r\n * the value is emitted, if `false` the value is not passed to the output\r\n * Observable. The `index` parameter is the number `i` for the i-th source\r\n * emission that has happened since the subscription, starting from the number\r\n * `0`.\r\n * @param {any} [thisArg] An optional argument to determine the value of `this`\r\n * in the `predicate` function.\r\n * @return {Observable} An Observable of values from the source that were\r\n * allowed by the `predicate` function.\r\n * @method filter\r\n * @owner Observable\r\n ",
+            "range": [
+              98,
+              1879
+            ],
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 0
+              },
+              "end": {
+                "line": 41,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Line",
+            "value": "# sourceMappingURL=filter.js.map",
+            "range": [
+              1987,
+              2021
+            ],
+            "loc": {
+              "start": {
+                "line": 45,
+                "column": 0
+              },
+              "end": {
+                "line": 45,
+                "column": 34
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        1881,
+        1985
+      ],
+      "loc": {
+        "start": {
+          "line": 42,
+          "column": 0
+        },
+        "end": {
+          "line": 44,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": " tslint:enable:max-line-length ",
+          "range": [
+            61,
+            96
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 2,
+              "column": 35
+            }
+          }
+        },
+        {
+          "type": "Block",
+          "value": "*\r\n * Filter items emitted by the source Observable by only emitting those that\r\n * satisfy a specified predicate.\r\n *\r\n * <span class=\"informal\">Like\r\n * [Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter),\r\n * it only emits a value from the source if it passes a criterion function.</span>\r\n *\r\n * <img src=\"./img/filter.png\" width=\"100%\">\r\n *\r\n * Similar to the well-known `Array.prototype.filter` method, this operator\r\n * takes values from the source Observable, passes them through a `predicate`\r\n * function and only emits those values that yielded `true`.\r\n *\r\n * @example <caption>Emit only click events whose target was a DIV element</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var clicksOnDivs = clicks.filter(ev => ev.target.tagName === 'DIV');\r\n * clicksOnDivs.subscribe(x => console.log(x));\r\n *\r\n * @see {@link distinct}\r\n * @see {@link distinctUntilChanged}\r\n * @see {@link distinctUntilKeyChanged}\r\n * @see {@link ignoreElements}\r\n * @see {@link partition}\r\n * @see {@link skip}\r\n *\r\n * @param {function(value: T, index: number): boolean} predicate A function that\r\n * evaluates each value emitted by the source Observable. If it returns `true`,\r\n * the value is emitted, if `false` the value is not passed to the output\r\n * Observable. The `index` parameter is the number `i` for the i-th source\r\n * emission that has happened since the subscription, starting from the number\r\n * `0`.\r\n * @param {any} [thisArg] An optional argument to determine the value of `this`\r\n * in the `predicate` function.\r\n * @return {Observable} An Observable of values from the source that were\r\n * allowed by the `predicate` function.\r\n * @method filter\r\n * @owner Observable\r\n ",
+          "range": [
+            98,
+            1879
+          ],
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 0
+            },
+            "end": {
+              "line": 41,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Line",
+          "value": "# sourceMappingURL=filter.js.map",
+          "range": [
+            1987,
+            2021
+          ],
+          "loc": {
+            "start": {
+              "line": 45,
+              "column": 0
+            },
+            "end": {
+              "line": 45,
+              "column": 34
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    0,
+    1985
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 44,
+      "column": 1
+    }
+  },
+  "comments": [
+    {
+      "type": "Block",
+      "value": " tslint:enable:max-line-length ",
+      "range": [
+        61,
+        96
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 35
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\r\n * Filter items emitted by the source Observable by only emitting those that\r\n * satisfy a specified predicate.\r\n *\r\n * <span class=\"informal\">Like\r\n * [Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter),\r\n * it only emits a value from the source if it passes a criterion function.</span>\r\n *\r\n * <img src=\"./img/filter.png\" width=\"100%\">\r\n *\r\n * Similar to the well-known `Array.prototype.filter` method, this operator\r\n * takes values from the source Observable, passes them through a `predicate`\r\n * function and only emits those values that yielded `true`.\r\n *\r\n * @example <caption>Emit only click events whose target was a DIV element</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var clicksOnDivs = clicks.filter(ev => ev.target.tagName === 'DIV');\r\n * clicksOnDivs.subscribe(x => console.log(x));\r\n *\r\n * @see {@link distinct}\r\n * @see {@link distinctUntilChanged}\r\n * @see {@link distinctUntilKeyChanged}\r\n * @see {@link ignoreElements}\r\n * @see {@link partition}\r\n * @see {@link skip}\r\n *\r\n * @param {function(value: T, index: number): boolean} predicate A function that\r\n * evaluates each value emitted by the source Observable. If it returns `true`,\r\n * the value is emitted, if `false` the value is not passed to the output\r\n * Observable. The `index` parameter is the number `i` for the i-th source\r\n * emission that has happened since the subscription, starting from the number\r\n * `0`.\r\n * @param {any} [thisArg] An optional argument to determine the value of `this`\r\n * in the `predicate` function.\r\n * @return {Observable} An Observable of values from the source that were\r\n * allowed by the `predicate` function.\r\n * @method filter\r\n * @owner Observable\r\n ",
+      "range": [
+        98,
+        1879
+      ],
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 41,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Line",
+      "value": "# sourceMappingURL=filter.js.map",
+      "range": [
+        1987,
+        2021
+      ],
+      "loc": {
+        "start": {
+          "line": 45,
+          "column": 0
+        },
+        "end": {
+          "line": 45,
+          "column": 34
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,469 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "AnimationFrameAction",
+            "range": [
+              9,
+              29
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 9
+              },
+              "end": {
+                "line": 1,
+                "column": 29
+              }
+            }
+          },
+          "imported": {
+            "type": "Identifier",
+            "name": "AnimationFrameAction",
+            "range": [
+              9,
+              29
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 9
+              },
+              "end": {
+                "line": 1,
+                "column": 29
+              }
+            }
+          },
+          "range": [
+            9,
+            29
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 9
+            },
+            "end": {
+              "line": 1,
+              "column": 29
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "./AnimationFrameAction",
+        "raw": "'./AnimationFrameAction'",
+        "range": [
+          37,
+          61
+        ],
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 37
+          },
+          "end": {
+            "line": 1,
+            "column": 61
+          }
+        }
+      },
+      "range": [
+        0,
+        62
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 62
+        }
+      }
+    },
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "AnimationFrameScheduler",
+            "range": [
+              73,
+              96
+            ],
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 9
+              },
+              "end": {
+                "line": 2,
+                "column": 32
+              }
+            }
+          },
+          "imported": {
+            "type": "Identifier",
+            "name": "AnimationFrameScheduler",
+            "range": [
+              73,
+              96
+            ],
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 9
+              },
+              "end": {
+                "line": 2,
+                "column": 32
+              }
+            }
+          },
+          "range": [
+            73,
+            96
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 9
+            },
+            "end": {
+              "line": 2,
+              "column": 32
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "./AnimationFrameScheduler",
+        "raw": "'./AnimationFrameScheduler'",
+        "range": [
+          104,
+          131
+        ],
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 40
+          },
+          "end": {
+            "line": 2,
+            "column": 67
+          }
+        }
+      },
+      "range": [
+        64,
+        132
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 68
+        }
+      },
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n *\r\n * Animation Frame Scheduler\r\n *\r\n * <span class=\"informal\">Perform task when `window.requestAnimationFrame` would fire</span>\r\n *\r\n * When `animationFrame` scheduler is used with delay, it will fall back to {@link async} scheduler\r\n * behaviour.\r\n *\r\n * Without delay, `animationFrame` scheduler can be used to create smooth browser animations.\r\n * It makes sure scheduled task will happen just before next browser content repaint,\r\n * thus performing animations as efficiently as possible.\r\n *\r\n * @example <caption>Schedule div height animation</caption>\r\n * const div = document.querySelector('.some-div');\r\n *\r\n * Rx.Scheduler.schedule(function(height) {\r\n *   div.style.height = height + \"px\";\r\n *\r\n *   this.schedule(height + 1);  // `this` references currently executing Action,\r\n *                               // which we reschedule with new state\r\n * }, 0, 0);\r\n *\r\n * // You will see .some-div element growing in height\r\n *\r\n *\r\n * @static true\r\n * @name animationFrame\r\n * @owner Scheduler\r\n ",
+          "range": [
+            134,
+            1151
+          ],
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 0
+            },
+            "end": {
+              "line": 32,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "VariableDeclaration",
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "id": {
+              "type": "Identifier",
+              "name": "animationFrame",
+              "range": [
+                1166,
+                1180
+              ],
+              "loc": {
+                "start": {
+                  "line": 33,
+                  "column": 13
+                },
+                "end": {
+                  "line": 33,
+                  "column": 27
+                }
+              }
+            },
+            "init": {
+              "type": "NewExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "AnimationFrameScheduler",
+                "range": [
+                  1187,
+                  1210
+                ],
+                "loc": {
+                  "start": {
+                    "line": 33,
+                    "column": 34
+                  },
+                  "end": {
+                    "line": 33,
+                    "column": 57
+                  }
+                }
+              },
+              "arguments": [
+                {
+                  "type": "Identifier",
+                  "name": "AnimationFrameAction",
+                  "range": [
+                    1211,
+                    1231
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 33,
+                      "column": 58
+                    },
+                    "end": {
+                      "line": 33,
+                      "column": 78
+                    }
+                  }
+                }
+              ],
+              "range": [
+                1183,
+                1232
+              ],
+              "loc": {
+                "start": {
+                  "line": 33,
+                  "column": 30
+                },
+                "end": {
+                  "line": 33,
+                  "column": 79
+                }
+              }
+            },
+            "range": [
+              1166,
+              1232
+            ],
+            "loc": {
+              "start": {
+                "line": 33,
+                "column": 13
+              },
+              "end": {
+                "line": 33,
+                "column": 79
+              }
+            }
+          }
+        ],
+        "kind": "const",
+        "range": [
+          1160,
+          1233
+        ],
+        "loc": {
+          "start": {
+            "line": 33,
+            "column": 7
+          },
+          "end": {
+            "line": 33,
+            "column": 80
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\r\n *\r\n * Animation Frame Scheduler\r\n *\r\n * <span class=\"informal\">Perform task when `window.requestAnimationFrame` would fire</span>\r\n *\r\n * When `animationFrame` scheduler is used with delay, it will fall back to {@link async} scheduler\r\n * behaviour.\r\n *\r\n * Without delay, `animationFrame` scheduler can be used to create smooth browser animations.\r\n * It makes sure scheduled task will happen just before next browser content repaint,\r\n * thus performing animations as efficiently as possible.\r\n *\r\n * @example <caption>Schedule div height animation</caption>\r\n * const div = document.querySelector('.some-div');\r\n *\r\n * Rx.Scheduler.schedule(function(height) {\r\n *   div.style.height = height + \"px\";\r\n *\r\n *   this.schedule(height + 1);  // `this` references currently executing Action,\r\n *                               // which we reschedule with new state\r\n * }, 0, 0);\r\n *\r\n * // You will see .some-div element growing in height\r\n *\r\n *\r\n * @static true\r\n * @name animationFrame\r\n * @owner Scheduler\r\n ",
+            "range": [
+              134,
+              1151
+            ],
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 0
+              },
+              "end": {
+                "line": 32,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Line",
+            "value": "# sourceMappingURL=animationFrame.js.map",
+            "range": [
+              1235,
+              1277
+            ],
+            "loc": {
+              "start": {
+                "line": 34,
+                "column": 0
+              },
+              "end": {
+                "line": 34,
+                "column": 42
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        1153,
+        1233
+      ],
+      "loc": {
+        "start": {
+          "line": 33,
+          "column": 0
+        },
+        "end": {
+          "line": 33,
+          "column": 80
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n *\r\n * Animation Frame Scheduler\r\n *\r\n * <span class=\"informal\">Perform task when `window.requestAnimationFrame` would fire</span>\r\n *\r\n * When `animationFrame` scheduler is used with delay, it will fall back to {@link async} scheduler\r\n * behaviour.\r\n *\r\n * Without delay, `animationFrame` scheduler can be used to create smooth browser animations.\r\n * It makes sure scheduled task will happen just before next browser content repaint,\r\n * thus performing animations as efficiently as possible.\r\n *\r\n * @example <caption>Schedule div height animation</caption>\r\n * const div = document.querySelector('.some-div');\r\n *\r\n * Rx.Scheduler.schedule(function(height) {\r\n *   div.style.height = height + \"px\";\r\n *\r\n *   this.schedule(height + 1);  // `this` references currently executing Action,\r\n *                               // which we reschedule with new state\r\n * }, 0, 0);\r\n *\r\n * // You will see .some-div element growing in height\r\n *\r\n *\r\n * @static true\r\n * @name animationFrame\r\n * @owner Scheduler\r\n ",
+          "range": [
+            134,
+            1151
+          ],
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 0
+            },
+            "end": {
+              "line": 32,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Line",
+          "value": "# sourceMappingURL=animationFrame.js.map",
+          "range": [
+            1235,
+            1277
+          ],
+          "loc": {
+            "start": {
+              "line": 34,
+              "column": 0
+            },
+            "end": {
+              "line": 34,
+              "column": 42
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    0,
+    1233
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 33,
+      "column": 80
+    }
+  },
+  "comments": [
+    {
+      "type": "Block",
+      "value": "*\r\n *\r\n * Animation Frame Scheduler\r\n *\r\n * <span class=\"informal\">Perform task when `window.requestAnimationFrame` would fire</span>\r\n *\r\n * When `animationFrame` scheduler is used with delay, it will fall back to {@link async} scheduler\r\n * behaviour.\r\n *\r\n * Without delay, `animationFrame` scheduler can be used to create smooth browser animations.\r\n * It makes sure scheduled task will happen just before next browser content repaint,\r\n * thus performing animations as efficiently as possible.\r\n *\r\n * @example <caption>Schedule div height animation</caption>\r\n * const div = document.querySelector('.some-div');\r\n *\r\n * Rx.Scheduler.schedule(function(height) {\r\n *   div.style.height = height + \"px\";\r\n *\r\n *   this.schedule(height + 1);  // `this` references currently executing Action,\r\n *                               // which we reschedule with new state\r\n * }, 0, 0);\r\n *\r\n * // You will see .some-div element growing in height\r\n *\r\n *\r\n * @static true\r\n * @name animationFrame\r\n * @owner Scheduler\r\n ",
+      "range": [
+        134,
+        1151
+      ],
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 32,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Line",
+      "value": "# sourceMappingURL=animationFrame.js.map",
+      "range": [
+        1235,
+        1277
+      ],
+      "loc": {
+        "start": {
+          "line": 34,
+          "column": 0
+        },
+        "end": {
+          "line": 34,
+          "column": 42
+        }
+      }
+    }
+  ]
+}

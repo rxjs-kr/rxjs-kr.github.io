@@ -1,0 +1,452 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "higherOrder",
+            "range": [
+              19,
+              30
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 19
+              },
+              "end": {
+                "line": 1,
+                "column": 30
+              }
+            }
+          },
+          "imported": {
+            "type": "Identifier",
+            "name": "buffer",
+            "range": [
+              9,
+              15
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 9
+              },
+              "end": {
+                "line": 1,
+                "column": 15
+              }
+            }
+          },
+          "range": [
+            9,
+            30
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 9
+            },
+            "end": {
+              "line": 1,
+              "column": 30
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "../operators",
+        "raw": "'../operators'",
+        "range": [
+          38,
+          52
+        ],
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 38
+          },
+          "end": {
+            "line": 1,
+            "column": 52
+          }
+        }
+      },
+      "range": [
+        0,
+        53
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 53
+        }
+      },
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * Buffers the source Observable values until `closingNotifier` emits.\r\n *\r\n * <span class=\"informal\">Collects values from the past as an array, and emits\r\n * that array only when another Observable emits.</span>\r\n *\r\n * <img src=\"./img/buffer.png\" width=\"100%\">\r\n *\r\n * Buffers the incoming Observable values until the given `closingNotifier`\r\n * Observable emits a value, at which point it emits the buffer on the output\r\n * Observable and starts a new buffer internally, awaiting the next time\r\n * `closingNotifier` emits.\r\n *\r\n * @example <caption>On every click, emit array of most recent interval events</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var interval = Rx.Observable.interval(1000);\r\n * var buffered = interval.buffer(clicks);\r\n * buffered.subscribe(x => console.log(x));\r\n *\r\n * @see {@link bufferCount}\r\n * @see {@link bufferTime}\r\n * @see {@link bufferToggle}\r\n * @see {@link bufferWhen}\r\n * @see {@link window}\r\n *\r\n * @param {Observable<any>} closingNotifier An Observable that signals the\r\n * buffer to be emitted on the output Observable.\r\n * @return {Observable<T[]>} An Observable of buffers, which are arrays of\r\n * values.\r\n * @method buffer\r\n * @owner Observable\r\n ",
+          "range": [
+            55,
+            1286
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 33,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "buffer",
+          "range": [
+            1304,
+            1310
+          ],
+          "loc": {
+            "start": {
+              "line": 34,
+              "column": 16
+            },
+            "end": {
+              "line": 34,
+              "column": 22
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "closingNotifier",
+            "range": [
+              1311,
+              1326
+            ],
+            "loc": {
+              "start": {
+                "line": 34,
+                "column": 23
+              },
+              "end": {
+                "line": 34,
+                "column": 38
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "higherOrder",
+                    "range": [
+                      1342,
+                      1353
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 35,
+                        "column": 11
+                      },
+                      "end": {
+                        "line": 35,
+                        "column": 22
+                      }
+                    }
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "name": "closingNotifier",
+                      "range": [
+                        1354,
+                        1369
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 35,
+                          "column": 23
+                        },
+                        "end": {
+                          "line": 35,
+                          "column": 38
+                        }
+                      }
+                    }
+                  ],
+                  "range": [
+                    1342,
+                    1370
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 35,
+                      "column": 11
+                    },
+                    "end": {
+                      "line": 35,
+                      "column": 39
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "ThisExpression",
+                    "range": [
+                      1371,
+                      1375
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 35,
+                        "column": 40
+                      },
+                      "end": {
+                        "line": 35,
+                        "column": 44
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  1342,
+                  1376
+                ],
+                "loc": {
+                  "start": {
+                    "line": 35,
+                    "column": 11
+                  },
+                  "end": {
+                    "line": 35,
+                    "column": 45
+                  }
+                }
+              },
+              "range": [
+                1335,
+                1377
+              ],
+              "loc": {
+                "start": {
+                  "line": 35,
+                  "column": 4
+                },
+                "end": {
+                  "line": 35,
+                  "column": 46
+                }
+              }
+            }
+          ],
+          "range": [
+            1328,
+            1380
+          ],
+          "loc": {
+            "start": {
+              "line": 34,
+              "column": 40
+            },
+            "end": {
+              "line": 36,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          1295,
+          1380
+        ],
+        "loc": {
+          "start": {
+            "line": 34,
+            "column": 7
+          },
+          "end": {
+            "line": 36,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\r\n * Buffers the source Observable values until `closingNotifier` emits.\r\n *\r\n * <span class=\"informal\">Collects values from the past as an array, and emits\r\n * that array only when another Observable emits.</span>\r\n *\r\n * <img src=\"./img/buffer.png\" width=\"100%\">\r\n *\r\n * Buffers the incoming Observable values until the given `closingNotifier`\r\n * Observable emits a value, at which point it emits the buffer on the output\r\n * Observable and starts a new buffer internally, awaiting the next time\r\n * `closingNotifier` emits.\r\n *\r\n * @example <caption>On every click, emit array of most recent interval events</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var interval = Rx.Observable.interval(1000);\r\n * var buffered = interval.buffer(clicks);\r\n * buffered.subscribe(x => console.log(x));\r\n *\r\n * @see {@link bufferCount}\r\n * @see {@link bufferTime}\r\n * @see {@link bufferToggle}\r\n * @see {@link bufferWhen}\r\n * @see {@link window}\r\n *\r\n * @param {Observable<any>} closingNotifier An Observable that signals the\r\n * buffer to be emitted on the output Observable.\r\n * @return {Observable<T[]>} An Observable of buffers, which are arrays of\r\n * values.\r\n * @method buffer\r\n * @owner Observable\r\n ",
+            "range": [
+              55,
+              1286
+            ],
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 0
+              },
+              "end": {
+                "line": 33,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Line",
+            "value": "# sourceMappingURL=buffer.js.map",
+            "range": [
+              1382,
+              1416
+            ],
+            "loc": {
+              "start": {
+                "line": 37,
+                "column": 0
+              },
+              "end": {
+                "line": 37,
+                "column": 34
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        1288,
+        1380
+      ],
+      "loc": {
+        "start": {
+          "line": 34,
+          "column": 0
+        },
+        "end": {
+          "line": 36,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * Buffers the source Observable values until `closingNotifier` emits.\r\n *\r\n * <span class=\"informal\">Collects values from the past as an array, and emits\r\n * that array only when another Observable emits.</span>\r\n *\r\n * <img src=\"./img/buffer.png\" width=\"100%\">\r\n *\r\n * Buffers the incoming Observable values until the given `closingNotifier`\r\n * Observable emits a value, at which point it emits the buffer on the output\r\n * Observable and starts a new buffer internally, awaiting the next time\r\n * `closingNotifier` emits.\r\n *\r\n * @example <caption>On every click, emit array of most recent interval events</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var interval = Rx.Observable.interval(1000);\r\n * var buffered = interval.buffer(clicks);\r\n * buffered.subscribe(x => console.log(x));\r\n *\r\n * @see {@link bufferCount}\r\n * @see {@link bufferTime}\r\n * @see {@link bufferToggle}\r\n * @see {@link bufferWhen}\r\n * @see {@link window}\r\n *\r\n * @param {Observable<any>} closingNotifier An Observable that signals the\r\n * buffer to be emitted on the output Observable.\r\n * @return {Observable<T[]>} An Observable of buffers, which are arrays of\r\n * values.\r\n * @method buffer\r\n * @owner Observable\r\n ",
+          "range": [
+            55,
+            1286
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 33,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Line",
+          "value": "# sourceMappingURL=buffer.js.map",
+          "range": [
+            1382,
+            1416
+          ],
+          "loc": {
+            "start": {
+              "line": 37,
+              "column": 0
+            },
+            "end": {
+              "line": 37,
+              "column": 34
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    0,
+    1380
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 36,
+      "column": 1
+    }
+  },
+  "comments": [
+    {
+      "type": "Block",
+      "value": "*\r\n * Buffers the source Observable values until `closingNotifier` emits.\r\n *\r\n * <span class=\"informal\">Collects values from the past as an array, and emits\r\n * that array only when another Observable emits.</span>\r\n *\r\n * <img src=\"./img/buffer.png\" width=\"100%\">\r\n *\r\n * Buffers the incoming Observable values until the given `closingNotifier`\r\n * Observable emits a value, at which point it emits the buffer on the output\r\n * Observable and starts a new buffer internally, awaiting the next time\r\n * `closingNotifier` emits.\r\n *\r\n * @example <caption>On every click, emit array of most recent interval events</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var interval = Rx.Observable.interval(1000);\r\n * var buffered = interval.buffer(clicks);\r\n * buffered.subscribe(x => console.log(x));\r\n *\r\n * @see {@link bufferCount}\r\n * @see {@link bufferTime}\r\n * @see {@link bufferToggle}\r\n * @see {@link bufferWhen}\r\n * @see {@link window}\r\n *\r\n * @param {Observable<any>} closingNotifier An Observable that signals the\r\n * buffer to be emitted on the output Observable.\r\n * @return {Observable<T[]>} An Observable of buffers, which are arrays of\r\n * values.\r\n * @method buffer\r\n * @owner Observable\r\n ",
+      "range": [
+        55,
+        1286
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 33,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Line",
+      "value": "# sourceMappingURL=buffer.js.map",
+      "range": [
+        1382,
+        1416
+      ],
+      "loc": {
+        "start": {
+          "line": 37,
+          "column": 0
+        },
+        "end": {
+          "line": 37,
+          "column": 34
+        }
+      }
+    }
+  ]
+}

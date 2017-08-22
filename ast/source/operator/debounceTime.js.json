@@ -1,0 +1,614 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "async",
+            "range": [
+              9,
+              14
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 9
+              },
+              "end": {
+                "line": 1,
+                "column": 14
+              }
+            }
+          },
+          "imported": {
+            "type": "Identifier",
+            "name": "async",
+            "range": [
+              9,
+              14
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 9
+              },
+              "end": {
+                "line": 1,
+                "column": 14
+              }
+            }
+          },
+          "range": [
+            9,
+            14
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 9
+            },
+            "end": {
+              "line": 1,
+              "column": 14
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "../scheduler/async",
+        "raw": "'../scheduler/async'",
+        "range": [
+          22,
+          42
+        ],
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 22
+          },
+          "end": {
+            "line": 1,
+            "column": 42
+          }
+        }
+      },
+      "range": [
+        0,
+        43
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 43
+        }
+      }
+    },
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "higherOrder",
+            "range": [
+              70,
+              81
+            ],
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 25
+              },
+              "end": {
+                "line": 2,
+                "column": 36
+              }
+            }
+          },
+          "imported": {
+            "type": "Identifier",
+            "name": "debounceTime",
+            "range": [
+              54,
+              66
+            ],
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 9
+              },
+              "end": {
+                "line": 2,
+                "column": 21
+              }
+            }
+          },
+          "range": [
+            54,
+            81
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 9
+            },
+            "end": {
+              "line": 2,
+              "column": 36
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "../operators",
+        "raw": "'../operators'",
+        "range": [
+          89,
+          103
+        ],
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 44
+          },
+          "end": {
+            "line": 2,
+            "column": 58
+          }
+        }
+      },
+      "range": [
+        45,
+        104
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 59
+        }
+      },
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * Emits a value from the source Observable only after a particular time span\r\n * has passed without another source emission.\r\n *\r\n * <span class=\"informal\">It's like {@link delay}, but passes only the most\r\n * recent value from each burst of emissions.</span>\r\n *\r\n * <img src=\"./img/debounceTime.png\" width=\"100%\">\r\n *\r\n * `debounceTime` delays values emitted by the source Observable, but drops\r\n * previous pending delayed emissions if a new value arrives on the source\r\n * Observable. This operator keeps track of the most recent value from the\r\n * source Observable, and emits that only when `dueTime` enough time has passed\r\n * without any other value appearing on the source Observable. If a new value\r\n * appears before `dueTime` silence occurs, the previous value will be dropped\r\n * and will not be emitted on the output Observable.\r\n *\r\n * This is a rate-limiting operator, because it is impossible for more than one\r\n * value to be emitted in any time window of duration `dueTime`, but it is also\r\n * a delay-like operator since output emissions do not occur at the same time as\r\n * they did on the source Observable. Optionally takes a {@link IScheduler} for\r\n * managing timers.\r\n *\r\n * @example <caption>Emit the most recent click after a burst of clicks</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var result = clicks.debounceTime(1000);\r\n * result.subscribe(x => console.log(x));\r\n *\r\n * @see {@link auditTime}\r\n * @see {@link debounce}\r\n * @see {@link delay}\r\n * @see {@link sampleTime}\r\n * @see {@link throttleTime}\r\n *\r\n * @param {number} dueTime The timeout duration in milliseconds (or the time\r\n * unit determined internally by the optional `scheduler`) for the window of\r\n * time required to wait for emission silence before emitting the most recent\r\n * source value.\r\n * @param {Scheduler} [scheduler=async] The {@link IScheduler} to use for\r\n * managing the timers that handle the timeout for each value.\r\n * @return {Observable} An Observable that delays the emissions of the source\r\n * Observable by the specified `dueTime`, and may drop some values if they occur\r\n * too frequently.\r\n * @method debounceTime\r\n * @owner Observable\r\n ",
+          "range": [
+            106,
+            2306
+          ],
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 0
+            },
+            "end": {
+              "line": 48,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "debounceTime",
+          "range": [
+            2324,
+            2336
+          ],
+          "loc": {
+            "start": {
+              "line": 49,
+              "column": 16
+            },
+            "end": {
+              "line": 49,
+              "column": 28
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "dueTime",
+            "range": [
+              2337,
+              2344
+            ],
+            "loc": {
+              "start": {
+                "line": 49,
+                "column": 29
+              },
+              "end": {
+                "line": 49,
+                "column": 36
+              }
+            }
+          },
+          {
+            "type": "AssignmentPattern",
+            "left": {
+              "type": "Identifier",
+              "name": "scheduler",
+              "range": [
+                2346,
+                2355
+              ],
+              "loc": {
+                "start": {
+                  "line": 49,
+                  "column": 38
+                },
+                "end": {
+                  "line": 49,
+                  "column": 47
+                }
+              }
+            },
+            "right": {
+              "type": "Identifier",
+              "name": "async",
+              "range": [
+                2358,
+                2363
+              ],
+              "loc": {
+                "start": {
+                  "line": 49,
+                  "column": 50
+                },
+                "end": {
+                  "line": 49,
+                  "column": 55
+                }
+              }
+            },
+            "range": [
+              2346,
+              2363
+            ],
+            "loc": {
+              "start": {
+                "line": 49,
+                "column": 38
+              },
+              "end": {
+                "line": 49,
+                "column": 55
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "higherOrder",
+                    "range": [
+                      2379,
+                      2390
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 50,
+                        "column": 11
+                      },
+                      "end": {
+                        "line": 50,
+                        "column": 22
+                      }
+                    }
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "name": "dueTime",
+                      "range": [
+                        2391,
+                        2398
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 50,
+                          "column": 23
+                        },
+                        "end": {
+                          "line": 50,
+                          "column": 30
+                        }
+                      }
+                    },
+                    {
+                      "type": "Identifier",
+                      "name": "scheduler",
+                      "range": [
+                        2400,
+                        2409
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 50,
+                          "column": 32
+                        },
+                        "end": {
+                          "line": 50,
+                          "column": 41
+                        }
+                      }
+                    }
+                  ],
+                  "range": [
+                    2379,
+                    2410
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 50,
+                      "column": 11
+                    },
+                    "end": {
+                      "line": 50,
+                      "column": 42
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "ThisExpression",
+                    "range": [
+                      2411,
+                      2415
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 50,
+                        "column": 43
+                      },
+                      "end": {
+                        "line": 50,
+                        "column": 47
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  2379,
+                  2416
+                ],
+                "loc": {
+                  "start": {
+                    "line": 50,
+                    "column": 11
+                  },
+                  "end": {
+                    "line": 50,
+                    "column": 48
+                  }
+                }
+              },
+              "range": [
+                2372,
+                2417
+              ],
+              "loc": {
+                "start": {
+                  "line": 50,
+                  "column": 4
+                },
+                "end": {
+                  "line": 50,
+                  "column": 49
+                }
+              }
+            }
+          ],
+          "range": [
+            2365,
+            2420
+          ],
+          "loc": {
+            "start": {
+              "line": 49,
+              "column": 57
+            },
+            "end": {
+              "line": 51,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          2315,
+          2420
+        ],
+        "loc": {
+          "start": {
+            "line": 49,
+            "column": 7
+          },
+          "end": {
+            "line": 51,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\r\n * Emits a value from the source Observable only after a particular time span\r\n * has passed without another source emission.\r\n *\r\n * <span class=\"informal\">It's like {@link delay}, but passes only the most\r\n * recent value from each burst of emissions.</span>\r\n *\r\n * <img src=\"./img/debounceTime.png\" width=\"100%\">\r\n *\r\n * `debounceTime` delays values emitted by the source Observable, but drops\r\n * previous pending delayed emissions if a new value arrives on the source\r\n * Observable. This operator keeps track of the most recent value from the\r\n * source Observable, and emits that only when `dueTime` enough time has passed\r\n * without any other value appearing on the source Observable. If a new value\r\n * appears before `dueTime` silence occurs, the previous value will be dropped\r\n * and will not be emitted on the output Observable.\r\n *\r\n * This is a rate-limiting operator, because it is impossible for more than one\r\n * value to be emitted in any time window of duration `dueTime`, but it is also\r\n * a delay-like operator since output emissions do not occur at the same time as\r\n * they did on the source Observable. Optionally takes a {@link IScheduler} for\r\n * managing timers.\r\n *\r\n * @example <caption>Emit the most recent click after a burst of clicks</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var result = clicks.debounceTime(1000);\r\n * result.subscribe(x => console.log(x));\r\n *\r\n * @see {@link auditTime}\r\n * @see {@link debounce}\r\n * @see {@link delay}\r\n * @see {@link sampleTime}\r\n * @see {@link throttleTime}\r\n *\r\n * @param {number} dueTime The timeout duration in milliseconds (or the time\r\n * unit determined internally by the optional `scheduler`) for the window of\r\n * time required to wait for emission silence before emitting the most recent\r\n * source value.\r\n * @param {Scheduler} [scheduler=async] The {@link IScheduler} to use for\r\n * managing the timers that handle the timeout for each value.\r\n * @return {Observable} An Observable that delays the emissions of the source\r\n * Observable by the specified `dueTime`, and may drop some values if they occur\r\n * too frequently.\r\n * @method debounceTime\r\n * @owner Observable\r\n ",
+            "range": [
+              106,
+              2306
+            ],
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 0
+              },
+              "end": {
+                "line": 48,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Line",
+            "value": "# sourceMappingURL=debounceTime.js.map",
+            "range": [
+              2422,
+              2462
+            ],
+            "loc": {
+              "start": {
+                "line": 52,
+                "column": 0
+              },
+              "end": {
+                "line": 52,
+                "column": 40
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        2308,
+        2420
+      ],
+      "loc": {
+        "start": {
+          "line": 49,
+          "column": 0
+        },
+        "end": {
+          "line": 51,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * Emits a value from the source Observable only after a particular time span\r\n * has passed without another source emission.\r\n *\r\n * <span class=\"informal\">It's like {@link delay}, but passes only the most\r\n * recent value from each burst of emissions.</span>\r\n *\r\n * <img src=\"./img/debounceTime.png\" width=\"100%\">\r\n *\r\n * `debounceTime` delays values emitted by the source Observable, but drops\r\n * previous pending delayed emissions if a new value arrives on the source\r\n * Observable. This operator keeps track of the most recent value from the\r\n * source Observable, and emits that only when `dueTime` enough time has passed\r\n * without any other value appearing on the source Observable. If a new value\r\n * appears before `dueTime` silence occurs, the previous value will be dropped\r\n * and will not be emitted on the output Observable.\r\n *\r\n * This is a rate-limiting operator, because it is impossible for more than one\r\n * value to be emitted in any time window of duration `dueTime`, but it is also\r\n * a delay-like operator since output emissions do not occur at the same time as\r\n * they did on the source Observable. Optionally takes a {@link IScheduler} for\r\n * managing timers.\r\n *\r\n * @example <caption>Emit the most recent click after a burst of clicks</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var result = clicks.debounceTime(1000);\r\n * result.subscribe(x => console.log(x));\r\n *\r\n * @see {@link auditTime}\r\n * @see {@link debounce}\r\n * @see {@link delay}\r\n * @see {@link sampleTime}\r\n * @see {@link throttleTime}\r\n *\r\n * @param {number} dueTime The timeout duration in milliseconds (or the time\r\n * unit determined internally by the optional `scheduler`) for the window of\r\n * time required to wait for emission silence before emitting the most recent\r\n * source value.\r\n * @param {Scheduler} [scheduler=async] The {@link IScheduler} to use for\r\n * managing the timers that handle the timeout for each value.\r\n * @return {Observable} An Observable that delays the emissions of the source\r\n * Observable by the specified `dueTime`, and may drop some values if they occur\r\n * too frequently.\r\n * @method debounceTime\r\n * @owner Observable\r\n ",
+          "range": [
+            106,
+            2306
+          ],
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 0
+            },
+            "end": {
+              "line": 48,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Line",
+          "value": "# sourceMappingURL=debounceTime.js.map",
+          "range": [
+            2422,
+            2462
+          ],
+          "loc": {
+            "start": {
+              "line": 52,
+              "column": 0
+            },
+            "end": {
+              "line": 52,
+              "column": 40
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    0,
+    2420
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 51,
+      "column": 1
+    }
+  },
+  "comments": [
+    {
+      "type": "Block",
+      "value": "*\r\n * Emits a value from the source Observable only after a particular time span\r\n * has passed without another source emission.\r\n *\r\n * <span class=\"informal\">It's like {@link delay}, but passes only the most\r\n * recent value from each burst of emissions.</span>\r\n *\r\n * <img src=\"./img/debounceTime.png\" width=\"100%\">\r\n *\r\n * `debounceTime` delays values emitted by the source Observable, but drops\r\n * previous pending delayed emissions if a new value arrives on the source\r\n * Observable. This operator keeps track of the most recent value from the\r\n * source Observable, and emits that only when `dueTime` enough time has passed\r\n * without any other value appearing on the source Observable. If a new value\r\n * appears before `dueTime` silence occurs, the previous value will be dropped\r\n * and will not be emitted on the output Observable.\r\n *\r\n * This is a rate-limiting operator, because it is impossible for more than one\r\n * value to be emitted in any time window of duration `dueTime`, but it is also\r\n * a delay-like operator since output emissions do not occur at the same time as\r\n * they did on the source Observable. Optionally takes a {@link IScheduler} for\r\n * managing timers.\r\n *\r\n * @example <caption>Emit the most recent click after a burst of clicks</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var result = clicks.debounceTime(1000);\r\n * result.subscribe(x => console.log(x));\r\n *\r\n * @see {@link auditTime}\r\n * @see {@link debounce}\r\n * @see {@link delay}\r\n * @see {@link sampleTime}\r\n * @see {@link throttleTime}\r\n *\r\n * @param {number} dueTime The timeout duration in milliseconds (or the time\r\n * unit determined internally by the optional `scheduler`) for the window of\r\n * time required to wait for emission silence before emitting the most recent\r\n * source value.\r\n * @param {Scheduler} [scheduler=async] The {@link IScheduler} to use for\r\n * managing the timers that handle the timeout for each value.\r\n * @return {Observable} An Observable that delays the emissions of the source\r\n * Observable by the specified `dueTime`, and may drop some values if they occur\r\n * too frequently.\r\n * @method debounceTime\r\n * @owner Observable\r\n ",
+      "range": [
+        106,
+        2306
+      ],
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 48,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Line",
+      "value": "# sourceMappingURL=debounceTime.js.map",
+      "range": [
+        2422,
+        2462
+      ],
+      "loc": {
+        "start": {
+          "line": 52,
+          "column": 0
+        },
+        "end": {
+          "line": 52,
+          "column": 40
+        }
+      }
+    }
+  ]
+}

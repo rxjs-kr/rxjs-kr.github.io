@@ -1,0 +1,488 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "higherOrder",
+            "range": [
+              22,
+              33
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 22
+              },
+              "end": {
+                "line": 1,
+                "column": 33
+              }
+            }
+          },
+          "imported": {
+            "type": "Identifier",
+            "name": "elementAt",
+            "range": [
+              9,
+              18
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 9
+              },
+              "end": {
+                "line": 1,
+                "column": 18
+              }
+            }
+          },
+          "range": [
+            9,
+            33
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 9
+            },
+            "end": {
+              "line": 1,
+              "column": 33
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "../operators",
+        "raw": "'../operators'",
+        "range": [
+          41,
+          55
+        ],
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 41
+          },
+          "end": {
+            "line": 1,
+            "column": 55
+          }
+        }
+      },
+      "range": [
+        0,
+        56
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 56
+        }
+      },
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * Emits the single value at the specified `index` in a sequence of emissions\r\n * from the source Observable.\r\n *\r\n * <span class=\"informal\">Emits only the i-th value, then completes.</span>\r\n *\r\n * <img src=\"./img/elementAt.png\" width=\"100%\">\r\n *\r\n * `elementAt` returns an Observable that emits the item at the specified\r\n * `index` in the source Observable, or a default value if that `index` is out\r\n * of range and the `default` argument is provided. If the `default` argument is\r\n * not given and the `index` is out of range, the output Observable will emit an\r\n * `ArgumentOutOfRangeError` error.\r\n *\r\n * @example <caption>Emit only the third click event</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var result = clicks.elementAt(2);\r\n * result.subscribe(x => console.log(x));\r\n *\r\n * // Results in:\r\n * // click 1 = nothing\r\n * // click 2 = nothing\r\n * // click 3 = MouseEvent object logged to console\r\n *\r\n * @see {@link first}\r\n * @see {@link last}\r\n * @see {@link skip}\r\n * @see {@link single}\r\n * @see {@link take}\r\n *\r\n * @throws {ArgumentOutOfRangeError} When using `elementAt(i)`, it delivers an\r\n * ArgumentOutOrRangeError to the Observer's `error` callback if `i < 0` or the\r\n * Observable has completed before emitting the i-th `next` notification.\r\n *\r\n * @param {number} index Is the number `i` for the i-th source emission that has\r\n * happened since the subscription, starting from the number `0`.\r\n * @param {T} [defaultValue] The default value returned for missing indices.\r\n * @return {Observable} An Observable that emits a single item, if it is found.\r\n * Otherwise, will emit the default value if given. If not, then emits an error.\r\n * @method elementAt\r\n * @owner Observable\r\n ",
+          "range": [
+            58,
+            1802
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 43,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "elementAt",
+          "range": [
+            1820,
+            1829
+          ],
+          "loc": {
+            "start": {
+              "line": 44,
+              "column": 16
+            },
+            "end": {
+              "line": 44,
+              "column": 25
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "index",
+            "range": [
+              1830,
+              1835
+            ],
+            "loc": {
+              "start": {
+                "line": 44,
+                "column": 26
+              },
+              "end": {
+                "line": 44,
+                "column": 31
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "defaultValue",
+            "range": [
+              1837,
+              1849
+            ],
+            "loc": {
+              "start": {
+                "line": 44,
+                "column": 33
+              },
+              "end": {
+                "line": 44,
+                "column": 45
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "higherOrder",
+                    "range": [
+                      1865,
+                      1876
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 45,
+                        "column": 11
+                      },
+                      "end": {
+                        "line": 45,
+                        "column": 22
+                      }
+                    }
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "name": "index",
+                      "range": [
+                        1877,
+                        1882
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 45,
+                          "column": 23
+                        },
+                        "end": {
+                          "line": 45,
+                          "column": 28
+                        }
+                      }
+                    },
+                    {
+                      "type": "Identifier",
+                      "name": "defaultValue",
+                      "range": [
+                        1884,
+                        1896
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 45,
+                          "column": 30
+                        },
+                        "end": {
+                          "line": 45,
+                          "column": 42
+                        }
+                      }
+                    }
+                  ],
+                  "range": [
+                    1865,
+                    1897
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 45,
+                      "column": 11
+                    },
+                    "end": {
+                      "line": 45,
+                      "column": 43
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "ThisExpression",
+                    "range": [
+                      1898,
+                      1902
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 45,
+                        "column": 44
+                      },
+                      "end": {
+                        "line": 45,
+                        "column": 48
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  1865,
+                  1903
+                ],
+                "loc": {
+                  "start": {
+                    "line": 45,
+                    "column": 11
+                  },
+                  "end": {
+                    "line": 45,
+                    "column": 49
+                  }
+                }
+              },
+              "range": [
+                1858,
+                1904
+              ],
+              "loc": {
+                "start": {
+                  "line": 45,
+                  "column": 4
+                },
+                "end": {
+                  "line": 45,
+                  "column": 50
+                }
+              }
+            }
+          ],
+          "range": [
+            1851,
+            1907
+          ],
+          "loc": {
+            "start": {
+              "line": 44,
+              "column": 47
+            },
+            "end": {
+              "line": 46,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          1811,
+          1907
+        ],
+        "loc": {
+          "start": {
+            "line": 44,
+            "column": 7
+          },
+          "end": {
+            "line": 46,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\r\n * Emits the single value at the specified `index` in a sequence of emissions\r\n * from the source Observable.\r\n *\r\n * <span class=\"informal\">Emits only the i-th value, then completes.</span>\r\n *\r\n * <img src=\"./img/elementAt.png\" width=\"100%\">\r\n *\r\n * `elementAt` returns an Observable that emits the item at the specified\r\n * `index` in the source Observable, or a default value if that `index` is out\r\n * of range and the `default` argument is provided. If the `default` argument is\r\n * not given and the `index` is out of range, the output Observable will emit an\r\n * `ArgumentOutOfRangeError` error.\r\n *\r\n * @example <caption>Emit only the third click event</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var result = clicks.elementAt(2);\r\n * result.subscribe(x => console.log(x));\r\n *\r\n * // Results in:\r\n * // click 1 = nothing\r\n * // click 2 = nothing\r\n * // click 3 = MouseEvent object logged to console\r\n *\r\n * @see {@link first}\r\n * @see {@link last}\r\n * @see {@link skip}\r\n * @see {@link single}\r\n * @see {@link take}\r\n *\r\n * @throws {ArgumentOutOfRangeError} When using `elementAt(i)`, it delivers an\r\n * ArgumentOutOrRangeError to the Observer's `error` callback if `i < 0` or the\r\n * Observable has completed before emitting the i-th `next` notification.\r\n *\r\n * @param {number} index Is the number `i` for the i-th source emission that has\r\n * happened since the subscription, starting from the number `0`.\r\n * @param {T} [defaultValue] The default value returned for missing indices.\r\n * @return {Observable} An Observable that emits a single item, if it is found.\r\n * Otherwise, will emit the default value if given. If not, then emits an error.\r\n * @method elementAt\r\n * @owner Observable\r\n ",
+            "range": [
+              58,
+              1802
+            ],
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 0
+              },
+              "end": {
+                "line": 43,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Line",
+            "value": "# sourceMappingURL=elementAt.js.map",
+            "range": [
+              1909,
+              1946
+            ],
+            "loc": {
+              "start": {
+                "line": 47,
+                "column": 0
+              },
+              "end": {
+                "line": 47,
+                "column": 37
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        1804,
+        1907
+      ],
+      "loc": {
+        "start": {
+          "line": 44,
+          "column": 0
+        },
+        "end": {
+          "line": 46,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * Emits the single value at the specified `index` in a sequence of emissions\r\n * from the source Observable.\r\n *\r\n * <span class=\"informal\">Emits only the i-th value, then completes.</span>\r\n *\r\n * <img src=\"./img/elementAt.png\" width=\"100%\">\r\n *\r\n * `elementAt` returns an Observable that emits the item at the specified\r\n * `index` in the source Observable, or a default value if that `index` is out\r\n * of range and the `default` argument is provided. If the `default` argument is\r\n * not given and the `index` is out of range, the output Observable will emit an\r\n * `ArgumentOutOfRangeError` error.\r\n *\r\n * @example <caption>Emit only the third click event</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var result = clicks.elementAt(2);\r\n * result.subscribe(x => console.log(x));\r\n *\r\n * // Results in:\r\n * // click 1 = nothing\r\n * // click 2 = nothing\r\n * // click 3 = MouseEvent object logged to console\r\n *\r\n * @see {@link first}\r\n * @see {@link last}\r\n * @see {@link skip}\r\n * @see {@link single}\r\n * @see {@link take}\r\n *\r\n * @throws {ArgumentOutOfRangeError} When using `elementAt(i)`, it delivers an\r\n * ArgumentOutOrRangeError to the Observer's `error` callback if `i < 0` or the\r\n * Observable has completed before emitting the i-th `next` notification.\r\n *\r\n * @param {number} index Is the number `i` for the i-th source emission that has\r\n * happened since the subscription, starting from the number `0`.\r\n * @param {T} [defaultValue] The default value returned for missing indices.\r\n * @return {Observable} An Observable that emits a single item, if it is found.\r\n * Otherwise, will emit the default value if given. If not, then emits an error.\r\n * @method elementAt\r\n * @owner Observable\r\n ",
+          "range": [
+            58,
+            1802
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 43,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Line",
+          "value": "# sourceMappingURL=elementAt.js.map",
+          "range": [
+            1909,
+            1946
+          ],
+          "loc": {
+            "start": {
+              "line": 47,
+              "column": 0
+            },
+            "end": {
+              "line": 47,
+              "column": 37
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    0,
+    1907
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 46,
+      "column": 1
+    }
+  },
+  "comments": [
+    {
+      "type": "Block",
+      "value": "*\r\n * Emits the single value at the specified `index` in a sequence of emissions\r\n * from the source Observable.\r\n *\r\n * <span class=\"informal\">Emits only the i-th value, then completes.</span>\r\n *\r\n * <img src=\"./img/elementAt.png\" width=\"100%\">\r\n *\r\n * `elementAt` returns an Observable that emits the item at the specified\r\n * `index` in the source Observable, or a default value if that `index` is out\r\n * of range and the `default` argument is provided. If the `default` argument is\r\n * not given and the `index` is out of range, the output Observable will emit an\r\n * `ArgumentOutOfRangeError` error.\r\n *\r\n * @example <caption>Emit only the third click event</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var result = clicks.elementAt(2);\r\n * result.subscribe(x => console.log(x));\r\n *\r\n * // Results in:\r\n * // click 1 = nothing\r\n * // click 2 = nothing\r\n * // click 3 = MouseEvent object logged to console\r\n *\r\n * @see {@link first}\r\n * @see {@link last}\r\n * @see {@link skip}\r\n * @see {@link single}\r\n * @see {@link take}\r\n *\r\n * @throws {ArgumentOutOfRangeError} When using `elementAt(i)`, it delivers an\r\n * ArgumentOutOrRangeError to the Observer's `error` callback if `i < 0` or the\r\n * Observable has completed before emitting the i-th `next` notification.\r\n *\r\n * @param {number} index Is the number `i` for the i-th source emission that has\r\n * happened since the subscription, starting from the number `0`.\r\n * @param {T} [defaultValue] The default value returned for missing indices.\r\n * @return {Observable} An Observable that emits a single item, if it is found.\r\n * Otherwise, will emit the default value if given. If not, then emits an error.\r\n * @method elementAt\r\n * @owner Observable\r\n ",
+      "range": [
+        58,
+        1802
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 43,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Line",
+      "value": "# sourceMappingURL=elementAt.js.map",
+      "range": [
+        1909,
+        1946
+      ],
+      "loc": {
+        "start": {
+          "line": 47,
+          "column": 0
+        },
+        "end": {
+          "line": 47,
+          "column": 37
+        }
+      }
+    }
+  ]
+}

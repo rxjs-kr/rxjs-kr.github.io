@@ -1,0 +1,452 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "higherOrder",
+            "range": [
+              23,
+              34
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 23
+              },
+              "end": {
+                "line": 1,
+                "column": 34
+              }
+            }
+          },
+          "imported": {
+            "type": "Identifier",
+            "name": "catchError",
+            "range": [
+              9,
+              19
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 9
+              },
+              "end": {
+                "line": 1,
+                "column": 19
+              }
+            }
+          },
+          "range": [
+            9,
+            34
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 9
+            },
+            "end": {
+              "line": 1,
+              "column": 34
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "../operators",
+        "raw": "'../operators'",
+        "range": [
+          42,
+          56
+        ],
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 42
+          },
+          "end": {
+            "line": 1,
+            "column": 56
+          }
+        }
+      },
+      "range": [
+        0,
+        57
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 57
+        }
+      },
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * Catches errors on the observable to be handled by returning a new observable or throwing an error.\r\n *\r\n * <img src=\"./img/catch.png\" width=\"100%\">\r\n *\r\n * @example <caption>Continues with a different Observable when there's an error</caption>\r\n *\r\n * Observable.of(1, 2, 3, 4, 5)\r\n *   .map(n => {\r\n * \t   if (n == 4) {\r\n * \t     throw 'four!';\r\n *     }\r\n *\t   return n;\r\n *   })\r\n *   .catch(err => Observable.of('I', 'II', 'III', 'IV', 'V'))\r\n *   .subscribe(x => console.log(x));\r\n *   // 1, 2, 3, I, II, III, IV, V\r\n *\r\n * @example <caption>Retries the caught source Observable again in case of error, similar to retry() operator</caption>\r\n *\r\n * Observable.of(1, 2, 3, 4, 5)\r\n *   .map(n => {\r\n * \t   if (n === 4) {\r\n * \t     throw 'four!';\r\n *     }\r\n * \t   return n;\r\n *   })\r\n *   .catch((err, caught) => caught)\r\n *   .take(30)\r\n *   .subscribe(x => console.log(x));\r\n *   // 1, 2, 3, 1, 2, 3, ...\r\n *\r\n * @example <caption>Throws a new error when the source Observable throws an error</caption>\r\n *\r\n * Observable.of(1, 2, 3, 4, 5)\r\n *   .map(n => {\r\n *     if (n == 4) {\r\n *       throw 'four!';\r\n *     }\r\n *     return n;\r\n *   })\r\n *   .catch(err => {\r\n *     throw 'error in source. Details: ' + err;\r\n *   })\r\n *   .subscribe(\r\n *     x => console.log(x),\r\n *     err => console.log(err)\r\n *   );\r\n *   // 1, 2, 3, error in source. Details: four!\r\n *\r\n * @param {function} selector a function that takes as arguments `err`, which is the error, and `caught`, which\r\n *  is the source observable, in case you'd like to \"retry\" that observable by returning it again. Whatever observable\r\n *  is returned by the `selector` will be used to continue the observable chain.\r\n * @return {Observable} An observable that originates from either the source or the observable returned by the\r\n *  catch `selector` function.\r\n * @method catch\r\n * @name catch\r\n * @owner Observable\r\n ",
+          "range": [
+            59,
+            1956
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 60,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "_catch",
+          "range": [
+            1974,
+            1980
+          ],
+          "loc": {
+            "start": {
+              "line": 61,
+              "column": 16
+            },
+            "end": {
+              "line": 61,
+              "column": 22
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "selector",
+            "range": [
+              1981,
+              1989
+            ],
+            "loc": {
+              "start": {
+                "line": 61,
+                "column": 23
+              },
+              "end": {
+                "line": 61,
+                "column": 31
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "higherOrder",
+                    "range": [
+                      2005,
+                      2016
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 62,
+                        "column": 11
+                      },
+                      "end": {
+                        "line": 62,
+                        "column": 22
+                      }
+                    }
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "name": "selector",
+                      "range": [
+                        2017,
+                        2025
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 62,
+                          "column": 23
+                        },
+                        "end": {
+                          "line": 62,
+                          "column": 31
+                        }
+                      }
+                    }
+                  ],
+                  "range": [
+                    2005,
+                    2026
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 62,
+                      "column": 11
+                    },
+                    "end": {
+                      "line": 62,
+                      "column": 32
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "ThisExpression",
+                    "range": [
+                      2027,
+                      2031
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 62,
+                        "column": 33
+                      },
+                      "end": {
+                        "line": 62,
+                        "column": 37
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  2005,
+                  2032
+                ],
+                "loc": {
+                  "start": {
+                    "line": 62,
+                    "column": 11
+                  },
+                  "end": {
+                    "line": 62,
+                    "column": 38
+                  }
+                }
+              },
+              "range": [
+                1998,
+                2033
+              ],
+              "loc": {
+                "start": {
+                  "line": 62,
+                  "column": 4
+                },
+                "end": {
+                  "line": 62,
+                  "column": 39
+                }
+              }
+            }
+          ],
+          "range": [
+            1991,
+            2036
+          ],
+          "loc": {
+            "start": {
+              "line": 61,
+              "column": 33
+            },
+            "end": {
+              "line": 63,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          1965,
+          2036
+        ],
+        "loc": {
+          "start": {
+            "line": 61,
+            "column": 7
+          },
+          "end": {
+            "line": 63,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\r\n * Catches errors on the observable to be handled by returning a new observable or throwing an error.\r\n *\r\n * <img src=\"./img/catch.png\" width=\"100%\">\r\n *\r\n * @example <caption>Continues with a different Observable when there's an error</caption>\r\n *\r\n * Observable.of(1, 2, 3, 4, 5)\r\n *   .map(n => {\r\n * \t   if (n == 4) {\r\n * \t     throw 'four!';\r\n *     }\r\n *\t   return n;\r\n *   })\r\n *   .catch(err => Observable.of('I', 'II', 'III', 'IV', 'V'))\r\n *   .subscribe(x => console.log(x));\r\n *   // 1, 2, 3, I, II, III, IV, V\r\n *\r\n * @example <caption>Retries the caught source Observable again in case of error, similar to retry() operator</caption>\r\n *\r\n * Observable.of(1, 2, 3, 4, 5)\r\n *   .map(n => {\r\n * \t   if (n === 4) {\r\n * \t     throw 'four!';\r\n *     }\r\n * \t   return n;\r\n *   })\r\n *   .catch((err, caught) => caught)\r\n *   .take(30)\r\n *   .subscribe(x => console.log(x));\r\n *   // 1, 2, 3, 1, 2, 3, ...\r\n *\r\n * @example <caption>Throws a new error when the source Observable throws an error</caption>\r\n *\r\n * Observable.of(1, 2, 3, 4, 5)\r\n *   .map(n => {\r\n *     if (n == 4) {\r\n *       throw 'four!';\r\n *     }\r\n *     return n;\r\n *   })\r\n *   .catch(err => {\r\n *     throw 'error in source. Details: ' + err;\r\n *   })\r\n *   .subscribe(\r\n *     x => console.log(x),\r\n *     err => console.log(err)\r\n *   );\r\n *   // 1, 2, 3, error in source. Details: four!\r\n *\r\n * @param {function} selector a function that takes as arguments `err`, which is the error, and `caught`, which\r\n *  is the source observable, in case you'd like to \"retry\" that observable by returning it again. Whatever observable\r\n *  is returned by the `selector` will be used to continue the observable chain.\r\n * @return {Observable} An observable that originates from either the source or the observable returned by the\r\n *  catch `selector` function.\r\n * @method catch\r\n * @name catch\r\n * @owner Observable\r\n ",
+            "range": [
+              59,
+              1956
+            ],
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 0
+              },
+              "end": {
+                "line": 60,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Line",
+            "value": "# sourceMappingURL=catch.js.map",
+            "range": [
+              2038,
+              2071
+            ],
+            "loc": {
+              "start": {
+                "line": 64,
+                "column": 0
+              },
+              "end": {
+                "line": 64,
+                "column": 33
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        1958,
+        2036
+      ],
+      "loc": {
+        "start": {
+          "line": 61,
+          "column": 0
+        },
+        "end": {
+          "line": 63,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * Catches errors on the observable to be handled by returning a new observable or throwing an error.\r\n *\r\n * <img src=\"./img/catch.png\" width=\"100%\">\r\n *\r\n * @example <caption>Continues with a different Observable when there's an error</caption>\r\n *\r\n * Observable.of(1, 2, 3, 4, 5)\r\n *   .map(n => {\r\n * \t   if (n == 4) {\r\n * \t     throw 'four!';\r\n *     }\r\n *\t   return n;\r\n *   })\r\n *   .catch(err => Observable.of('I', 'II', 'III', 'IV', 'V'))\r\n *   .subscribe(x => console.log(x));\r\n *   // 1, 2, 3, I, II, III, IV, V\r\n *\r\n * @example <caption>Retries the caught source Observable again in case of error, similar to retry() operator</caption>\r\n *\r\n * Observable.of(1, 2, 3, 4, 5)\r\n *   .map(n => {\r\n * \t   if (n === 4) {\r\n * \t     throw 'four!';\r\n *     }\r\n * \t   return n;\r\n *   })\r\n *   .catch((err, caught) => caught)\r\n *   .take(30)\r\n *   .subscribe(x => console.log(x));\r\n *   // 1, 2, 3, 1, 2, 3, ...\r\n *\r\n * @example <caption>Throws a new error when the source Observable throws an error</caption>\r\n *\r\n * Observable.of(1, 2, 3, 4, 5)\r\n *   .map(n => {\r\n *     if (n == 4) {\r\n *       throw 'four!';\r\n *     }\r\n *     return n;\r\n *   })\r\n *   .catch(err => {\r\n *     throw 'error in source. Details: ' + err;\r\n *   })\r\n *   .subscribe(\r\n *     x => console.log(x),\r\n *     err => console.log(err)\r\n *   );\r\n *   // 1, 2, 3, error in source. Details: four!\r\n *\r\n * @param {function} selector a function that takes as arguments `err`, which is the error, and `caught`, which\r\n *  is the source observable, in case you'd like to \"retry\" that observable by returning it again. Whatever observable\r\n *  is returned by the `selector` will be used to continue the observable chain.\r\n * @return {Observable} An observable that originates from either the source or the observable returned by the\r\n *  catch `selector` function.\r\n * @method catch\r\n * @name catch\r\n * @owner Observable\r\n ",
+          "range": [
+            59,
+            1956
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 60,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Line",
+          "value": "# sourceMappingURL=catch.js.map",
+          "range": [
+            2038,
+            2071
+          ],
+          "loc": {
+            "start": {
+              "line": 64,
+              "column": 0
+            },
+            "end": {
+              "line": 64,
+              "column": 33
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    0,
+    2036
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 63,
+      "column": 1
+    }
+  },
+  "comments": [
+    {
+      "type": "Block",
+      "value": "*\r\n * Catches errors on the observable to be handled by returning a new observable or throwing an error.\r\n *\r\n * <img src=\"./img/catch.png\" width=\"100%\">\r\n *\r\n * @example <caption>Continues with a different Observable when there's an error</caption>\r\n *\r\n * Observable.of(1, 2, 3, 4, 5)\r\n *   .map(n => {\r\n * \t   if (n == 4) {\r\n * \t     throw 'four!';\r\n *     }\r\n *\t   return n;\r\n *   })\r\n *   .catch(err => Observable.of('I', 'II', 'III', 'IV', 'V'))\r\n *   .subscribe(x => console.log(x));\r\n *   // 1, 2, 3, I, II, III, IV, V\r\n *\r\n * @example <caption>Retries the caught source Observable again in case of error, similar to retry() operator</caption>\r\n *\r\n * Observable.of(1, 2, 3, 4, 5)\r\n *   .map(n => {\r\n * \t   if (n === 4) {\r\n * \t     throw 'four!';\r\n *     }\r\n * \t   return n;\r\n *   })\r\n *   .catch((err, caught) => caught)\r\n *   .take(30)\r\n *   .subscribe(x => console.log(x));\r\n *   // 1, 2, 3, 1, 2, 3, ...\r\n *\r\n * @example <caption>Throws a new error when the source Observable throws an error</caption>\r\n *\r\n * Observable.of(1, 2, 3, 4, 5)\r\n *   .map(n => {\r\n *     if (n == 4) {\r\n *       throw 'four!';\r\n *     }\r\n *     return n;\r\n *   })\r\n *   .catch(err => {\r\n *     throw 'error in source. Details: ' + err;\r\n *   })\r\n *   .subscribe(\r\n *     x => console.log(x),\r\n *     err => console.log(err)\r\n *   );\r\n *   // 1, 2, 3, error in source. Details: four!\r\n *\r\n * @param {function} selector a function that takes as arguments `err`, which is the error, and `caught`, which\r\n *  is the source observable, in case you'd like to \"retry\" that observable by returning it again. Whatever observable\r\n *  is returned by the `selector` will be used to continue the observable chain.\r\n * @return {Observable} An observable that originates from either the source or the observable returned by the\r\n *  catch `selector` function.\r\n * @method catch\r\n * @name catch\r\n * @owner Observable\r\n ",
+      "range": [
+        59,
+        1956
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 60,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Line",
+      "value": "# sourceMappingURL=catch.js.map",
+      "range": [
+        2038,
+        2071
+      ],
+      "loc": {
+        "start": {
+          "line": 64,
+          "column": 0
+        },
+        "end": {
+          "line": 64,
+          "column": 33
+        }
+      }
+    }
+  ]
+}

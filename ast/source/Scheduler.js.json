@@ -1,0 +1,1323 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "ClassDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "Scheduler",
+          "range": [
+            424,
+            433
+          ],
+          "loc": {
+            "start": {
+              "line": 17,
+              "column": 13
+            },
+            "end": {
+              "line": 17,
+              "column": 22
+            }
+          }
+        },
+        "superClass": null,
+        "body": {
+          "type": "ClassBody",
+          "body": [
+            {
+              "type": "MethodDefinition",
+              "key": {
+                "type": "Identifier",
+                "name": "constructor",
+                "range": [
+                  441,
+                  452
+                ],
+                "loc": {
+                  "start": {
+                    "line": 18,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 18,
+                    "column": 15
+                  }
+                }
+              },
+              "value": {
+                "type": "FunctionExpression",
+                "id": null,
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "name": "SchedulerAction",
+                    "range": [
+                      453,
+                      468
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 18,
+                        "column": 16
+                      },
+                      "end": {
+                        "line": 18,
+                        "column": 31
+                      }
+                    }
+                  },
+                  {
+                    "type": "AssignmentPattern",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "now",
+                      "range": [
+                        470,
+                        473
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 18,
+                          "column": 33
+                        },
+                        "end": {
+                          "line": 18,
+                          "column": 36
+                        }
+                      }
+                    },
+                    "right": {
+                      "type": "MemberExpression",
+                      "computed": false,
+                      "object": {
+                        "type": "Identifier",
+                        "name": "Scheduler",
+                        "range": [
+                          476,
+                          485
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 18,
+                            "column": 39
+                          },
+                          "end": {
+                            "line": 18,
+                            "column": 48
+                          }
+                        }
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "now",
+                        "range": [
+                          486,
+                          489
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 18,
+                            "column": 49
+                          },
+                          "end": {
+                            "line": 18,
+                            "column": 52
+                          }
+                        }
+                      },
+                      "range": [
+                        476,
+                        489
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 18,
+                          "column": 39
+                        },
+                        "end": {
+                          "line": 18,
+                          "column": 52
+                        }
+                      }
+                    },
+                    "range": [
+                      470,
+                      489
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 18,
+                        "column": 33
+                      },
+                      "end": {
+                        "line": 18,
+                        "column": 52
+                      }
+                    }
+                  }
+                ],
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "ThisExpression",
+                            "range": [
+                              502,
+                              506
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 19,
+                                "column": 8
+                              },
+                              "end": {
+                                "line": 19,
+                                "column": 12
+                              }
+                            }
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "SchedulerAction",
+                            "range": [
+                              507,
+                              522
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 19,
+                                "column": 13
+                              },
+                              "end": {
+                                "line": 19,
+                                "column": 28
+                              }
+                            }
+                          },
+                          "range": [
+                            502,
+                            522
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 19,
+                              "column": 8
+                            },
+                            "end": {
+                              "line": 19,
+                              "column": 28
+                            }
+                          }
+                        },
+                        "right": {
+                          "type": "Identifier",
+                          "name": "SchedulerAction",
+                          "range": [
+                            525,
+                            540
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 19,
+                              "column": 31
+                            },
+                            "end": {
+                              "line": 19,
+                              "column": 46
+                            }
+                          }
+                        },
+                        "range": [
+                          502,
+                          540
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 19,
+                            "column": 8
+                          },
+                          "end": {
+                            "line": 19,
+                            "column": 46
+                          }
+                        }
+                      },
+                      "range": [
+                        502,
+                        541
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 19,
+                          "column": 8
+                        },
+                        "end": {
+                          "line": 19,
+                          "column": 47
+                        }
+                      }
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "ThisExpression",
+                            "range": [
+                              551,
+                              555
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 20,
+                                "column": 8
+                              },
+                              "end": {
+                                "line": 20,
+                                "column": 12
+                              }
+                            }
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "now",
+                            "range": [
+                              556,
+                              559
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 20,
+                                "column": 13
+                              },
+                              "end": {
+                                "line": 20,
+                                "column": 16
+                              }
+                            }
+                          },
+                          "range": [
+                            551,
+                            559
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 20,
+                              "column": 8
+                            },
+                            "end": {
+                              "line": 20,
+                              "column": 16
+                            }
+                          }
+                        },
+                        "right": {
+                          "type": "Identifier",
+                          "name": "now",
+                          "range": [
+                            562,
+                            565
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 20,
+                              "column": 19
+                            },
+                            "end": {
+                              "line": 20,
+                              "column": 22
+                            }
+                          }
+                        },
+                        "range": [
+                          551,
+                          565
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 20,
+                            "column": 8
+                          },
+                          "end": {
+                            "line": 20,
+                            "column": 22
+                          }
+                        }
+                      },
+                      "range": [
+                        551,
+                        566
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 20,
+                          "column": 8
+                        },
+                        "end": {
+                          "line": 20,
+                          "column": 23
+                        }
+                      }
+                    }
+                  ],
+                  "range": [
+                    491,
+                    573
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 18,
+                      "column": 54
+                    },
+                    "end": {
+                      "line": 21,
+                      "column": 5
+                    }
+                  }
+                },
+                "generator": false,
+                "expression": false,
+                "range": [
+                  452,
+                  573
+                ],
+                "loc": {
+                  "start": {
+                    "line": 18,
+                    "column": 15
+                  },
+                  "end": {
+                    "line": 21,
+                    "column": 5
+                  }
+                }
+              },
+              "kind": "constructor",
+              "computed": false,
+              "range": [
+                441,
+                573
+              ],
+              "loc": {
+                "start": {
+                  "line": 18,
+                  "column": 4
+                },
+                "end": {
+                  "line": 21,
+                  "column": 5
+                }
+              },
+              "trailingComments": [
+                {
+                  "type": "Block",
+                  "value": "*\r\n     * Schedules a function, `work`, for execution. May happen at some point in\r\n     * the future, according to the `delay` parameter, if specified. May be passed\r\n     * some context object, `state`, which will be passed to the `work` function.\r\n     *\r\n     * The given arguments will be processed an stored as an Action object in a\r\n     * queue of actions.\r\n     *\r\n     * @param {function(state: ?T): ?Subscription} work A function representing a\r\n     * task, or some unit of work to be executed by the Scheduler.\r\n     * @param {number} [delay] Time to wait before executing the work, where the\r\n     * time unit is implicit and defined by the Scheduler itself.\r\n     * @param {T} [state] Some contextual data that the `work` function uses when\r\n     * called by the Scheduler.\r\n     * @return {Subscription} A subscription in order to be able to unsubscribe\r\n     * the scheduled work.\r\n     ",
+                  "range": [
+                    579,
+                    1487
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 22,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 38,
+                      "column": 7
+                    }
+                  }
+                }
+              ],
+              "static": false
+            },
+            {
+              "type": "MethodDefinition",
+              "key": {
+                "type": "Identifier",
+                "name": "schedule",
+                "range": [
+                  1493,
+                  1501
+                ],
+                "loc": {
+                  "start": {
+                    "line": 39,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 39,
+                    "column": 12
+                  }
+                }
+              },
+              "value": {
+                "type": "FunctionExpression",
+                "id": null,
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "name": "work",
+                    "range": [
+                      1502,
+                      1506
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 39,
+                        "column": 13
+                      },
+                      "end": {
+                        "line": 39,
+                        "column": 17
+                      }
+                    }
+                  },
+                  {
+                    "type": "AssignmentPattern",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "delay",
+                      "range": [
+                        1508,
+                        1513
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 39,
+                          "column": 19
+                        },
+                        "end": {
+                          "line": 39,
+                          "column": 24
+                        }
+                      }
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": 0,
+                      "raw": "0",
+                      "range": [
+                        1516,
+                        1517
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 39,
+                          "column": 27
+                        },
+                        "end": {
+                          "line": 39,
+                          "column": 28
+                        }
+                      }
+                    },
+                    "range": [
+                      1508,
+                      1517
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 39,
+                        "column": 19
+                      },
+                      "end": {
+                        "line": 39,
+                        "column": 28
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "state",
+                    "range": [
+                      1519,
+                      1524
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 39,
+                        "column": 30
+                      },
+                      "end": {
+                        "line": 39,
+                        "column": 35
+                      }
+                    }
+                  }
+                ],
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "ReturnStatement",
+                      "argument": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "NewExpression",
+                            "callee": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "ThisExpression",
+                                "range": [
+                                  1548,
+                                  1552
+                                ],
+                                "loc": {
+                                  "start": {
+                                    "line": 40,
+                                    "column": 19
+                                  },
+                                  "end": {
+                                    "line": 40,
+                                    "column": 23
+                                  }
+                                }
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "SchedulerAction",
+                                "range": [
+                                  1553,
+                                  1568
+                                ],
+                                "loc": {
+                                  "start": {
+                                    "line": 40,
+                                    "column": 24
+                                  },
+                                  "end": {
+                                    "line": 40,
+                                    "column": 39
+                                  }
+                                }
+                              },
+                              "range": [
+                                1548,
+                                1568
+                              ],
+                              "loc": {
+                                "start": {
+                                  "line": 40,
+                                  "column": 19
+                                },
+                                "end": {
+                                  "line": 40,
+                                  "column": 39
+                                }
+                              }
+                            },
+                            "arguments": [
+                              {
+                                "type": "ThisExpression",
+                                "range": [
+                                  1569,
+                                  1573
+                                ],
+                                "loc": {
+                                  "start": {
+                                    "line": 40,
+                                    "column": 40
+                                  },
+                                  "end": {
+                                    "line": 40,
+                                    "column": 44
+                                  }
+                                }
+                              },
+                              {
+                                "type": "Identifier",
+                                "name": "work",
+                                "range": [
+                                  1575,
+                                  1579
+                                ],
+                                "loc": {
+                                  "start": {
+                                    "line": 40,
+                                    "column": 46
+                                  },
+                                  "end": {
+                                    "line": 40,
+                                    "column": 50
+                                  }
+                                }
+                              }
+                            ],
+                            "range": [
+                              1544,
+                              1580
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 40,
+                                "column": 15
+                              },
+                              "end": {
+                                "line": 40,
+                                "column": 51
+                              }
+                            }
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "schedule",
+                            "range": [
+                              1581,
+                              1589
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 40,
+                                "column": 52
+                              },
+                              "end": {
+                                "line": 40,
+                                "column": 60
+                              }
+                            }
+                          },
+                          "range": [
+                            1544,
+                            1589
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 40,
+                              "column": 15
+                            },
+                            "end": {
+                              "line": 40,
+                              "column": 60
+                            }
+                          }
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "name": "state",
+                            "range": [
+                              1590,
+                              1595
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 40,
+                                "column": 61
+                              },
+                              "end": {
+                                "line": 40,
+                                "column": 66
+                              }
+                            }
+                          },
+                          {
+                            "type": "Identifier",
+                            "name": "delay",
+                            "range": [
+                              1597,
+                              1602
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 40,
+                                "column": 68
+                              },
+                              "end": {
+                                "line": 40,
+                                "column": 73
+                              }
+                            }
+                          }
+                        ],
+                        "range": [
+                          1544,
+                          1603
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 40,
+                            "column": 15
+                          },
+                          "end": {
+                            "line": 40,
+                            "column": 74
+                          }
+                        }
+                      },
+                      "range": [
+                        1537,
+                        1604
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 40,
+                          "column": 8
+                        },
+                        "end": {
+                          "line": 40,
+                          "column": 75
+                        }
+                      }
+                    }
+                  ],
+                  "range": [
+                    1526,
+                    1611
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 39,
+                      "column": 37
+                    },
+                    "end": {
+                      "line": 41,
+                      "column": 5
+                    }
+                  }
+                },
+                "generator": false,
+                "expression": false,
+                "range": [
+                  1501,
+                  1611
+                ],
+                "loc": {
+                  "start": {
+                    "line": 39,
+                    "column": 12
+                  },
+                  "end": {
+                    "line": 41,
+                    "column": 5
+                  }
+                }
+              },
+              "kind": "method",
+              "computed": false,
+              "range": [
+                1493,
+                1611
+              ],
+              "loc": {
+                "start": {
+                  "line": 39,
+                  "column": 4
+                },
+                "end": {
+                  "line": 41,
+                  "column": 5
+                }
+              },
+              "leadingComments": [
+                {
+                  "type": "Block",
+                  "value": "*\r\n     * Schedules a function, `work`, for execution. May happen at some point in\r\n     * the future, according to the `delay` parameter, if specified. May be passed\r\n     * some context object, `state`, which will be passed to the `work` function.\r\n     *\r\n     * The given arguments will be processed an stored as an Action object in a\r\n     * queue of actions.\r\n     *\r\n     * @param {function(state: ?T): ?Subscription} work A function representing a\r\n     * task, or some unit of work to be executed by the Scheduler.\r\n     * @param {number} [delay] Time to wait before executing the work, where the\r\n     * time unit is implicit and defined by the Scheduler itself.\r\n     * @param {T} [state] Some contextual data that the `work` function uses when\r\n     * called by the Scheduler.\r\n     * @return {Subscription} A subscription in order to be able to unsubscribe\r\n     * the scheduled work.\r\n     ",
+                  "range": [
+                    579,
+                    1487
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 22,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 38,
+                      "column": 7
+                    }
+                  }
+                }
+              ],
+              "static": false
+            }
+          ],
+          "range": [
+            434,
+            1614
+          ],
+          "loc": {
+            "start": {
+              "line": 17,
+              "column": 23
+            },
+            "end": {
+              "line": 42,
+              "column": 1
+            }
+          }
+        },
+        "range": [
+          418,
+          1614
+        ],
+        "loc": {
+          "start": {
+            "line": 17,
+            "column": 7
+          },
+          "end": {
+            "line": 42,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\r\n * An execution context and a data structure to order tasks and schedule their\r\n * execution. Provides a notion of (potentially virtual) time, through the\r\n * `now()` getter method.\r\n *\r\n * Each unit of work in a Scheduler is called an {@link Action}.\r\n *\r\n * ```ts\r\n * class Scheduler {\r\n *   now(): number;\r\n *   schedule(work, delay?, state?): Subscription;\r\n * }\r\n * ```\r\n *\r\n * @class Scheduler\r\n ",
+            "range": [
+              0,
+              409
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 0
+              },
+              "end": {
+                "line": 16,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": []
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        411,
+        1614
+      ],
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 0
+        },
+        "end": {
+          "line": 42,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * An execution context and a data structure to order tasks and schedule their\r\n * execution. Provides a notion of (potentially virtual) time, through the\r\n * `now()` getter method.\r\n *\r\n * Each unit of work in a Scheduler is called an {@link Action}.\r\n *\r\n * ```ts\r\n * class Scheduler {\r\n *   now(): number;\r\n *   schedule(work, delay?, state?): Subscription;\r\n * }\r\n * ```\r\n *\r\n * @class Scheduler\r\n ",
+          "range": [
+            0,
+            409
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 0
+            },
+            "end": {
+              "line": 16,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "AssignmentExpression",
+        "operator": "=",
+        "left": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "Identifier",
+            "name": "Scheduler",
+            "range": [
+              1616,
+              1625
+            ],
+            "loc": {
+              "start": {
+                "line": 43,
+                "column": 0
+              },
+              "end": {
+                "line": 43,
+                "column": 9
+              }
+            }
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "now",
+            "range": [
+              1626,
+              1629
+            ],
+            "loc": {
+              "start": {
+                "line": 43,
+                "column": 10
+              },
+              "end": {
+                "line": 43,
+                "column": 13
+              }
+            }
+          },
+          "range": [
+            1616,
+            1629
+          ],
+          "loc": {
+            "start": {
+              "line": 43,
+              "column": 0
+            },
+            "end": {
+              "line": 43,
+              "column": 13
+            }
+          }
+        },
+        "right": {
+          "type": "ConditionalExpression",
+          "test": {
+            "type": "MemberExpression",
+            "computed": false,
+            "object": {
+              "type": "Identifier",
+              "name": "Date",
+              "range": [
+                1632,
+                1636
+              ],
+              "loc": {
+                "start": {
+                  "line": 43,
+                  "column": 16
+                },
+                "end": {
+                  "line": 43,
+                  "column": 20
+                }
+              }
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "now",
+              "range": [
+                1637,
+                1640
+              ],
+              "loc": {
+                "start": {
+                  "line": 43,
+                  "column": 21
+                },
+                "end": {
+                  "line": 43,
+                  "column": 24
+                }
+              }
+            },
+            "range": [
+              1632,
+              1640
+            ],
+            "loc": {
+              "start": {
+                "line": 43,
+                "column": 16
+              },
+              "end": {
+                "line": 43,
+                "column": 24
+              }
+            }
+          },
+          "consequent": {
+            "type": "MemberExpression",
+            "computed": false,
+            "object": {
+              "type": "Identifier",
+              "name": "Date",
+              "range": [
+                1643,
+                1647
+              ],
+              "loc": {
+                "start": {
+                  "line": 43,
+                  "column": 27
+                },
+                "end": {
+                  "line": 43,
+                  "column": 31
+                }
+              }
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "now",
+              "range": [
+                1648,
+                1651
+              ],
+              "loc": {
+                "start": {
+                  "line": 43,
+                  "column": 32
+                },
+                "end": {
+                  "line": 43,
+                  "column": 35
+                }
+              }
+            },
+            "range": [
+              1643,
+              1651
+            ],
+            "loc": {
+              "start": {
+                "line": 43,
+                "column": 27
+              },
+              "end": {
+                "line": 43,
+                "column": 35
+              }
+            }
+          },
+          "alternate": {
+            "type": "ArrowFunctionExpression",
+            "id": null,
+            "params": [],
+            "body": {
+              "type": "UnaryExpression",
+              "operator": "+",
+              "argument": {
+                "type": "NewExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "Date",
+                  "range": [
+                    1665,
+                    1669
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 43,
+                      "column": 49
+                    },
+                    "end": {
+                      "line": 43,
+                      "column": 53
+                    }
+                  }
+                },
+                "arguments": [],
+                "range": [
+                  1661,
+                  1671
+                ],
+                "loc": {
+                  "start": {
+                    "line": 43,
+                    "column": 45
+                  },
+                  "end": {
+                    "line": 43,
+                    "column": 55
+                  }
+                }
+              },
+              "prefix": true,
+              "range": [
+                1660,
+                1671
+              ],
+              "loc": {
+                "start": {
+                  "line": 43,
+                  "column": 44
+                },
+                "end": {
+                  "line": 43,
+                  "column": 55
+                }
+              }
+            },
+            "generator": false,
+            "expression": true,
+            "range": [
+              1654,
+              1671
+            ],
+            "loc": {
+              "start": {
+                "line": 43,
+                "column": 38
+              },
+              "end": {
+                "line": 43,
+                "column": 55
+              }
+            }
+          },
+          "range": [
+            1632,
+            1671
+          ],
+          "loc": {
+            "start": {
+              "line": 43,
+              "column": 16
+            },
+            "end": {
+              "line": 43,
+              "column": 55
+            }
+          }
+        },
+        "range": [
+          1616,
+          1671
+        ],
+        "loc": {
+          "start": {
+            "line": 43,
+            "column": 0
+          },
+          "end": {
+            "line": 43,
+            "column": 55
+          }
+        }
+      },
+      "range": [
+        1616,
+        1672
+      ],
+      "loc": {
+        "start": {
+          "line": 43,
+          "column": 0
+        },
+        "end": {
+          "line": 43,
+          "column": 56
+        }
+      },
+      "trailingComments": [
+        {
+          "type": "Line",
+          "value": "# sourceMappingURL=Scheduler.js.map",
+          "range": [
+            1674,
+            1711
+          ],
+          "loc": {
+            "start": {
+              "line": 44,
+              "column": 0
+            },
+            "end": {
+              "line": 44,
+              "column": 37
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    411,
+    1672
+  ],
+  "loc": {
+    "start": {
+      "line": 17,
+      "column": 0
+    },
+    "end": {
+      "line": 43,
+      "column": 56
+    }
+  },
+  "comments": [
+    {
+      "type": "Block",
+      "value": "*\r\n * An execution context and a data structure to order tasks and schedule their\r\n * execution. Provides a notion of (potentially virtual) time, through the\r\n * `now()` getter method.\r\n *\r\n * Each unit of work in a Scheduler is called an {@link Action}.\r\n *\r\n * ```ts\r\n * class Scheduler {\r\n *   now(): number;\r\n *   schedule(work, delay?, state?): Subscription;\r\n * }\r\n * ```\r\n *\r\n * @class Scheduler\r\n ",
+      "range": [
+        0,
+        409
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 16,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\r\n     * Schedules a function, `work`, for execution. May happen at some point in\r\n     * the future, according to the `delay` parameter, if specified. May be passed\r\n     * some context object, `state`, which will be passed to the `work` function.\r\n     *\r\n     * The given arguments will be processed an stored as an Action object in a\r\n     * queue of actions.\r\n     *\r\n     * @param {function(state: ?T): ?Subscription} work A function representing a\r\n     * task, or some unit of work to be executed by the Scheduler.\r\n     * @param {number} [delay] Time to wait before executing the work, where the\r\n     * time unit is implicit and defined by the Scheduler itself.\r\n     * @param {T} [state] Some contextual data that the `work` function uses when\r\n     * called by the Scheduler.\r\n     * @return {Subscription} A subscription in order to be able to unsubscribe\r\n     * the scheduled work.\r\n     ",
+      "range": [
+        579,
+        1487
+      ],
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 4
+        },
+        "end": {
+          "line": 38,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": "Line",
+      "value": "# sourceMappingURL=Scheduler.js.map",
+      "range": [
+        1674,
+        1711
+      ],
+      "loc": {
+        "start": {
+          "line": 44,
+          "column": 0
+        },
+        "end": {
+          "line": 44,
+          "column": 37
+        }
+      }
+    }
+  ]
+}

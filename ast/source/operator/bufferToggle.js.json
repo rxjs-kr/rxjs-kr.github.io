@@ -1,0 +1,488 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "higherOrder",
+            "range": [
+              25,
+              36
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 25
+              },
+              "end": {
+                "line": 1,
+                "column": 36
+              }
+            }
+          },
+          "imported": {
+            "type": "Identifier",
+            "name": "bufferToggle",
+            "range": [
+              9,
+              21
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 9
+              },
+              "end": {
+                "line": 1,
+                "column": 21
+              }
+            }
+          },
+          "range": [
+            9,
+            36
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 9
+            },
+            "end": {
+              "line": 1,
+              "column": 36
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "../operators",
+        "raw": "'../operators'",
+        "range": [
+          44,
+          58
+        ],
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 44
+          },
+          "end": {
+            "line": 1,
+            "column": 58
+          }
+        }
+      },
+      "range": [
+        0,
+        59
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 59
+        }
+      },
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * Buffers the source Observable values starting from an emission from\r\n * `openings` and ending when the output of `closingSelector` emits.\r\n *\r\n * <span class=\"informal\">Collects values from the past as an array. Starts\r\n * collecting only when `opening` emits, and calls the `closingSelector`\r\n * function to get an Observable that tells when to close the buffer.</span>\r\n *\r\n * <img src=\"./img/bufferToggle.png\" width=\"100%\">\r\n *\r\n * Buffers values from the source by opening the buffer via signals from an\r\n * Observable provided to `openings`, and closing and sending the buffers when\r\n * a Subscribable or Promise returned by the `closingSelector` function emits.\r\n *\r\n * @example <caption>Every other second, emit the click events from the next 500ms</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var openings = Rx.Observable.interval(1000);\r\n * var buffered = clicks.bufferToggle(openings, i =>\r\n *   i % 2 ? Rx.Observable.interval(500) : Rx.Observable.empty()\r\n * );\r\n * buffered.subscribe(x => console.log(x));\r\n *\r\n * @see {@link buffer}\r\n * @see {@link bufferCount}\r\n * @see {@link bufferTime}\r\n * @see {@link bufferWhen}\r\n * @see {@link windowToggle}\r\n *\r\n * @param {SubscribableOrPromise<O>} openings A Subscribable or Promise of notifications to start new\r\n * buffers.\r\n * @param {function(value: O): SubscribableOrPromise} closingSelector A function that takes\r\n * the value emitted by the `openings` observable and returns a Subscribable or Promise,\r\n * which, when it emits, signals that the associated buffer should be emitted\r\n * and cleared.\r\n * @return {Observable<T[]>} An observable of arrays of buffered values.\r\n * @method bufferToggle\r\n * @owner Observable\r\n ",
+          "range": [
+            61,
+            1784
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 39,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "bufferToggle",
+          "range": [
+            1802,
+            1814
+          ],
+          "loc": {
+            "start": {
+              "line": 40,
+              "column": 16
+            },
+            "end": {
+              "line": 40,
+              "column": 28
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "openings",
+            "range": [
+              1815,
+              1823
+            ],
+            "loc": {
+              "start": {
+                "line": 40,
+                "column": 29
+              },
+              "end": {
+                "line": 40,
+                "column": 37
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "closingSelector",
+            "range": [
+              1825,
+              1840
+            ],
+            "loc": {
+              "start": {
+                "line": 40,
+                "column": 39
+              },
+              "end": {
+                "line": 40,
+                "column": 54
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "higherOrder",
+                    "range": [
+                      1856,
+                      1867
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 41,
+                        "column": 11
+                      },
+                      "end": {
+                        "line": 41,
+                        "column": 22
+                      }
+                    }
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "name": "openings",
+                      "range": [
+                        1868,
+                        1876
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 41,
+                          "column": 23
+                        },
+                        "end": {
+                          "line": 41,
+                          "column": 31
+                        }
+                      }
+                    },
+                    {
+                      "type": "Identifier",
+                      "name": "closingSelector",
+                      "range": [
+                        1878,
+                        1893
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 41,
+                          "column": 33
+                        },
+                        "end": {
+                          "line": 41,
+                          "column": 48
+                        }
+                      }
+                    }
+                  ],
+                  "range": [
+                    1856,
+                    1894
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 41,
+                      "column": 11
+                    },
+                    "end": {
+                      "line": 41,
+                      "column": 49
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "ThisExpression",
+                    "range": [
+                      1895,
+                      1899
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 41,
+                        "column": 50
+                      },
+                      "end": {
+                        "line": 41,
+                        "column": 54
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  1856,
+                  1900
+                ],
+                "loc": {
+                  "start": {
+                    "line": 41,
+                    "column": 11
+                  },
+                  "end": {
+                    "line": 41,
+                    "column": 55
+                  }
+                }
+              },
+              "range": [
+                1849,
+                1901
+              ],
+              "loc": {
+                "start": {
+                  "line": 41,
+                  "column": 4
+                },
+                "end": {
+                  "line": 41,
+                  "column": 56
+                }
+              }
+            }
+          ],
+          "range": [
+            1842,
+            1904
+          ],
+          "loc": {
+            "start": {
+              "line": 40,
+              "column": 56
+            },
+            "end": {
+              "line": 42,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          1793,
+          1904
+        ],
+        "loc": {
+          "start": {
+            "line": 40,
+            "column": 7
+          },
+          "end": {
+            "line": 42,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\r\n * Buffers the source Observable values starting from an emission from\r\n * `openings` and ending when the output of `closingSelector` emits.\r\n *\r\n * <span class=\"informal\">Collects values from the past as an array. Starts\r\n * collecting only when `opening` emits, and calls the `closingSelector`\r\n * function to get an Observable that tells when to close the buffer.</span>\r\n *\r\n * <img src=\"./img/bufferToggle.png\" width=\"100%\">\r\n *\r\n * Buffers values from the source by opening the buffer via signals from an\r\n * Observable provided to `openings`, and closing and sending the buffers when\r\n * a Subscribable or Promise returned by the `closingSelector` function emits.\r\n *\r\n * @example <caption>Every other second, emit the click events from the next 500ms</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var openings = Rx.Observable.interval(1000);\r\n * var buffered = clicks.bufferToggle(openings, i =>\r\n *   i % 2 ? Rx.Observable.interval(500) : Rx.Observable.empty()\r\n * );\r\n * buffered.subscribe(x => console.log(x));\r\n *\r\n * @see {@link buffer}\r\n * @see {@link bufferCount}\r\n * @see {@link bufferTime}\r\n * @see {@link bufferWhen}\r\n * @see {@link windowToggle}\r\n *\r\n * @param {SubscribableOrPromise<O>} openings A Subscribable or Promise of notifications to start new\r\n * buffers.\r\n * @param {function(value: O): SubscribableOrPromise} closingSelector A function that takes\r\n * the value emitted by the `openings` observable and returns a Subscribable or Promise,\r\n * which, when it emits, signals that the associated buffer should be emitted\r\n * and cleared.\r\n * @return {Observable<T[]>} An observable of arrays of buffered values.\r\n * @method bufferToggle\r\n * @owner Observable\r\n ",
+            "range": [
+              61,
+              1784
+            ],
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 0
+              },
+              "end": {
+                "line": 39,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Line",
+            "value": "# sourceMappingURL=bufferToggle.js.map",
+            "range": [
+              1906,
+              1946
+            ],
+            "loc": {
+              "start": {
+                "line": 43,
+                "column": 0
+              },
+              "end": {
+                "line": 43,
+                "column": 40
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        1786,
+        1904
+      ],
+      "loc": {
+        "start": {
+          "line": 40,
+          "column": 0
+        },
+        "end": {
+          "line": 42,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * Buffers the source Observable values starting from an emission from\r\n * `openings` and ending when the output of `closingSelector` emits.\r\n *\r\n * <span class=\"informal\">Collects values from the past as an array. Starts\r\n * collecting only when `opening` emits, and calls the `closingSelector`\r\n * function to get an Observable that tells when to close the buffer.</span>\r\n *\r\n * <img src=\"./img/bufferToggle.png\" width=\"100%\">\r\n *\r\n * Buffers values from the source by opening the buffer via signals from an\r\n * Observable provided to `openings`, and closing and sending the buffers when\r\n * a Subscribable or Promise returned by the `closingSelector` function emits.\r\n *\r\n * @example <caption>Every other second, emit the click events from the next 500ms</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var openings = Rx.Observable.interval(1000);\r\n * var buffered = clicks.bufferToggle(openings, i =>\r\n *   i % 2 ? Rx.Observable.interval(500) : Rx.Observable.empty()\r\n * );\r\n * buffered.subscribe(x => console.log(x));\r\n *\r\n * @see {@link buffer}\r\n * @see {@link bufferCount}\r\n * @see {@link bufferTime}\r\n * @see {@link bufferWhen}\r\n * @see {@link windowToggle}\r\n *\r\n * @param {SubscribableOrPromise<O>} openings A Subscribable or Promise of notifications to start new\r\n * buffers.\r\n * @param {function(value: O): SubscribableOrPromise} closingSelector A function that takes\r\n * the value emitted by the `openings` observable and returns a Subscribable or Promise,\r\n * which, when it emits, signals that the associated buffer should be emitted\r\n * and cleared.\r\n * @return {Observable<T[]>} An observable of arrays of buffered values.\r\n * @method bufferToggle\r\n * @owner Observable\r\n ",
+          "range": [
+            61,
+            1784
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 39,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Line",
+          "value": "# sourceMappingURL=bufferToggle.js.map",
+          "range": [
+            1906,
+            1946
+          ],
+          "loc": {
+            "start": {
+              "line": 43,
+              "column": 0
+            },
+            "end": {
+              "line": 43,
+              "column": 40
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    0,
+    1904
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 42,
+      "column": 1
+    }
+  },
+  "comments": [
+    {
+      "type": "Block",
+      "value": "*\r\n * Buffers the source Observable values starting from an emission from\r\n * `openings` and ending when the output of `closingSelector` emits.\r\n *\r\n * <span class=\"informal\">Collects values from the past as an array. Starts\r\n * collecting only when `opening` emits, and calls the `closingSelector`\r\n * function to get an Observable that tells when to close the buffer.</span>\r\n *\r\n * <img src=\"./img/bufferToggle.png\" width=\"100%\">\r\n *\r\n * Buffers values from the source by opening the buffer via signals from an\r\n * Observable provided to `openings`, and closing and sending the buffers when\r\n * a Subscribable or Promise returned by the `closingSelector` function emits.\r\n *\r\n * @example <caption>Every other second, emit the click events from the next 500ms</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var openings = Rx.Observable.interval(1000);\r\n * var buffered = clicks.bufferToggle(openings, i =>\r\n *   i % 2 ? Rx.Observable.interval(500) : Rx.Observable.empty()\r\n * );\r\n * buffered.subscribe(x => console.log(x));\r\n *\r\n * @see {@link buffer}\r\n * @see {@link bufferCount}\r\n * @see {@link bufferTime}\r\n * @see {@link bufferWhen}\r\n * @see {@link windowToggle}\r\n *\r\n * @param {SubscribableOrPromise<O>} openings A Subscribable or Promise of notifications to start new\r\n * buffers.\r\n * @param {function(value: O): SubscribableOrPromise} closingSelector A function that takes\r\n * the value emitted by the `openings` observable and returns a Subscribable or Promise,\r\n * which, when it emits, signals that the associated buffer should be emitted\r\n * and cleared.\r\n * @return {Observable<T[]>} An observable of arrays of buffered values.\r\n * @method bufferToggle\r\n * @owner Observable\r\n ",
+      "range": [
+        61,
+        1784
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 39,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Line",
+      "value": "# sourceMappingURL=bufferToggle.js.map",
+      "range": [
+        1906,
+        1946
+      ],
+      "loc": {
+        "start": {
+          "line": 43,
+          "column": 0
+        },
+        "end": {
+          "line": 43,
+          "column": 40
+        }
+      }
+    }
+  ]
+}

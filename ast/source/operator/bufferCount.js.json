@@ -1,0 +1,524 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "higherOrder",
+            "range": [
+              24,
+              35
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 24
+              },
+              "end": {
+                "line": 1,
+                "column": 35
+              }
+            }
+          },
+          "imported": {
+            "type": "Identifier",
+            "name": "bufferCount",
+            "range": [
+              9,
+              20
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 9
+              },
+              "end": {
+                "line": 1,
+                "column": 20
+              }
+            }
+          },
+          "range": [
+            9,
+            35
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 9
+            },
+            "end": {
+              "line": 1,
+              "column": 35
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "../operators",
+        "raw": "'../operators'",
+        "range": [
+          43,
+          57
+        ],
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 43
+          },
+          "end": {
+            "line": 1,
+            "column": 57
+          }
+        }
+      },
+      "range": [
+        0,
+        58
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 58
+        }
+      },
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * Buffers the source Observable values until the size hits the maximum\r\n * `bufferSize` given.\r\n *\r\n * <span class=\"informal\">Collects values from the past as an array, and emits\r\n * that array only when its size reaches `bufferSize`.</span>\r\n *\r\n * <img src=\"./img/bufferCount.png\" width=\"100%\">\r\n *\r\n * Buffers a number of values from the source Observable by `bufferSize` then\r\n * emits the buffer and clears it, and starts a new buffer each\r\n * `startBufferEvery` values. If `startBufferEvery` is not provided or is\r\n * `null`, then new buffers are started immediately at the start of the source\r\n * and when each buffer closes and is emitted.\r\n *\r\n * @example <caption>Emit the last two click events as an array</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var buffered = clicks.bufferCount(2);\r\n * buffered.subscribe(x => console.log(x));\r\n *\r\n * @example <caption>On every click, emit the last two click events as an array</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var buffered = clicks.bufferCount(2, 1);\r\n * buffered.subscribe(x => console.log(x));\r\n *\r\n * @see {@link buffer}\r\n * @see {@link bufferTime}\r\n * @see {@link bufferToggle}\r\n * @see {@link bufferWhen}\r\n * @see {@link pairwise}\r\n * @see {@link windowCount}\r\n *\r\n * @param {number} bufferSize The maximum size of the buffer emitted.\r\n * @param {number} [startBufferEvery] Interval at which to start a new buffer.\r\n * For example if `startBufferEvery` is `2`, then a new buffer will be started\r\n * on every other value from the source. A new buffer is started at the\r\n * beginning of the source by default.\r\n * @return {Observable<T[]>} An Observable of arrays of buffered values.\r\n * @method bufferCount\r\n * @owner Observable\r\n ",
+          "range": [
+            60,
+            1828
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 42,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "bufferCount",
+          "range": [
+            1846,
+            1857
+          ],
+          "loc": {
+            "start": {
+              "line": 43,
+              "column": 16
+            },
+            "end": {
+              "line": 43,
+              "column": 27
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "bufferSize",
+            "range": [
+              1858,
+              1868
+            ],
+            "loc": {
+              "start": {
+                "line": 43,
+                "column": 28
+              },
+              "end": {
+                "line": 43,
+                "column": 38
+              }
+            }
+          },
+          {
+            "type": "AssignmentPattern",
+            "left": {
+              "type": "Identifier",
+              "name": "startBufferEvery",
+              "range": [
+                1870,
+                1886
+              ],
+              "loc": {
+                "start": {
+                  "line": 43,
+                  "column": 40
+                },
+                "end": {
+                  "line": 43,
+                  "column": 56
+                }
+              }
+            },
+            "right": {
+              "type": "Literal",
+              "value": null,
+              "raw": "null",
+              "range": [
+                1889,
+                1893
+              ],
+              "loc": {
+                "start": {
+                  "line": 43,
+                  "column": 59
+                },
+                "end": {
+                  "line": 43,
+                  "column": 63
+                }
+              }
+            },
+            "range": [
+              1870,
+              1893
+            ],
+            "loc": {
+              "start": {
+                "line": 43,
+                "column": 40
+              },
+              "end": {
+                "line": 43,
+                "column": 63
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "higherOrder",
+                    "range": [
+                      1909,
+                      1920
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 44,
+                        "column": 11
+                      },
+                      "end": {
+                        "line": 44,
+                        "column": 22
+                      }
+                    }
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "name": "bufferSize",
+                      "range": [
+                        1921,
+                        1931
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 44,
+                          "column": 23
+                        },
+                        "end": {
+                          "line": 44,
+                          "column": 33
+                        }
+                      }
+                    },
+                    {
+                      "type": "Identifier",
+                      "name": "startBufferEvery",
+                      "range": [
+                        1933,
+                        1949
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 44,
+                          "column": 35
+                        },
+                        "end": {
+                          "line": 44,
+                          "column": 51
+                        }
+                      }
+                    }
+                  ],
+                  "range": [
+                    1909,
+                    1950
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 44,
+                      "column": 11
+                    },
+                    "end": {
+                      "line": 44,
+                      "column": 52
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "ThisExpression",
+                    "range": [
+                      1951,
+                      1955
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 44,
+                        "column": 53
+                      },
+                      "end": {
+                        "line": 44,
+                        "column": 57
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  1909,
+                  1956
+                ],
+                "loc": {
+                  "start": {
+                    "line": 44,
+                    "column": 11
+                  },
+                  "end": {
+                    "line": 44,
+                    "column": 58
+                  }
+                }
+              },
+              "range": [
+                1902,
+                1957
+              ],
+              "loc": {
+                "start": {
+                  "line": 44,
+                  "column": 4
+                },
+                "end": {
+                  "line": 44,
+                  "column": 59
+                }
+              }
+            }
+          ],
+          "range": [
+            1895,
+            1960
+          ],
+          "loc": {
+            "start": {
+              "line": 43,
+              "column": 65
+            },
+            "end": {
+              "line": 45,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          1837,
+          1960
+        ],
+        "loc": {
+          "start": {
+            "line": 43,
+            "column": 7
+          },
+          "end": {
+            "line": 45,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\r\n * Buffers the source Observable values until the size hits the maximum\r\n * `bufferSize` given.\r\n *\r\n * <span class=\"informal\">Collects values from the past as an array, and emits\r\n * that array only when its size reaches `bufferSize`.</span>\r\n *\r\n * <img src=\"./img/bufferCount.png\" width=\"100%\">\r\n *\r\n * Buffers a number of values from the source Observable by `bufferSize` then\r\n * emits the buffer and clears it, and starts a new buffer each\r\n * `startBufferEvery` values. If `startBufferEvery` is not provided or is\r\n * `null`, then new buffers are started immediately at the start of the source\r\n * and when each buffer closes and is emitted.\r\n *\r\n * @example <caption>Emit the last two click events as an array</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var buffered = clicks.bufferCount(2);\r\n * buffered.subscribe(x => console.log(x));\r\n *\r\n * @example <caption>On every click, emit the last two click events as an array</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var buffered = clicks.bufferCount(2, 1);\r\n * buffered.subscribe(x => console.log(x));\r\n *\r\n * @see {@link buffer}\r\n * @see {@link bufferTime}\r\n * @see {@link bufferToggle}\r\n * @see {@link bufferWhen}\r\n * @see {@link pairwise}\r\n * @see {@link windowCount}\r\n *\r\n * @param {number} bufferSize The maximum size of the buffer emitted.\r\n * @param {number} [startBufferEvery] Interval at which to start a new buffer.\r\n * For example if `startBufferEvery` is `2`, then a new buffer will be started\r\n * on every other value from the source. A new buffer is started at the\r\n * beginning of the source by default.\r\n * @return {Observable<T[]>} An Observable of arrays of buffered values.\r\n * @method bufferCount\r\n * @owner Observable\r\n ",
+            "range": [
+              60,
+              1828
+            ],
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 0
+              },
+              "end": {
+                "line": 42,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Line",
+            "value": "# sourceMappingURL=bufferCount.js.map",
+            "range": [
+              1962,
+              2001
+            ],
+            "loc": {
+              "start": {
+                "line": 46,
+                "column": 0
+              },
+              "end": {
+                "line": 46,
+                "column": 39
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        1830,
+        1960
+      ],
+      "loc": {
+        "start": {
+          "line": 43,
+          "column": 0
+        },
+        "end": {
+          "line": 45,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * Buffers the source Observable values until the size hits the maximum\r\n * `bufferSize` given.\r\n *\r\n * <span class=\"informal\">Collects values from the past as an array, and emits\r\n * that array only when its size reaches `bufferSize`.</span>\r\n *\r\n * <img src=\"./img/bufferCount.png\" width=\"100%\">\r\n *\r\n * Buffers a number of values from the source Observable by `bufferSize` then\r\n * emits the buffer and clears it, and starts a new buffer each\r\n * `startBufferEvery` values. If `startBufferEvery` is not provided or is\r\n * `null`, then new buffers are started immediately at the start of the source\r\n * and when each buffer closes and is emitted.\r\n *\r\n * @example <caption>Emit the last two click events as an array</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var buffered = clicks.bufferCount(2);\r\n * buffered.subscribe(x => console.log(x));\r\n *\r\n * @example <caption>On every click, emit the last two click events as an array</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var buffered = clicks.bufferCount(2, 1);\r\n * buffered.subscribe(x => console.log(x));\r\n *\r\n * @see {@link buffer}\r\n * @see {@link bufferTime}\r\n * @see {@link bufferToggle}\r\n * @see {@link bufferWhen}\r\n * @see {@link pairwise}\r\n * @see {@link windowCount}\r\n *\r\n * @param {number} bufferSize The maximum size of the buffer emitted.\r\n * @param {number} [startBufferEvery] Interval at which to start a new buffer.\r\n * For example if `startBufferEvery` is `2`, then a new buffer will be started\r\n * on every other value from the source. A new buffer is started at the\r\n * beginning of the source by default.\r\n * @return {Observable<T[]>} An Observable of arrays of buffered values.\r\n * @method bufferCount\r\n * @owner Observable\r\n ",
+          "range": [
+            60,
+            1828
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 42,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Line",
+          "value": "# sourceMappingURL=bufferCount.js.map",
+          "range": [
+            1962,
+            2001
+          ],
+          "loc": {
+            "start": {
+              "line": 46,
+              "column": 0
+            },
+            "end": {
+              "line": 46,
+              "column": 39
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    0,
+    1960
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 45,
+      "column": 1
+    }
+  },
+  "comments": [
+    {
+      "type": "Block",
+      "value": "*\r\n * Buffers the source Observable values until the size hits the maximum\r\n * `bufferSize` given.\r\n *\r\n * <span class=\"informal\">Collects values from the past as an array, and emits\r\n * that array only when its size reaches `bufferSize`.</span>\r\n *\r\n * <img src=\"./img/bufferCount.png\" width=\"100%\">\r\n *\r\n * Buffers a number of values from the source Observable by `bufferSize` then\r\n * emits the buffer and clears it, and starts a new buffer each\r\n * `startBufferEvery` values. If `startBufferEvery` is not provided or is\r\n * `null`, then new buffers are started immediately at the start of the source\r\n * and when each buffer closes and is emitted.\r\n *\r\n * @example <caption>Emit the last two click events as an array</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var buffered = clicks.bufferCount(2);\r\n * buffered.subscribe(x => console.log(x));\r\n *\r\n * @example <caption>On every click, emit the last two click events as an array</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var buffered = clicks.bufferCount(2, 1);\r\n * buffered.subscribe(x => console.log(x));\r\n *\r\n * @see {@link buffer}\r\n * @see {@link bufferTime}\r\n * @see {@link bufferToggle}\r\n * @see {@link bufferWhen}\r\n * @see {@link pairwise}\r\n * @see {@link windowCount}\r\n *\r\n * @param {number} bufferSize The maximum size of the buffer emitted.\r\n * @param {number} [startBufferEvery] Interval at which to start a new buffer.\r\n * For example if `startBufferEvery` is `2`, then a new buffer will be started\r\n * on every other value from the source. A new buffer is started at the\r\n * beginning of the source by default.\r\n * @return {Observable<T[]>} An Observable of arrays of buffered values.\r\n * @method bufferCount\r\n * @owner Observable\r\n ",
+      "range": [
+        60,
+        1828
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 42,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Line",
+      "value": "# sourceMappingURL=bufferCount.js.map",
+      "range": [
+        1962,
+        2001
+      ],
+      "loc": {
+        "start": {
+          "line": 46,
+          "column": 0
+        },
+        "end": {
+          "line": 46,
+          "column": 39
+        }
+      }
+    }
+  ]
+}

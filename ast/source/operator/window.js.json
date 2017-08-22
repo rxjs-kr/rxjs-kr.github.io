@@ -1,0 +1,452 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "higherOrder",
+            "range": [
+              19,
+              30
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 19
+              },
+              "end": {
+                "line": 1,
+                "column": 30
+              }
+            }
+          },
+          "imported": {
+            "type": "Identifier",
+            "name": "window",
+            "range": [
+              9,
+              15
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 9
+              },
+              "end": {
+                "line": 1,
+                "column": 15
+              }
+            }
+          },
+          "range": [
+            9,
+            30
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 9
+            },
+            "end": {
+              "line": 1,
+              "column": 30
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "../operators",
+        "raw": "'../operators'",
+        "range": [
+          38,
+          52
+        ],
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 38
+          },
+          "end": {
+            "line": 1,
+            "column": 52
+          }
+        }
+      },
+      "range": [
+        0,
+        53
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 53
+        }
+      },
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * Branch out the source Observable values as a nested Observable whenever\r\n * `windowBoundaries` emits.\r\n *\r\n * <span class=\"informal\">It's like {@link buffer}, but emits a nested Observable\r\n * instead of an array.</span>\r\n *\r\n * <img src=\"./img/window.png\" width=\"100%\">\r\n *\r\n * Returns an Observable that emits windows of items it collects from the source\r\n * Observable. The output Observable emits connected, non-overlapping\r\n * windows. It emits the current window and opens a new one whenever the\r\n * Observable `windowBoundaries` emits an item. Because each window is an\r\n * Observable, the output is a higher-order Observable.\r\n *\r\n * @example <caption>In every window of 1 second each, emit at most 2 click events</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var interval = Rx.Observable.interval(1000);\r\n * var result = clicks.window(interval)\r\n *   .map(win => win.take(2)) // each window has at most 2 emissions\r\n *   .mergeAll(); // flatten the Observable-of-Observables\r\n * result.subscribe(x => console.log(x));\r\n *\r\n * @see {@link windowCount}\r\n * @see {@link windowTime}\r\n * @see {@link windowToggle}\r\n * @see {@link windowWhen}\r\n * @see {@link buffer}\r\n *\r\n * @param {Observable<any>} windowBoundaries An Observable that completes the\r\n * previous window and starts a new window.\r\n * @return {Observable<Observable<T>>} An Observable of windows, which are\r\n * Observables emitting values of the source Observable.\r\n * @method window\r\n * @owner Observable\r\n ",
+          "range": [
+            55,
+            1569
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 37,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "window",
+          "range": [
+            1587,
+            1593
+          ],
+          "loc": {
+            "start": {
+              "line": 38,
+              "column": 16
+            },
+            "end": {
+              "line": 38,
+              "column": 22
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "windowBoundaries",
+            "range": [
+              1594,
+              1610
+            ],
+            "loc": {
+              "start": {
+                "line": 38,
+                "column": 23
+              },
+              "end": {
+                "line": 38,
+                "column": 39
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "higherOrder",
+                    "range": [
+                      1626,
+                      1637
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 39,
+                        "column": 11
+                      },
+                      "end": {
+                        "line": 39,
+                        "column": 22
+                      }
+                    }
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "name": "windowBoundaries",
+                      "range": [
+                        1638,
+                        1654
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 39,
+                          "column": 23
+                        },
+                        "end": {
+                          "line": 39,
+                          "column": 39
+                        }
+                      }
+                    }
+                  ],
+                  "range": [
+                    1626,
+                    1655
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 39,
+                      "column": 11
+                    },
+                    "end": {
+                      "line": 39,
+                      "column": 40
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "ThisExpression",
+                    "range": [
+                      1656,
+                      1660
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 39,
+                        "column": 41
+                      },
+                      "end": {
+                        "line": 39,
+                        "column": 45
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  1626,
+                  1661
+                ],
+                "loc": {
+                  "start": {
+                    "line": 39,
+                    "column": 11
+                  },
+                  "end": {
+                    "line": 39,
+                    "column": 46
+                  }
+                }
+              },
+              "range": [
+                1619,
+                1662
+              ],
+              "loc": {
+                "start": {
+                  "line": 39,
+                  "column": 4
+                },
+                "end": {
+                  "line": 39,
+                  "column": 47
+                }
+              }
+            }
+          ],
+          "range": [
+            1612,
+            1665
+          ],
+          "loc": {
+            "start": {
+              "line": 38,
+              "column": 41
+            },
+            "end": {
+              "line": 40,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          1578,
+          1665
+        ],
+        "loc": {
+          "start": {
+            "line": 38,
+            "column": 7
+          },
+          "end": {
+            "line": 40,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\r\n * Branch out the source Observable values as a nested Observable whenever\r\n * `windowBoundaries` emits.\r\n *\r\n * <span class=\"informal\">It's like {@link buffer}, but emits a nested Observable\r\n * instead of an array.</span>\r\n *\r\n * <img src=\"./img/window.png\" width=\"100%\">\r\n *\r\n * Returns an Observable that emits windows of items it collects from the source\r\n * Observable. The output Observable emits connected, non-overlapping\r\n * windows. It emits the current window and opens a new one whenever the\r\n * Observable `windowBoundaries` emits an item. Because each window is an\r\n * Observable, the output is a higher-order Observable.\r\n *\r\n * @example <caption>In every window of 1 second each, emit at most 2 click events</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var interval = Rx.Observable.interval(1000);\r\n * var result = clicks.window(interval)\r\n *   .map(win => win.take(2)) // each window has at most 2 emissions\r\n *   .mergeAll(); // flatten the Observable-of-Observables\r\n * result.subscribe(x => console.log(x));\r\n *\r\n * @see {@link windowCount}\r\n * @see {@link windowTime}\r\n * @see {@link windowToggle}\r\n * @see {@link windowWhen}\r\n * @see {@link buffer}\r\n *\r\n * @param {Observable<any>} windowBoundaries An Observable that completes the\r\n * previous window and starts a new window.\r\n * @return {Observable<Observable<T>>} An Observable of windows, which are\r\n * Observables emitting values of the source Observable.\r\n * @method window\r\n * @owner Observable\r\n ",
+            "range": [
+              55,
+              1569
+            ],
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 0
+              },
+              "end": {
+                "line": 37,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Line",
+            "value": "# sourceMappingURL=window.js.map",
+            "range": [
+              1667,
+              1701
+            ],
+            "loc": {
+              "start": {
+                "line": 41,
+                "column": 0
+              },
+              "end": {
+                "line": 41,
+                "column": 34
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        1571,
+        1665
+      ],
+      "loc": {
+        "start": {
+          "line": 38,
+          "column": 0
+        },
+        "end": {
+          "line": 40,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\r\n * Branch out the source Observable values as a nested Observable whenever\r\n * `windowBoundaries` emits.\r\n *\r\n * <span class=\"informal\">It's like {@link buffer}, but emits a nested Observable\r\n * instead of an array.</span>\r\n *\r\n * <img src=\"./img/window.png\" width=\"100%\">\r\n *\r\n * Returns an Observable that emits windows of items it collects from the source\r\n * Observable. The output Observable emits connected, non-overlapping\r\n * windows. It emits the current window and opens a new one whenever the\r\n * Observable `windowBoundaries` emits an item. Because each window is an\r\n * Observable, the output is a higher-order Observable.\r\n *\r\n * @example <caption>In every window of 1 second each, emit at most 2 click events</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var interval = Rx.Observable.interval(1000);\r\n * var result = clicks.window(interval)\r\n *   .map(win => win.take(2)) // each window has at most 2 emissions\r\n *   .mergeAll(); // flatten the Observable-of-Observables\r\n * result.subscribe(x => console.log(x));\r\n *\r\n * @see {@link windowCount}\r\n * @see {@link windowTime}\r\n * @see {@link windowToggle}\r\n * @see {@link windowWhen}\r\n * @see {@link buffer}\r\n *\r\n * @param {Observable<any>} windowBoundaries An Observable that completes the\r\n * previous window and starts a new window.\r\n * @return {Observable<Observable<T>>} An Observable of windows, which are\r\n * Observables emitting values of the source Observable.\r\n * @method window\r\n * @owner Observable\r\n ",
+          "range": [
+            55,
+            1569
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 37,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Line",
+          "value": "# sourceMappingURL=window.js.map",
+          "range": [
+            1667,
+            1701
+          ],
+          "loc": {
+            "start": {
+              "line": 41,
+              "column": 0
+            },
+            "end": {
+              "line": 41,
+              "column": 34
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    0,
+    1665
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 40,
+      "column": 1
+    }
+  },
+  "comments": [
+    {
+      "type": "Block",
+      "value": "*\r\n * Branch out the source Observable values as a nested Observable whenever\r\n * `windowBoundaries` emits.\r\n *\r\n * <span class=\"informal\">It's like {@link buffer}, but emits a nested Observable\r\n * instead of an array.</span>\r\n *\r\n * <img src=\"./img/window.png\" width=\"100%\">\r\n *\r\n * Returns an Observable that emits windows of items it collects from the source\r\n * Observable. The output Observable emits connected, non-overlapping\r\n * windows. It emits the current window and opens a new one whenever the\r\n * Observable `windowBoundaries` emits an item. Because each window is an\r\n * Observable, the output is a higher-order Observable.\r\n *\r\n * @example <caption>In every window of 1 second each, emit at most 2 click events</caption>\r\n * var clicks = Rx.Observable.fromEvent(document, 'click');\r\n * var interval = Rx.Observable.interval(1000);\r\n * var result = clicks.window(interval)\r\n *   .map(win => win.take(2)) // each window has at most 2 emissions\r\n *   .mergeAll(); // flatten the Observable-of-Observables\r\n * result.subscribe(x => console.log(x));\r\n *\r\n * @see {@link windowCount}\r\n * @see {@link windowTime}\r\n * @see {@link windowToggle}\r\n * @see {@link windowWhen}\r\n * @see {@link buffer}\r\n *\r\n * @param {Observable<any>} windowBoundaries An Observable that completes the\r\n * previous window and starts a new window.\r\n * @return {Observable<Observable<T>>} An Observable of windows, which are\r\n * Observables emitting values of the source Observable.\r\n * @method window\r\n * @owner Observable\r\n ",
+      "range": [
+        55,
+        1569
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 37,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Line",
+      "value": "# sourceMappingURL=window.js.map",
+      "range": [
+        1667,
+        1701
+      ],
+      "loc": {
+        "start": {
+          "line": 41,
+          "column": 0
+        },
+        "end": {
+          "line": 41,
+          "column": 34
+        }
+      }
+    }
+  ]
+}

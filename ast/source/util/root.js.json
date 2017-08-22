@@ -1,0 +1,1436 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "__window",
+            "range": [
+              208,
+              216
+            ],
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 6
+              },
+              "end": {
+                "line": 4,
+                "column": 14
+              }
+            }
+          },
+          "init": {
+            "type": "LogicalExpression",
+            "operator": "&&",
+            "left": {
+              "type": "BinaryExpression",
+              "operator": "!==",
+              "left": {
+                "type": "UnaryExpression",
+                "operator": "typeof",
+                "argument": {
+                  "type": "Identifier",
+                  "name": "window",
+                  "range": [
+                    226,
+                    232
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 24
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 30
+                    }
+                  }
+                },
+                "prefix": true,
+                "range": [
+                  219,
+                  232
+                ],
+                "loc": {
+                  "start": {
+                    "line": 4,
+                    "column": 17
+                  },
+                  "end": {
+                    "line": 4,
+                    "column": 30
+                  }
+                }
+              },
+              "right": {
+                "type": "Literal",
+                "value": "undefined",
+                "raw": "'undefined'",
+                "range": [
+                  237,
+                  248
+                ],
+                "loc": {
+                  "start": {
+                    "line": 4,
+                    "column": 35
+                  },
+                  "end": {
+                    "line": 4,
+                    "column": 46
+                  }
+                }
+              },
+              "range": [
+                219,
+                248
+              ],
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 17
+                },
+                "end": {
+                  "line": 4,
+                  "column": 46
+                }
+              }
+            },
+            "right": {
+              "type": "Identifier",
+              "name": "window",
+              "range": [
+                252,
+                258
+              ],
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 50
+                },
+                "end": {
+                  "line": 4,
+                  "column": 56
+                }
+              }
+            },
+            "range": [
+              219,
+              258
+            ],
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 17
+              },
+              "end": {
+                "line": 4,
+                "column": 56
+              }
+            }
+          },
+          "range": [
+            208,
+            258
+          ],
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 6
+            },
+            "end": {
+              "line": 4,
+              "column": 56
+            }
+          }
+        }
+      ],
+      "kind": "const",
+      "range": [
+        202,
+        259
+      ],
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 57
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Line",
+          "value": " CommonJS / Node have global context exposed as \"global\" variable.",
+          "range": [
+            0,
+            68
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 68
+            }
+          }
+        },
+        {
+          "type": "Line",
+          "value": " We don't want to include the whole node.d.ts this this compilation unit so we'll just fake",
+          "range": [
+            70,
+            163
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 2,
+              "column": 93
+            }
+          }
+        },
+        {
+          "type": "Line",
+          "value": " the global \"global\" var for now.",
+          "range": [
+            165,
+            200
+          ],
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 0
+            },
+            "end": {
+              "line": 3,
+              "column": 35
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "__self",
+            "range": [
+              267,
+              273
+            ],
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 6
+              },
+              "end": {
+                "line": 5,
+                "column": 12
+              }
+            }
+          },
+          "init": {
+            "type": "LogicalExpression",
+            "operator": "&&",
+            "left": {
+              "type": "LogicalExpression",
+              "operator": "&&",
+              "left": {
+                "type": "LogicalExpression",
+                "operator": "&&",
+                "left": {
+                  "type": "BinaryExpression",
+                  "operator": "!==",
+                  "left": {
+                    "type": "UnaryExpression",
+                    "operator": "typeof",
+                    "argument": {
+                      "type": "Identifier",
+                      "name": "self",
+                      "range": [
+                        283,
+                        287
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 5,
+                          "column": 22
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 26
+                        }
+                      }
+                    },
+                    "prefix": true,
+                    "range": [
+                      276,
+                      287
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 5,
+                        "column": 15
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 26
+                      }
+                    }
+                  },
+                  "right": {
+                    "type": "Literal",
+                    "value": "undefined",
+                    "raw": "'undefined'",
+                    "range": [
+                      292,
+                      303
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 5,
+                        "column": 31
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 42
+                      }
+                    }
+                  },
+                  "range": [
+                    276,
+                    303
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 5,
+                      "column": 15
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 42
+                    }
+                  }
+                },
+                "right": {
+                  "type": "BinaryExpression",
+                  "operator": "!==",
+                  "left": {
+                    "type": "UnaryExpression",
+                    "operator": "typeof",
+                    "argument": {
+                      "type": "Identifier",
+                      "name": "WorkerGlobalScope",
+                      "range": [
+                        314,
+                        331
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 5,
+                          "column": 53
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 70
+                        }
+                      }
+                    },
+                    "prefix": true,
+                    "range": [
+                      307,
+                      331
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 5,
+                        "column": 46
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 70
+                      }
+                    }
+                  },
+                  "right": {
+                    "type": "Literal",
+                    "value": "undefined",
+                    "raw": "'undefined'",
+                    "range": [
+                      336,
+                      347
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 5,
+                        "column": 75
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 86
+                      }
+                    }
+                  },
+                  "range": [
+                    307,
+                    347
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 5,
+                      "column": 46
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 86
+                    }
+                  }
+                },
+                "range": [
+                  276,
+                  347
+                ],
+                "loc": {
+                  "start": {
+                    "line": 5,
+                    "column": 15
+                  },
+                  "end": {
+                    "line": 5,
+                    "column": 86
+                  }
+                }
+              },
+              "right": {
+                "type": "BinaryExpression",
+                "operator": "instanceof",
+                "left": {
+                  "type": "Identifier",
+                  "name": "self",
+                  "range": [
+                    356,
+                    360
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 6,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 6,
+                      "column": 8
+                    }
+                  }
+                },
+                "right": {
+                  "type": "Identifier",
+                  "name": "WorkerGlobalScope",
+                  "range": [
+                    372,
+                    389
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 6,
+                      "column": 20
+                    },
+                    "end": {
+                      "line": 6,
+                      "column": 37
+                    }
+                  }
+                },
+                "range": [
+                  356,
+                  389
+                ],
+                "loc": {
+                  "start": {
+                    "line": 6,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 6,
+                    "column": 37
+                  }
+                }
+              },
+              "range": [
+                276,
+                389
+              ],
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 15
+                },
+                "end": {
+                  "line": 6,
+                  "column": 37
+                }
+              }
+            },
+            "right": {
+              "type": "Identifier",
+              "name": "self",
+              "range": [
+                393,
+                397
+              ],
+              "loc": {
+                "start": {
+                  "line": 6,
+                  "column": 41
+                },
+                "end": {
+                  "line": 6,
+                  "column": 45
+                }
+              }
+            },
+            "range": [
+              276,
+              397
+            ],
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 15
+              },
+              "end": {
+                "line": 6,
+                "column": 45
+              }
+            }
+          },
+          "range": [
+            267,
+            397
+          ],
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 6
+            },
+            "end": {
+              "line": 6,
+              "column": 45
+            }
+          }
+        }
+      ],
+      "kind": "const",
+      "range": [
+        261,
+        398
+      ],
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 6,
+          "column": 46
+        }
+      }
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "__global",
+            "range": [
+              406,
+              414
+            ],
+            "loc": {
+              "start": {
+                "line": 7,
+                "column": 6
+              },
+              "end": {
+                "line": 7,
+                "column": 14
+              }
+            }
+          },
+          "init": {
+            "type": "LogicalExpression",
+            "operator": "&&",
+            "left": {
+              "type": "BinaryExpression",
+              "operator": "!==",
+              "left": {
+                "type": "UnaryExpression",
+                "operator": "typeof",
+                "argument": {
+                  "type": "Identifier",
+                  "name": "global",
+                  "range": [
+                    424,
+                    430
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 7,
+                      "column": 24
+                    },
+                    "end": {
+                      "line": 7,
+                      "column": 30
+                    }
+                  }
+                },
+                "prefix": true,
+                "range": [
+                  417,
+                  430
+                ],
+                "loc": {
+                  "start": {
+                    "line": 7,
+                    "column": 17
+                  },
+                  "end": {
+                    "line": 7,
+                    "column": 30
+                  }
+                }
+              },
+              "right": {
+                "type": "Literal",
+                "value": "undefined",
+                "raw": "'undefined'",
+                "range": [
+                  435,
+                  446
+                ],
+                "loc": {
+                  "start": {
+                    "line": 7,
+                    "column": 35
+                  },
+                  "end": {
+                    "line": 7,
+                    "column": 46
+                  }
+                }
+              },
+              "range": [
+                417,
+                446
+              ],
+              "loc": {
+                "start": {
+                  "line": 7,
+                  "column": 17
+                },
+                "end": {
+                  "line": 7,
+                  "column": 46
+                }
+              }
+            },
+            "right": {
+              "type": "Identifier",
+              "name": "global",
+              "range": [
+                450,
+                456
+              ],
+              "loc": {
+                "start": {
+                  "line": 7,
+                  "column": 50
+                },
+                "end": {
+                  "line": 7,
+                  "column": 56
+                }
+              }
+            },
+            "range": [
+              417,
+              456
+            ],
+            "loc": {
+              "start": {
+                "line": 7,
+                "column": 17
+              },
+              "end": {
+                "line": 7,
+                "column": 56
+              }
+            }
+          },
+          "range": [
+            406,
+            456
+          ],
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 6
+            },
+            "end": {
+              "line": 7,
+              "column": 56
+            }
+          }
+        }
+      ],
+      "kind": "const",
+      "range": [
+        400,
+        457
+      ],
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 57
+        }
+      }
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "_root",
+            "range": [
+              465,
+              470
+            ],
+            "loc": {
+              "start": {
+                "line": 8,
+                "column": 6
+              },
+              "end": {
+                "line": 8,
+                "column": 11
+              }
+            }
+          },
+          "init": {
+            "type": "LogicalExpression",
+            "operator": "||",
+            "left": {
+              "type": "LogicalExpression",
+              "operator": "||",
+              "left": {
+                "type": "Identifier",
+                "name": "__window",
+                "range": [
+                  473,
+                  481
+                ],
+                "loc": {
+                  "start": {
+                    "line": 8,
+                    "column": 14
+                  },
+                  "end": {
+                    "line": 8,
+                    "column": 22
+                  }
+                }
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "__global",
+                "range": [
+                  485,
+                  493
+                ],
+                "loc": {
+                  "start": {
+                    "line": 8,
+                    "column": 26
+                  },
+                  "end": {
+                    "line": 8,
+                    "column": 34
+                  }
+                }
+              },
+              "range": [
+                473,
+                493
+              ],
+              "loc": {
+                "start": {
+                  "line": 8,
+                  "column": 14
+                },
+                "end": {
+                  "line": 8,
+                  "column": 34
+                }
+              }
+            },
+            "right": {
+              "type": "Identifier",
+              "name": "__self",
+              "range": [
+                497,
+                503
+              ],
+              "loc": {
+                "start": {
+                  "line": 8,
+                  "column": 38
+                },
+                "end": {
+                  "line": 8,
+                  "column": 44
+                }
+              }
+            },
+            "range": [
+              473,
+              503
+            ],
+            "loc": {
+              "start": {
+                "line": 8,
+                "column": 14
+              },
+              "end": {
+                "line": 8,
+                "column": 44
+              }
+            }
+          },
+          "range": [
+            465,
+            503
+          ],
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 6
+            },
+            "end": {
+              "line": 8,
+              "column": 44
+            }
+          }
+        }
+      ],
+      "kind": "const",
+      "range": [
+        459,
+        504
+      ],
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 0
+        },
+        "end": {
+          "line": 8,
+          "column": 45
+        }
+      },
+      "trailingComments": [
+        {
+          "type": "Line",
+          "value": " Workaround Closure Compiler restriction: The body of a goog.module cannot use throw.",
+          "range": [
+            506,
+            593
+          ],
+          "loc": {
+            "start": {
+              "line": 9,
+              "column": 0
+            },
+            "end": {
+              "line": 9,
+              "column": 87
+            }
+          }
+        },
+        {
+          "type": "Line",
+          "value": " This is needed when used with angular/tsickle which inserts a goog.module statement.",
+          "range": [
+            595,
+            682
+          ],
+          "loc": {
+            "start": {
+              "line": 10,
+              "column": 0
+            },
+            "end": {
+              "line": 10,
+              "column": 87
+            }
+          }
+        },
+        {
+          "type": "Line",
+          "value": " Wrap in IIFE",
+          "range": [
+            684,
+            699
+          ],
+          "loc": {
+            "start": {
+              "line": 11,
+              "column": 0
+            },
+            "end": {
+              "line": 11,
+              "column": 15
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "FunctionExpression",
+          "id": null,
+          "params": [],
+          "body": {
+            "type": "BlockStatement",
+            "body": [
+              {
+                "type": "IfStatement",
+                "test": {
+                  "type": "UnaryExpression",
+                  "operator": "!",
+                  "argument": {
+                    "type": "Identifier",
+                    "name": "_root",
+                    "range": [
+                      726,
+                      731
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 13,
+                        "column": 9
+                      },
+                      "end": {
+                        "line": 13,
+                        "column": 14
+                      }
+                    }
+                  },
+                  "prefix": true,
+                  "range": [
+                    725,
+                    731
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 13,
+                      "column": 8
+                    },
+                    "end": {
+                      "line": 13,
+                      "column": 14
+                    }
+                  }
+                },
+                "consequent": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "ThrowStatement",
+                      "argument": {
+                        "type": "NewExpression",
+                        "callee": {
+                          "type": "Identifier",
+                          "name": "Error",
+                          "range": [
+                            754,
+                            759
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 14,
+                              "column": 18
+                            },
+                            "end": {
+                              "line": 14,
+                              "column": 23
+                            }
+                          }
+                        },
+                        "arguments": [
+                          {
+                            "type": "Literal",
+                            "value": "RxJS could not find any global context (window, self, global)",
+                            "raw": "'RxJS could not find any global context (window, self, global)'",
+                            "range": [
+                              760,
+                              823
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 14,
+                                "column": 24
+                              },
+                              "end": {
+                                "line": 14,
+                                "column": 87
+                              }
+                            }
+                          }
+                        ],
+                        "range": [
+                          750,
+                          824
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 14,
+                            "column": 14
+                          },
+                          "end": {
+                            "line": 14,
+                            "column": 88
+                          }
+                        }
+                      },
+                      "range": [
+                        744,
+                        825
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 14,
+                          "column": 8
+                        },
+                        "end": {
+                          "line": 14,
+                          "column": 89
+                        }
+                      }
+                    }
+                  ],
+                  "range": [
+                    733,
+                    832
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 13,
+                      "column": 16
+                    },
+                    "end": {
+                      "line": 15,
+                      "column": 5
+                    }
+                  }
+                },
+                "alternate": null,
+                "range": [
+                  721,
+                  832
+                ],
+                "loc": {
+                  "start": {
+                    "line": 13,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 15,
+                    "column": 5
+                  }
+                }
+              }
+            ],
+            "range": [
+              714,
+              835
+            ],
+            "loc": {
+              "start": {
+                "line": 12,
+                "column": 13
+              },
+              "end": {
+                "line": 16,
+                "column": 1
+              }
+            }
+          },
+          "generator": false,
+          "expression": false,
+          "range": [
+            702,
+            835
+          ],
+          "loc": {
+            "start": {
+              "line": 12,
+              "column": 1
+            },
+            "end": {
+              "line": 16,
+              "column": 1
+            }
+          }
+        },
+        "arguments": [],
+        "range": [
+          701,
+          838
+        ],
+        "loc": {
+          "start": {
+            "line": 12,
+            "column": 0
+          },
+          "end": {
+            "line": 16,
+            "column": 4
+          }
+        }
+      },
+      "range": [
+        701,
+        839
+      ],
+      "loc": {
+        "start": {
+          "line": 12,
+          "column": 0
+        },
+        "end": {
+          "line": 16,
+          "column": 5
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Line",
+          "value": " Workaround Closure Compiler restriction: The body of a goog.module cannot use throw.",
+          "range": [
+            506,
+            593
+          ],
+          "loc": {
+            "start": {
+              "line": 9,
+              "column": 0
+            },
+            "end": {
+              "line": 9,
+              "column": 87
+            }
+          }
+        },
+        {
+          "type": "Line",
+          "value": " This is needed when used with angular/tsickle which inserts a goog.module statement.",
+          "range": [
+            595,
+            682
+          ],
+          "loc": {
+            "start": {
+              "line": 10,
+              "column": 0
+            },
+            "end": {
+              "line": 10,
+              "column": 87
+            }
+          }
+        },
+        {
+          "type": "Line",
+          "value": " Wrap in IIFE",
+          "range": [
+            684,
+            699
+          ],
+          "loc": {
+            "start": {
+              "line": 11,
+              "column": 0
+            },
+            "end": {
+              "line": 11,
+              "column": 15
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": null,
+      "specifiers": [
+        {
+          "type": "ExportSpecifier",
+          "exported": {
+            "type": "Identifier",
+            "name": "root",
+            "range": [
+              859,
+              863
+            ],
+            "loc": {
+              "start": {
+                "line": 17,
+                "column": 18
+              },
+              "end": {
+                "line": 17,
+                "column": 22
+              }
+            }
+          },
+          "local": {
+            "type": "Identifier",
+            "name": "_root",
+            "range": [
+              850,
+              855
+            ],
+            "loc": {
+              "start": {
+                "line": 17,
+                "column": 9
+              },
+              "end": {
+                "line": 17,
+                "column": 14
+              }
+            }
+          },
+          "range": [
+            850,
+            863
+          ],
+          "loc": {
+            "start": {
+              "line": 17,
+              "column": 9
+            },
+            "end": {
+              "line": 17,
+              "column": 22
+            }
+          }
+        }
+      ],
+      "source": null,
+      "range": [
+        841,
+        866
+      ],
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 0
+        },
+        "end": {
+          "line": 17,
+          "column": 25
+        }
+      },
+      "trailingComments": [
+        {
+          "type": "Line",
+          "value": "# sourceMappingURL=root.js.map",
+          "range": [
+            868,
+            900
+          ],
+          "loc": {
+            "start": {
+              "line": 18,
+              "column": 0
+            },
+            "end": {
+              "line": 18,
+              "column": 32
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    202,
+    866
+  ],
+  "loc": {
+    "start": {
+      "line": 4,
+      "column": 0
+    },
+    "end": {
+      "line": 17,
+      "column": 25
+    }
+  },
+  "comments": [
+    {
+      "type": "Line",
+      "value": " CommonJS / Node have global context exposed as \"global\" variable.",
+      "range": [
+        0,
+        68
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 68
+        }
+      }
+    },
+    {
+      "type": "Line",
+      "value": " We don't want to include the whole node.d.ts this this compilation unit so we'll just fake",
+      "range": [
+        70,
+        163
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 93
+        }
+      }
+    },
+    {
+      "type": "Line",
+      "value": " the global \"global\" var for now.",
+      "range": [
+        165,
+        200
+      ],
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 35
+        }
+      }
+    },
+    {
+      "type": "Line",
+      "value": " Workaround Closure Compiler restriction: The body of a goog.module cannot use throw.",
+      "range": [
+        506,
+        593
+      ],
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 0
+        },
+        "end": {
+          "line": 9,
+          "column": 87
+        }
+      }
+    },
+    {
+      "type": "Line",
+      "value": " This is needed when used with angular/tsickle which inserts a goog.module statement.",
+      "range": [
+        595,
+        682
+      ],
+      "loc": {
+        "start": {
+          "line": 10,
+          "column": 0
+        },
+        "end": {
+          "line": 10,
+          "column": 87
+        }
+      }
+    },
+    {
+      "type": "Line",
+      "value": " Wrap in IIFE",
+      "range": [
+        684,
+        699
+      ],
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 0
+        },
+        "end": {
+          "line": 11,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": "Line",
+      "value": "# sourceMappingURL=root.js.map",
+      "range": [
+        868,
+        900
+      ],
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 0
+        },
+        "end": {
+          "line": 18,
+          "column": 32
+        }
+      }
+    }
+  ]
+}
