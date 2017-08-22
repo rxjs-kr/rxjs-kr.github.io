@@ -42,10 +42,10 @@
     <ul class="manual-toc">
       
     <li data-ice="manualNav" class="indent-h1"><span class="manual-dot"></span><a href="manual/overview.html#introduction" data-ice="link">Introduction</a></li>
-<li data-ice="manualNav" class="indent-h2"><span class="manual-dot"></span><a href="manual/overview.html#first-examples" data-ice="link">First examples</a></li>
-<li data-ice="manualNav" class="indent-h3"><span class="manual-dot"></span><a href="manual/overview.html#purity" data-ice="link">Purity</a></li>
-<li data-ice="manualNav" class="indent-h3"><span class="manual-dot"></span><a href="manual/overview.html#flow" data-ice="link">Flow</a></li>
-<li data-ice="manualNav" class="indent-h3"><span class="manual-dot"></span><a href="manual/overview.html#values" data-ice="link">Values</a></li>
+<li data-ice="manualNav" class="indent-h2"><span class="manual-dot"></span><a href="manual/overview.html#-" data-ice="link">&#xCCAB;&#xBC88;&#xCA30; &#xC608;</a></li>
+<li data-ice="manualNav" class="indent-h3"><span class="manual-dot"></span><a href="manual/overview.html#-" data-ice="link">(&#xC21C;&#xC218;&#xC131;)</a></li>
+<li data-ice="manualNav" class="indent-h3"><span class="manual-dot"></span><a href="manual/overview.html#flow-" data-ice="link">Flow(&#xD750;&#xB984;)</a></li>
+<li data-ice="manualNav" class="indent-h3"><span class="manual-dot"></span><a href="manual/overview.html#-" data-ice="link">&#xAC12;&#xB4E4;</a></li>
 <li data-ice="manualNav" class="indent-h1"><span class="manual-dot"></span><a href="manual/overview.html#observable" data-ice="link">Observable</a></li>
 <li data-ice="manualNav" class="indent-h2"><span class="manual-dot"></span><a href="manual/overview.html#pull-versus-push" data-ice="link">Pull versus Push</a></li>
 <li data-ice="manualNav" class="indent-h2"><span class="manual-dot"></span><a href="manual/overview.html#observables-as-generalizations-of-functions" data-ice="link">Observables as generalizations of functions</a></li>
@@ -135,45 +135,71 @@
   </div>
   <div data-ice="content"><h1 id="introduction">Introduction</h1>
 <p>RxJS is a library for composing asynchronous and event-based programs by using observable sequences. It provides one core type, the <a href="./manual/./overview.html#observable">Observable</a>, satellite types (Observer, Schedulers, Subjects) and operators inspired by <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.6">Array#extras</a> (map, filter, reduce, every, etc) to allow handling asynchronous events as collections.</p>
-<p><span class="informal">Think of RxJS as Lodash for events.</span></p>
+<p>RsJS&#xB294;  Observable sequences&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC73C;&#xB85C;&#xC368; &#xBE44;&#xB3D9;&#xAE30;&#xC801;&#xC774;&#xACE0; &#xC774;&#xBCA4;&#xD2B8; &#xC9C0;&#xD5A5; &#xD504;&#xB85C;&#xADF8;&#xB7A8; &#xAD6C;&#xC131;&#xD558;&#xAE30;&#xC704;&#xD55C; &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;&#xC774;&#xB2E4;. &#xC774;&#xAC83;&#xC740; &#xCEEC;&#xB809;&#xC158;&#xC73C;&#xB85C; &#xBE44;&#xB3D9;&#xAE30;&#xC801;&#xC774; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xB2E4;&#xB8E8;&#xAE30; &#xC704;&#xD574;&#xC11C; &#xD575;&#xC2EC;&#xC801;&#xC778; &#xD0C0;&#xC785;&#xC778; [Observable] , satellite types(Observer, Schedulers, Subjects) &#xADF8;&#xB9AC;&#xACE0;   [Array#extras] &#xC5D0; &#xC758;&#xD574;&#xC11C; &#xC601;&#xD5A5;&#xC744; &#xBC1B;&#xC740; operator(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.6">https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.6</a>) (map, filter, reduce, every, etc)&#xC744; &#xC81C;&#xACF5;&#xD55C;&#xB2E4;.</p>
+<p><span class="informal">RxJS&#xB97C; Lodash&#xC758; events&#xB85C; &#xC0DD;&#xAC01;&#xD574;&#xBCF4;&#xC790;</span></p>
 <p>ReactiveX combines the <a href="https://en.wikipedia.org/wiki/Observer_pattern">Observer pattern</a> with the <a href="https://en.wikipedia.org/wiki/Iterator_pattern">Iterator pattern</a> and <a href="http://martinfowler.com/articles/collection-pipeline/#NestedOperatorExpressions">functional programming with collections</a> to fill the need for an ideal way of managing sequences of events.</p>
-<p>The essential concepts in RxJS which solve async event management are:</p>
+<p>ReactiveX&#xB294; &#xC5F0;&#xC18D;&#xC801;&#xC778; &#xC774;&#xBCA4;&#xD2B8;&#xC744; &#xB2E4;&#xB8E8;&#xAE30; &#xC704;&#xD55C; &#xAC00;&#xC7A5; &#xC774;&#xC0C1;&#xC801;&#xC778; &#xBC29;&#xBC95;&#xC744; &#xCDA9;&#xC871;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C; [Iterator pattern]&#xB97C; &#xAC00;&#xC9C4; <a href="https://en.wikipedia.org/wiki/Observer_pattern">Observer pattern</a> &#xADF8;&#xB9AC;&#xACE0; <a href="http://martinfowler.com/articles/collection-pipeline/#NestedOperatorExpressions">&#xCEEC;&#xB809;&#xC158;&#xC744; &#xB3D9;&#xBC18;&#xD55C; &#xD568;&#xC218;&#xD615; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D; </a>&#xC73C;&#xB85C; &#xACB0;&#xD569;&#xB41C;&#xB2E4;.</p>
+<p>The essential concepts in RxJS which solve async event management are:
+RxJS&#xC5D0;&#xC11C; &#xAC00;&#xC7A5; &#xD575;&#xC2EC;&#xC801;&#xC778; &#xAC1C;&#xB150;&#xC740; &#xBE44;&#xB3D9;&#xAE30;&#xC801;&#xC778; &#xC774;&#xBCA4;&#xD2B8; &#xAD00;&#xB9AC;&#xB97C; &#xD574;&#xACB0;&#xD558;&#xB294;&#xB370; &#xC788;&#xB2E4;.</p>
 <ul>
 <li><strong>Observable:</strong> represents the idea of an invokable collection of future values or events.</li>
-<li><strong>Observer:</strong> is a collection of callbacks that knows how to listen to values delivered by the Observable.</li>
-<li><strong>Subscription:</strong> represents the execution of an Observable, is primarily useful for cancelling the execution.</li>
-<li><strong>Operators:</strong> are pure functions that enable a functional programming style of dealing with collections with operations like <code>map</code>, <code>filter</code>, <code>concat</code>, <code>flatMap</code>, etc.</li>
-<li><strong>Subject:</strong> is the equivalent to an EventEmitter, and the only way of multicasting a value or event to multiple Observers.</li>
-<li><strong>Schedulers:</strong> are centralized dispatchers to control concurrency, allowing us to coordinate when computation happens on e.g. <code>setTimeout</code> or <code>requestAnimationFrame</code> or others.</li>
+<li><p><strong>Observable:</strong>&#xC740; &#xBC1C;&#xC0DD;&#xD560;&#xC218; &#xC788;&#xB294; &#xBBF8;&#xB798;&#xC758; &#xAC12;&#xACFC; &#xC774;&#xBCA4;&#xB4E4;&#xC5D0; &#xB300;&#xD55C; &#xCEEC;&#xB809;&#xC158;&#xC5D0; &#xB300;&#xD55C; &#xAC1C;&#xB150;&#xC744; &#xB098;&#xD0C0;&#xB0B8;&#xB2E4;.</p>
+</li>
+<li><p><strong>Observer:</strong> is a collection of callbacks that knows how to listen to values delivered by the Observable.</p>
+</li>
+<li><p><strong>Observer:</strong> &#xB294; &#xCF5C;&#xBC31;&#xC758; &#xCEEC;&#xB809;&#xC158;&#xC774;&#xB2E4;.  &#xC5B4;&#xB5BB;&#xAC8C; Observable&#xC758;&#xD574;&#xC11C; &#xAC12;&#xC744; &#xC804;&#xB2EC;&#xB420;&#xC9C0;&#xB97C;  how to listen to values delivered by the Observable.</p>
+</li>
+<li><p><strong>Subscription:</strong> represents the execution Observable, is primarily useful for cancelling the execution.</p>
+</li>
+<li><p><strong>Subscription:</strong> Observable&#xC758; &#xC2E4;&#xD589;&#xC744; &#xB098;&#xD0C0;&#xB0B4;&#xACE0; , &#xC8FC;&#xB85C; &#xC2E4;&#xD589;&#xC744; &#xCDE8;&#xC18C;&#xD558;&#xB294;&#xB370;&#xC5D0; &#xC720;&#xC6A9;&#xD558;&#xB2E4;.</p>
+</li>
+<li><p><strong>Operators:</strong> are pure functions that enable a functional programming style of dealing with collections with operations like <code>map</code>, <code>filter</code>, <code>concat</code>, <code>flatMap</code>, etc.</p>
+</li>
+<li><p><strong>Operators:</strong> &#xC740;  <code>map</code>, <code>filter</code>, <code>concat</code>, <code>flatMap</code>, &#xB4F1;&#xACFC; &#xC740; &#xCEEC;&#xB809;&#xC158;&#xC744; &#xD568;&#xC218;&#xD615; &#xC2A4;&#xD0C0;&#xC77C;&#xB85C; &#xB2E4;&#xB8F0;&#xC218; &#xC788;&#xAC8C; &#xD558;&#xB294; &#xC21C;&#xC218;&#xD55C; &#xD568;&#xC218;&#xC774;&#xB2E4;.</p>
+</li>
+<li><p><strong>Subject:</strong>&#xB294; EventEmitter&#xC640; &#xB3D9;&#xC77C;&#xD558;&#xACE0;, &#xBCF5;&#xD569; Observers&#xC5D0;  &#xAC12;&#xACFC; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xBA40;&#xD2F0;&#xCE90;&#xC2A4;&#xD305;&#xD558;&#xB294; &#xC720;&#xC77C;&#xD55C; &#xBC29;&#xBC95;&#xC774;&#xB2E4;.</p>
+</li>
+<li><p><strong>Schedulers:</strong> are centralized dispatchers to control concurrency, allowing us to coordinate when computation happens on e.g. <code>setTimeout</code> or <code>requestAnimationFrame</code> or others.</p>
+</li>
+<li><p><strong>Schedulers:</strong> &#xB294; &#xB3D9;&#xC2DC;&#xC131;&#xC744; &#xC81C;&#xC5B4;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C; dispatchers&#xB4E4;&#xB85C; &#xC9D1;&#xC911;&#xC2DC;&#xD0A8;&#xB2E4;, 
+&#xC608;&#xB97C;&#xB4E4;&#xBA74;  <code>setTimeout</code> , <code>requestAnimationFrame</code> &#xB610;&#xB2E4;&#xB978; &#xAC83;&#xB4E4;&#xACFC; &#xC5F0;&#xC0B0;&#xC774; &#xC77C;&#xC5B4;&#xB0A0;&#xB54C; , &#xC798; &#xC870;&#xC815;&#xD558;&#xB3C4;&#xB85D; &#xD568;&#xC73C;&#xB85C;&#xC368; 
+(&#xC5ED;&#xC790;: &#xB3D9;&#xC2DC;&#xB2E4;&#xBC1C;&#xC801; &#xC791;&#xC5C5;&#xC774; &#xC77C;&#xC5B4;&#xB098;&#xBA74; dispatchers&#xC5D0; &#xC9D1;&#xC911;&#xC2DC;&#xCF1C; &#xB3D9;&#xC2DC;&#xC131;&#xC744; &#xC81C;&#xC5B4;&#xD55C;&#xB2E4;.)</p>
+</li>
 </ul>
-<h2 id="first-examples">First examples</h2>
-<p>Normally you register event listeners.</p>
+<h2 id="-">&#xCCAB;&#xBC88;&#xCA30; &#xC608;</h2>
+<p>&#xBCF4;&#xD1B5; &#xC774;&#xBCA4;&#xD2B8; &#xB9AC;&#xC2A4;&#xB108;&#xB97C; &#xB4F1;&#xB85D;&#xD55C;&#xB2E4;.</p>
 <pre><code class="lang-js"><code class="source-code prettyprint">var button = document.querySelector(&apos;button&apos;);
 button.addEventListener(&apos;click&apos;, () =&gt; console.log(&apos;Clicked!&apos;));</code>
 </code></pre>
-<p>Using RxJS you create an observable instead.</p>
+<p>&#xB300;&#xC2E0;&#xC5D0; RxJS &#xB97C; observable&#xB85C; &#xC0DD;&#xC131;&#xD55C;&#xB2E4;.</p>
 <pre><code class="lang-js"><code class="source-code prettyprint">var button = document.querySelector(&apos;button&apos;);
 Rx.Observable.fromEvent(button, &apos;click&apos;)
   .subscribe(() =&gt; console.log(&apos;Clicked!&apos;));</code>
 </code></pre>
-<h3 id="purity">Purity</h3>
-<p>What makes RxJS powerful is its ability to produce values using pure functions. That means your code is less prone to errors.</p>
+<h3 id="-">(&#xC21C;&#xC218;&#xC131;)</h3>
+<p>What makes RxJS powerful is its ability to produce values using pure functions. That means your code is less prone to errors.
+RxJS&#xB97C; &#xAC15;&#xB825;&#xD558;&#xAC8C; &#xD558;&#xB294;&#xAC83;&#xC740; &#xC21C;&#xC218;&#xD568;&#xC218;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC5EC; &#xAC12;&#xC744; &#xB9CC;&#xB4E4;&#xC5B4;&#xB0B4;&#xB294;&#xAC83;&#xC774;&#xB2E4;. &#xC774;&#xAC83;&#xC740; &#xB2F9;&#xC2E0;&#xC758; &#xCF54;&#xB4DC;&#xAC00; &#xC5D0;&#xB7EC;&#xAC00; &#xB0A0; &#xACBD;&#xD5A5;&#xC77C; &#xC801;&#xC5B4;&#xC9D0;&#xC744; &#xB098;&#xD0C0;&#xB0B8;&#xB2E4;.</p>
 <p>Normally you would create an impure function, where other
-pieces of your code can mess up your state.</p>
+pieces of your code can mess up your state.
+&#xBCF4;&#xD1B5; &#xC6B0;&#xB9AC;&#xB294; &#xC21C;&#xC218;&#xD558;&#xC9C0; &#xBABB;&#xD55C; &#xD568;&#xC218;&#xB97C; &#xB9CC;&#xB4E0;&#xB2E4;, &#xB610;&#xB2E4;&#xB978; &#xACF3;&#xC5D0;&#xC11C;&#xB294; &#xB2F9;&#xC2E0;&#xC758; &#xC0C1;&#xD0DC;&#xB97C; &#xD63C;&#xB780;&#xC2A4;&#xB7FD;&#xAC8C; &#xB9CC;&#xB4E4;&#xC218;&#xC788;&#xB2E4;.</p>
 <pre><code class="lang-js"><code class="source-code prettyprint">var count = 0;
 var button = document.querySelector(&apos;button&apos;);
 button.addEventListener(&apos;click&apos;, () =&gt; console.log(`Clicked ${++count} times`));</code>
 </code></pre>
-<p>Using RxJS you isolate the state.</p>
+<p>Using RxJS you isolate the state.
+RxJS&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC5EC; &#xB2F9;&#xC2E0;&#xC744; &#xC0C1;&#xD0DC;&#xB97C; &#xACA9;&#xB9AC;&#xC2DC;&#xD0AC;&#xC218; &#xC788;&#xB2E4;.</p>
 <pre><code class="lang-Js"><code class="source-code prettyprint">var button = document.querySelector(&apos;button&apos;);
 Rx.Observable.fromEvent(button, &apos;click&apos;)
   .scan(count =&gt; count + 1, 0)
   .subscribe(count =&gt; console.log(`Clicked ${count} times`));</code>
 </code></pre>
-<p>The <strong>scan</strong> operator works just like <strong>reduce</strong> for arrays. It takes a value which is exposed to a callback. The returned value of the callback will then become the next value exposed the next time the callback runs.</p>
-<h3 id="flow">Flow</h3>
-<p>RxJS has a whole range of operators that helps you control how the events flow through your observables.</p>
-<p>This is how you would allow at most one click per second, with plain JavaScript:</p>
+<p>The <strong>scan</strong> operator works just like <strong>reduce</strong> for arrays. It takes a value which is exposed to a callback. The returned value of the callback will then become the next value exposed the next time the callback runs.
+<strong>scan</strong> operator&#xB294; &#xBC30;&#xC5F4;&#xC758; <strong>reduce</strong> &#xAC19;&#xC774; &#xB3D9;&#xC791;&#xD55C;&#xB2E4;. &#xC774;&#xAC83;&#xC740; &#xCF5C;&#xBC31;&#xC73C;&#xB85C; &#xB178;&#xCD9C;&#xB41C; &#xAC12;&#xC744; &#xAC00;&#xC9C4;&#xB2E4;. &#xCF5C;&#xBC31;&#xC758; &#xB9AC;&#xD134;&#xB41C; &#xAC12;&#xC740; &#xCF5C;&#xBC31;&#xC774; &#xB3D9;&#xC791;&#xD558;&#xB294; &#xCF5C;&#xBC31;&#xC774; &#xB3D9;&#xC791;&#xD558;&#xB290; &#xB2E4;&#xC74C; &#xC2DC;&#xC810;&#xC5D0; &#xB2E4;&#xC74C; &#xAC12;&#xC774; &#xB420; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<h3 id="flow-">Flow(&#xD750;&#xB984;)</h3>
+<p>RxJS has a whole range of operators that helps you control how the events flow through your observables.
+RxJS&#xB294; &#xC5B4;&#xB5BB;&#xAC8C; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; observables&#xC744; &#xD1B5;&#xD574;&#xC11C; &#xCEE8;&#xD2B8;&#xB864; &#xD558;&#xB3C4;&#xB85D; &#xB3C4;&#xC640;&#xC8FC;&#xB294; &#xBAA8;&#xB4E0; operators&#xB97C; &#xAC00;&#xC9C4;&#xB2E4;. </p>
+<p>This is how you would allow at most one click per second, with plain JavaScript:
+&#xC21C;&#xC218;&#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xB85C;&#xB294;,&#xC774;&#xAC83;&#xC740; &#xC5B4;&#xB5BB;&#xAC8C; &#xB9E4;&#xCD08;&#xB9C8;&#xB2E4; &#xD55C;&#xBC88; &#xC774;&#xC0C1;&#xC758; &#xD074;&#xB9AD;&#xC744; &#xD5C8;&#xC6A9;&#xD558;&#xB294;&#xC9C0;&#xC5D0; &#xB300;&#xD55C; &#xAC83;&#xC774;&#xB2E4;. </p>
 <pre><code class="lang-js"><code class="source-code prettyprint">var count = 0;
 var rate = 1000;
 var lastClick = Date.now() - rate;
@@ -185,17 +211,19 @@ button.addEventListener(&apos;click&apos;, () =&gt; {
   }
 });</code>
 </code></pre>
-<p>With RxJS:</p>
+<p>RxJs &#xB85C; &#xD558;&#xBA74; :</p>
 <pre><code class="lang-js"><code class="source-code prettyprint">var button = document.querySelector(&apos;button&apos;);
 Rx.Observable.fromEvent(button, &apos;click&apos;)
   .throttleTime(1000)
   .scan(count =&gt; count + 1, 0)
   .subscribe(count =&gt; console.log(`Clicked ${count} times`));</code>
 </code></pre>
-<p>Other flow control operators are <a href="./manual/../class/es6/Observable.js~Observable.html#instance-method-filter"><strong>filter</strong></a>, <a href="./manual/../class/es6/Observable.js~Observable.html#instance-method-delay"><strong>delay</strong></a>, <a href="./manual/../class/es6/Observable.js~Observable.html#instance-method-debounceTime"><strong>debounceTime</strong></a>, <a href="./manual/../class/es6/Observable.js~Observable.html#instance-method-take"><strong>take</strong></a>, <a href="./manual/../class/es6/Observable.js~Observable.html#instance-method-takeUntil"><strong>takeUntil</strong></a>, <a href="./manual/../class/es6/Observable.js~Observable.html#instance-method-distinct"><strong>distinct</strong></a>, <a href="./manual/../class/es6/Observable.js~Observable.html#instance-method-distinctUntilChanged"><strong>distinctUntilChanged</strong></a> etc.</p>
-<h3 id="values">Values</h3>
-<p>You can transform the values passed through your observables.</p>
-<p>Here&apos;s how you can add the current mouse x position for every click, in plain JavaScript:</p>
+<p>&#xB610;&#xB2E4;&#xB978; &#xD750;&#xC74C; &#xC81C;&#xC5B4; Oberator&#xB294; <a href="./manual/../class/es6/Observable.js~Observable.html#instance-method-filter"><strong>filter</strong></a>, <a href="./manual/../class/es6/Observable.js~Observable.html#instance-method-delay"><strong>delay</strong></a>, <a href="./manual/../class/es6/Observable.js~Observable.html#instance-method-debounceTime"><strong>debounceTime</strong></a>, <a href="./manual/../class/es6/Observable.js~Observable.html#instance-method-take"><strong>take</strong></a>, <a href="./manual/../class/es6/Observable.js~Observable.html#instance-method-takeUntil"><strong>takeUntil</strong></a>, <a href="./manual/../class/es6/Observable.js~Observable.html#instance-method-distinct"><strong>distinct</strong></a>, <a href="./manual/../class/es6/Observable.js~Observable.html#instance-method-distinctUntilChanged"><strong>distinctUntilChanged</strong></a> etc.</p>
+<h3 id="-">&#xAC12;&#xB4E4;</h3>
+<p>You can transform the values passed through your observables.
+&#xB2F9;&#xC2E0;&#xC740; observables&#xD1B5;&#xD574;&#xC11C; &#xAC12;&#xC744; &#xD1B5;&#xACFC;&#xC2DC;&#xCF1C; &#xBCC0;&#xD615;&#xD560;&#xC218; &#xC788;&#xB2E4;.</p>
+<p>Here&apos;s how you can add the current mouse x position for every click, in plain JavaScript:
+&#xC21C;&#xC218;&#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xC5D0;&#xC11C;&#xB294;, &#xC5EC;&#xAE30;&#xC5D0; &#xC5B4;&#xB5BB;&#xAC8C; &#xD074;&#xB9AD; &#xC774;&#xBCA4;&#xD2B8;&#xC5D0; &#xB300;&#xD574;&#xC11C; &#xD604;&#xC7AC; &#xB9C8;&#xC6B0;&#xC2A4; X &#xC704;&#xCE58;&#xB97C; &#xCD94;&#xAC00;&#xD560;&#xC9C0;&#xC5D0; &#xB300;&#xD55C; &#xAC83;&#xC774;&#xC788;&#xB2E4;.</p>
 <pre><code class="lang-js"><code class="source-code prettyprint">var count = 0;
 var rate = 1000;
 var lastClick = Date.now() - rate;
@@ -208,7 +236,7 @@ button.addEventListener(&apos;click&apos;, (event) =&gt; {
   }
 });</code>
 </code></pre>
-<p>With RxJS:</p>
+<p>RxJS&#xB85C;&#xB294;: </p>
 <pre><code class="lang-js"><code class="source-code prettyprint">var button = document.querySelector(&apos;button&apos;);
 Rx.Observable.fromEvent(button, &apos;click&apos;)
   .throttleTime(1000)
@@ -218,6 +246,8 @@ Rx.Observable.fromEvent(button, &apos;click&apos;)
 </code></pre>
 <p>Other value producing operators are <a href="./manual/../class/es6/Observable.js~Observable.html#instance-method-pluck"><strong>pluck</strong></a>, <a href="./manual/../class/es6/Observable.js~Observable.html#instance-method-pairwise"><strong>pairwise</strong></a>,
 <a href="./manual/../class/es6/Observable.js~Observable.html#instance-method-sample"><strong>sample</strong></a> etc.</p>
+<p>&#xB610;&#xB77C;&#xB978; &#xAC12;&#xC744; &#xB9CC;&#xB4E4;&#xC5B4;&#xB0B4;&#xB294; operators&#xB294; <a href="./manual/../class/es6/Observable.js~Observable.html#instance-method-pluck"><strong>pluck</strong></a>, <a href="./manual/../class/es6/Observable.js~Observable.html#instance-method-pairwise"><strong>pairwise</strong></a>,
+<a href="./manual/../class/es6/Observable.js~Observable.html#instance-method-sample"><strong>sample</strong></a> , &#xB4F1;&#xC774; &#xC788;&#xB2E4;.</p>
 <h1 id="observable">Observable</h1>
 <p>Observables are lazy Push collections of multiple values. They fill the missing spot in the following table:</p>
 <table>
